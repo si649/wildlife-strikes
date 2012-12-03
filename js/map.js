@@ -43,7 +43,7 @@ var Map = (function($,_,d3){
 				var airport = chartNodes.selectAll("path")
 				    .data(collection.features)
 				    .enter().append("path")
-					    .attr("class", function (d) { return d.id });
+					    .attr("class", function (d) { return d.id + " leaflet-zoom-hide"});
 				    
 
 				map.on("viewreset", reset);
