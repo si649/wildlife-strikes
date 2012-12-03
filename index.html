@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<title> WSR Visualization - Terror in the Skies! </title>
+<link rel="shortcut icon" href="favicon.png" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.css" />
+
+<script src="js/lib/LAB.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$LAB
+	.script("js/lib/jquery-1.8.2.min.js")
+	.script("js/lib/underscore-min.js")
+	.script("js/lib/d3.v2.min.js").wait()
+	.script("js/animals.js")
+	.script("http://cdn.leafletjs.com/leaflet-0.4/leaflet.js")
+	.script("http://maps.stamen.com/js/tile.stamen.js?v1.2.0").wait()
+	.script("js/map.js")
+	.wait(function(){
+		$(document).ready(function(){
+			// define global namespace.
+			// 	all modules will have access to this object, since it is attached to the window
+			//	data that needs to be shared will move within this reference
+			window.WSR = window.WSR || {};
+			$.extend(true,WSR,{
+				vars: {
+					date: function() {
+						// this will get more complex, but becomes a global way to grab the current "time"
+						return '2010';
+					},
+					mapH: $(window).height(), // set in $ready
+					mapW: $(window).width()	// set in $ready
+				},
+				models: {},	// store data models for reference
+				views: {}	// store UI views for reference
+			});	
+			$('#map').css({'width':WSR.vars.mapW,'height':WSR.vars.mapH});
+			
+			/** Initialize Modules **/
+			
+			var map = new Map();
+			map.initMap("#map")  // initialize map
+			
+			var animalUI = new AnimalUI();
+			animalUI.initAnimalUI("#animals"); // initialize Species Buttons
+			
+		}); // END $.ready
+	});
+</script>
+</head>
+<body>
+<ul id="animals"></ul>
+<div id="map"></div>
+</body>
+</html>
