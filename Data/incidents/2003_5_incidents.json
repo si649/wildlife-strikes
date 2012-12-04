@@ -1,0 +1,6252 @@
+[
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "SC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLESTON AFB/INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCHS", 
+        "TIME": "30", 
+        "INDEX_NR": "8119"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GEORGE BUSH INTERCONTINENTAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAH", 
+        "TIME": "350", 
+        "INDEX_NR": "215090"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX SKY HARBOR", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHX", 
+        "TIME": "15", 
+        "INDEX_NR": "216124"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "", 
+        "INDEX_NR": "216376"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "CT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GROTON-NEW LONDON AR", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KGON", 
+        "TIME": "", 
+        "INDEX_NR": "216415"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS/FORT WORTH INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDFW", 
+        "TIME": "830", 
+        "INDEX_NR": "216472"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "KY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CINCINNATI/NORTHERN KENTUCKY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCVG", 
+        "TIME": "715", 
+        "INDEX_NR": "216813"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "AR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "2230", 
+        "INDEX_NR": "217212"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "NC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "RALEIGH-DURHAM INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KRDU", 
+        "TIME": "2330", 
+        "INDEX_NR": "218138"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "", 
+        "INDEX_NR": "218214"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "218724"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KANSAS CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCI", 
+        "TIME": "", 
+        "INDEX_NR": "220435"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "NV", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MCCARREN INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLAS", 
+        "TIME": "1230", 
+        "INDEX_NR": "220593"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "JACKSONVILLE INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KJAX", 
+        "TIME": "", 
+        "INDEX_NR": "220818"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "RI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "THEODORE FRANCIS GREEN STATE", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPVD", 
+        "TIME": "", 
+        "INDEX_NR": "222283"
+    }, 
+    {
+        "INCIDENT_DATE": "1-May-03", 
+        "STATE": "NJ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NEWARK LIBERTY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KEWR", 
+        "TIME": "", 
+        "INDEX_NR": "222448"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MIDLAND INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMAF", 
+        "TIME": "", 
+        "INDEX_NR": "5098"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "NH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PEASE INTL TRADEPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPSM", 
+        "TIME": "425", 
+        "INDEX_NR": "7477"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "", 
+        "INDEX_NR": "216370"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MINETA SAN JOSE INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSJC", 
+        "TIME": "755", 
+        "INDEX_NR": "216440"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS/FORT WORTH INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDFW", 
+        "TIME": "2220", 
+        "INDEX_NR": "216502"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SAN ANTONIO INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSAT", 
+        "TIME": "", 
+        "INDEX_NR": "216675"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "VA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "RICHMOND INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KRIC", 
+        "TIME": "845", 
+        "INDEX_NR": "217209"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LAMBERT-ST LOUIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSTL", 
+        "TIME": "", 
+        "INDEX_NR": "217697"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "", 
+        "INDEX_NR": "218817"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SAN DIEGO INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSAN", 
+        "TIME": "", 
+        "INDEX_NR": "218866"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "219103"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOVELL FIELD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCHA", 
+        "TIME": "945", 
+        "INDEX_NR": "219619"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "UT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SALT LAKE CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSLC", 
+        "TIME": "1130", 
+        "INDEX_NR": "219768"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "MI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DETROIT METRO WAYNE COUNTY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDTW", 
+        "TIME": "1140", 
+        "INDEX_NR": "219997"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "220426"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "FLOYD BENNETT MEMORIAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KGFL", 
+        "TIME": "940", 
+        "INDEX_NR": "220730"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "METRO OAKLAND INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOAK", 
+        "TIME": "315", 
+        "INDEX_NR": "220924"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "MI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DETROIT METRO WAYNE COUNTY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDTW", 
+        "TIME": "", 
+        "INDEX_NR": "221687"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BUFFALO-NIAGARA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBUF", 
+        "TIME": "", 
+        "INDEX_NR": "222010"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "222951"
+    }, 
+    {
+        "INCIDENT_DATE": "2-May-03", 
+        "STATE": "MD", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BALTIMORE WASH INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBWI", 
+        "TIME": "1255", 
+        "INDEX_NR": "223785"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "SC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLESTON AFB/INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCHS", 
+        "TIME": "1530", 
+        "INDEX_NR": "8122"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOS ANGELES INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLAX", 
+        "TIME": "", 
+        "INDEX_NR": "215128"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "SC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLESTON AFB/INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCHS", 
+        "TIME": "1538", 
+        "INDEX_NR": "215908"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "MD", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BALTIMORE WASH INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBWI", 
+        "TIME": "1615", 
+        "INDEX_NR": "216270"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "WI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "2145", 
+        "INDEX_NR": "216916"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX SKY HARBOR", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHX", 
+        "TIME": "250", 
+        "INDEX_NR": "217345"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NASHVILLE INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBNA", 
+        "TIME": "", 
+        "INDEX_NR": "218892"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "0", 
+        "INDEX_NR": "219063"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX SKY HARBOR", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHX", 
+        "TIME": "", 
+        "INDEX_NR": "219216"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "KY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOUISVILLE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSDF", 
+        "TIME": "", 
+        "INDEX_NR": "219286"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "AUSTIN-BERGSTROM INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KAUS", 
+        "TIME": "", 
+        "INDEX_NR": "219576"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "VALLEY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KHRL", 
+        "TIME": "", 
+        "INDEX_NR": "219653"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "MI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DETROIT METRO WAYNE COUNTY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDTW", 
+        "TIME": "", 
+        "INDEX_NR": "219879"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "MD", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BALTIMORE WASH INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBWI", 
+        "TIME": "1115", 
+        "INDEX_NR": "221145"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TUCSON INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KTUS", 
+        "TIME": "", 
+        "INDEX_NR": "222263"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "AUSTIN-BERGSTROM INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KAUS", 
+        "TIME": "2010", 
+        "INDEX_NR": "222576"
+    }, 
+    {
+        "INCIDENT_DATE": "3-May-03", 
+        "STATE": "WI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "2330", 
+        "INDEX_NR": "222716"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "ME", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BANGOR INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBGR", 
+        "TIME": "125", 
+        "INDEX_NR": "8120"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "SC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLESTON AFB/INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCHS", 
+        "TIME": "2105", 
+        "INDEX_NR": "8121"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "OR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PORTLAND INTL (OR)", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPDX", 
+        "TIME": "", 
+        "INDEX_NR": "213480"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "L F WADE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "TXKF", 
+        "TIME": "1157", 
+        "INDEX_NR": "215713"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX DEER VALLEY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDVT", 
+        "TIME": "826", 
+        "INDEX_NR": "216552"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "216892"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "JOHN F KENNEDY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KJFK", 
+        "TIME": "1440", 
+        "INDEX_NR": "217247"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "KY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CINCINNATI/NORTHERN KENTUCKY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCVG", 
+        "TIME": "1620", 
+        "INDEX_NR": "217646"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "MI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DETROIT METRO WAYNE COUNTY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDTW", 
+        "TIME": "", 
+        "INDEX_NR": "218172"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BURKE LAKEFRONT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBKL", 
+        "TIME": "", 
+        "INDEX_NR": "218368"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "MI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DETROIT METRO WAYNE COUNTY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDTW", 
+        "TIME": "", 
+        "INDEX_NR": "218370"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "NH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MANCHESTER AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMHT", 
+        "TIME": "2300", 
+        "INDEX_NR": "219958"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GREATER PITTSBURGH", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPIT", 
+        "TIME": "1645", 
+        "INDEX_NR": "220434"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KANSAS CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCI", 
+        "TIME": "1835", 
+        "INDEX_NR": "220699"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "NC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLOTTE/DOUGLAS INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCLT", 
+        "TIME": "850", 
+        "INDEX_NR": "220822"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LAKEFRONT AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KNEW", 
+        "TIME": "", 
+        "INDEX_NR": "220825"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS/FORT WORTH INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDFW", 
+        "TIME": "", 
+        "INDEX_NR": "221155"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "222009"
+    }, 
+    {
+        "INCIDENT_DATE": "4-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GEORGE BUSH INTERCONTINENTAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAH", 
+        "TIME": "", 
+        "INDEX_NR": "223567"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SHEPPARD AIR FORCE BASE", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSPS", 
+        "TIME": "1530", 
+        "INDEX_NR": "3813"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "OK", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WILL ROGERS WORLD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOKC", 
+        "TIME": "1512", 
+        "INDEX_NR": "8047"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MIDLAND INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMAF", 
+        "TIME": "1020", 
+        "INDEX_NR": "8124"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOS ANGELES INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLAX", 
+        "TIME": "708", 
+        "INDEX_NR": "215501"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "215891"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "QC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MONTREAL INTL (MIRABEL)", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "CYMX", 
+        "TIME": "315", 
+        "INDEX_NR": "216457"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BUFFALO-NIAGARA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBUF", 
+        "TIME": "", 
+        "INDEX_NR": "217447"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MIAMI INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMIA", 
+        "TIME": "", 
+        "INDEX_NR": "217572"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "ND", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "HECTOR INTERNATIONAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KFAR", 
+        "TIME": "", 
+        "INDEX_NR": "217603"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "MI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DETROIT METRO WAYNE COUNTY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDTW", 
+        "TIME": "1200", 
+        "INDEX_NR": "217711"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LAMBERT-ST LOUIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSTL", 
+        "TIME": "2135", 
+        "INDEX_NR": "217712"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "AR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "FORT SMITH MUNICIPAL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KFSM", 
+        "TIME": "", 
+        "INDEX_NR": "217713"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "NE", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MILLARD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMLE", 
+        "TIME": "2100", 
+        "INDEX_NR": "218286"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "KY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CINCINNATI/NORTHERN KENTUCKY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCVG", 
+        "TIME": "", 
+        "INDEX_NR": "218473"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "GA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MALCOLM MCKINNON ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSSI", 
+        "TIME": "930", 
+        "INDEX_NR": "218930"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NASHVILLE INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBNA", 
+        "TIME": "", 
+        "INDEX_NR": "218999"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "WI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "JOHN F KENNEDY MEMORIAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KASX", 
+        "TIME": "1908", 
+        "INDEX_NR": "219582"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "GA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DEKALB-PEACHTREE ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPDK", 
+        "TIME": "2030", 
+        "INDEX_NR": "220079"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "OK", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WILL ROGERS WORLD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOKC", 
+        "TIME": "", 
+        "INDEX_NR": "220185"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "UT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SALT LAKE CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSLC", 
+        "TIME": "855", 
+        "INDEX_NR": "220546"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SAN FRANCISCO INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSFO", 
+        "TIME": "", 
+        "INDEX_NR": "221131"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "OK", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TULSA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KTUL", 
+        "TIME": "2240", 
+        "INDEX_NR": "221344"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221569"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ADDISON", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KADS", 
+        "TIME": "1000", 
+        "INDEX_NR": "221600"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221617"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHILADELPHIA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHL", 
+        "TIME": "", 
+        "INDEX_NR": "222149"
+    }, 
+    {
+        "INCIDENT_DATE": "5-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "223816"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "STEWART INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSWF", 
+        "TIME": "1110", 
+        "INDEX_NR": "6136"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "YOUNGSTOWN-WARREN RGNL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KYNG", 
+        "TIME": "1230", 
+        "INDEX_NR": "7615"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "YOUNGSTOWN-WARREN RGNL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KYNG", 
+        "TIME": "2135", 
+        "INDEX_NR": "7616"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO MIDWAY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMDW", 
+        "TIME": "2150", 
+        "INDEX_NR": "216464"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MIAMI INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMIA", 
+        "TIME": "", 
+        "INDEX_NR": "216602"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "VA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NORFOLK INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORF", 
+        "TIME": "", 
+        "INDEX_NR": "216837"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "AUSTIN-BERGSTROM INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KAUS", 
+        "TIME": "", 
+        "INDEX_NR": "217565"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "AIRBORNE AIRPARK", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KILN", 
+        "TIME": "", 
+        "INDEX_NR": "217737"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "217823"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNIV OF ILLINOIS -WILLARD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCMI", 
+        "TIME": "710", 
+        "INDEX_NR": "217861"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NASHVILLE INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBNA", 
+        "TIME": "2045", 
+        "INDEX_NR": "218102"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "218316"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WESTCHESTER COUNTY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KHPN", 
+        "TIME": "", 
+        "INDEX_NR": "218950"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "READING REGIONAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KRDG", 
+        "TIME": "1800", 
+        "INDEX_NR": "219138"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON DULLES INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAD", 
+        "TIME": "", 
+        "INDEX_NR": "219413"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "IN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "INDIANAPOLIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIND", 
+        "TIME": "2355", 
+        "INDEX_NR": "220019"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "220512"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "220700"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LONG BEACH-DAUGH FLD", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLGB", 
+        "TIME": "1500", 
+        "INDEX_NR": "221247"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "IA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DES MOINES INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDSM", 
+        "TIME": "", 
+        "INDEX_NR": "221707"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BUFFALO-NIAGARA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBUF", 
+        "TIME": "2225", 
+        "INDEX_NR": "221986"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "NE", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "EPPLEY AIRFIELD", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOMA", 
+        "TIME": "648", 
+        "INDEX_NR": "222193"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "KS", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "300", 
+        "INDEX_NR": "224324"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "OK", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TULSA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KTUL", 
+        "TIME": "430", 
+        "INDEX_NR": "224325"
+    }, 
+    {
+        "INCIDENT_DATE": "6-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CLEVELAND-HOPKINS INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCLE", 
+        "TIME": "", 
+        "INDEX_NR": "225311"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "HARRISBURG INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMDT", 
+        "TIME": "1102", 
+        "INDEX_NR": "5837"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "NE", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LINCOLN MUNICIPAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLNK", 
+        "TIME": "", 
+        "INDEX_NR": "5997"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "RI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "QUONSET STATE ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOQU", 
+        "TIME": "700", 
+        "INDEX_NR": "6213"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SHEPPARD AIR FORCE BASE", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSPS", 
+        "TIME": "1945", 
+        "INDEX_NR": "6214"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "AR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "FORT SMITH MUNICIPAL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KFSM", 
+        "TIME": "", 
+        "INDEX_NR": "6252"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "MA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WESTOVER ARB/METRO ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCEF", 
+        "TIME": "1959", 
+        "INDEX_NR": "7612"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "209529"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "210", 
+        "INDEX_NR": "212941"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX DEER VALLEY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDVT", 
+        "TIME": "745", 
+        "INDEX_NR": "217557"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "217558"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX-MESA GATEWAY", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIWA", 
+        "TIME": "", 
+        "INDEX_NR": "218107"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "1130", 
+        "INDEX_NR": "218110"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "KY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CINCINNATI/NORTHERN KENTUCKY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCVG", 
+        "TIME": "", 
+        "INDEX_NR": "218149"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "10", 
+        "INDEX_NR": "218390"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LAKEFRONT AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KNEW", 
+        "TIME": "1200", 
+        "INDEX_NR": "219366"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "219584"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ORLANDO INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCO", 
+        "TIME": "850", 
+        "INDEX_NR": "219812"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "515", 
+        "INDEX_NR": "219851"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "220828"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TOLEDO EXPRESS ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KTOL", 
+        "TIME": "1304", 
+        "INDEX_NR": "221398"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "WI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ROCK COUNTY", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KJVL", 
+        "TIME": "1752", 
+        "INDEX_NR": "221551"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "840", 
+        "INDEX_NR": "221887"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "", 
+        "INDEX_NR": "222296"
+    }, 
+    {
+        "INCIDENT_DATE": "7-May-03", 
+        "STATE": "NE", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LINCOLN MUNICIPAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLNK", 
+        "TIME": "", 
+        "INDEX_NR": "223295"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SPRINGFIELD BECKLEY MUNICIPAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSGH", 
+        "TIME": "1115", 
+        "INDEX_NR": "3814"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "SC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLESTON AFB/INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCHS", 
+        "TIME": "2155", 
+        "INDEX_NR": "4209"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BOCA RATON ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBCT", 
+        "TIME": "", 
+        "INDEX_NR": "215625"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "216944"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "RONALD REAGAN WASHINGTON NATL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDCA", 
+        "TIME": "", 
+        "INDEX_NR": "217070"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "217421"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TUCSON INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KTUS", 
+        "TIME": "", 
+        "INDEX_NR": "217836"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "NV", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "RENO TAHOE INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KRNO", 
+        "TIME": "", 
+        "INDEX_NR": "218011"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "MD", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BALTIMORE WASH INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBWI", 
+        "TIME": "", 
+        "INDEX_NR": "218413"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KANSAS CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCI", 
+        "TIME": "", 
+        "INDEX_NR": "218809"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "NC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "RALEIGH-DURHAM INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KRDU", 
+        "TIME": "", 
+        "INDEX_NR": "218856"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "30", 
+        "INDEX_NR": "219243"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "2335", 
+        "INDEX_NR": "219244"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SANTA BARBARA MUNICIPAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSBA", 
+        "TIME": "917", 
+        "INDEX_NR": "219517"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KANSAS CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCI", 
+        "TIME": "", 
+        "INDEX_NR": "220203"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "2250", 
+        "INDEX_NR": "220708"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "NV", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "RENO TAHOE INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KRNO", 
+        "TIME": "900", 
+        "INDEX_NR": "220813"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221337"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "REDDING MUNICIPAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KRDD", 
+        "TIME": "", 
+        "INDEX_NR": "221904"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX SKY HARBOR", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHX", 
+        "TIME": "", 
+        "INDEX_NR": "222038"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "GA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SAVANNAH INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSAV", 
+        "TIME": "2146", 
+        "INDEX_NR": "222111"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GREATER PITTSBURGH", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPIT", 
+        "TIME": "2237", 
+        "INDEX_NR": "222269"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "OK", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PONCA CITY MUNICIPAL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPNC", 
+        "TIME": "930", 
+        "INDEX_NR": "222655"
+    }, 
+    {
+        "INCIDENT_DATE": "8-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "520", 
+        "INDEX_NR": "223261"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHILADELPHIA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHL", 
+        "TIME": "800", 
+        "INDEX_NR": "216512"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "AK", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TED STEVENS ANCHORAGE INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "PANC", 
+        "TIME": "", 
+        "INDEX_NR": "216560"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "10", 
+        "INDEX_NR": "216669"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KANSAS CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCI", 
+        "TIME": "1300", 
+        "INDEX_NR": "216924"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "NH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PEASE INTL TRADEPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPSM", 
+        "TIME": "", 
+        "INDEX_NR": "217152"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "NJ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ATLANTIC CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KACY", 
+        "TIME": "", 
+        "INDEX_NR": "217335"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "217399"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "WA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MCCORD FIELD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KTCM", 
+        "TIME": "", 
+        "INDEX_NR": "217474"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "218354"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "15", 
+        "INDEX_NR": "218692"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KANSAI INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "RJBB", 
+        "TIME": "", 
+        "INDEX_NR": "219270"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "2215", 
+        "INDEX_NR": "219454"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "UT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SALT LAKE CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSLC", 
+        "TIME": "", 
+        "INDEX_NR": "219621"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON DULLES INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAD", 
+        "TIME": "", 
+        "INDEX_NR": "219628"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "NJ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NEWARK LIBERTY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KEWR", 
+        "TIME": "1500", 
+        "INDEX_NR": "220186"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "220213"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BURKE LAKEFRONT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBKL", 
+        "TIME": "", 
+        "INDEX_NR": "220284"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BLOOMINGTON/NORMAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBMI", 
+        "TIME": "", 
+        "INDEX_NR": "220626"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221333"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TRI-CITIES REGIONAL TN/VA ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KTRI", 
+        "TIME": "2151", 
+        "INDEX_NR": "221545"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SCOTTSDALE ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSDL", 
+        "TIME": "", 
+        "INDEX_NR": "222281"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PORT COLUMBUS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCMH", 
+        "TIME": "", 
+        "INDEX_NR": "222342"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO MIDWAY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMDW", 
+        "TIME": "", 
+        "INDEX_NR": "222493"
+    }, 
+    {
+        "INCIDENT_DATE": "9-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ORLANDO INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCO", 
+        "TIME": "", 
+        "INDEX_NR": "223660"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "", 
+        "INDEX_NR": "214421"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOS ANGELES INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLAX", 
+        "TIME": "2033", 
+        "INDEX_NR": "214422"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "AIRBORNE AIRPARK", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KILN", 
+        "TIME": "", 
+        "INDEX_NR": "215610"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GENERAL ESCOBEDO INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "MMMY", 
+        "TIME": "2120", 
+        "INDEX_NR": "215874"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PANAMA CITY - BAY COUNTY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPFN", 
+        "TIME": "", 
+        "INDEX_NR": "217566"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "MI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DETROIT METRO WAYNE COUNTY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDTW", 
+        "TIME": "", 
+        "INDEX_NR": "217625"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "OR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PORTLAND INTL (OR)", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPDX", 
+        "TIME": "1415", 
+        "INDEX_NR": "217719"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "732", 
+        "INDEX_NR": "217949"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LAMBERT-ST LOUIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSTL", 
+        "TIME": "2239", 
+        "INDEX_NR": "218036"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DYERSBURG REGIONAL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDYR", 
+        "TIME": "", 
+        "INDEX_NR": "218399"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "SC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MYRTLE BEACH INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMYR", 
+        "TIME": "910", 
+        "INDEX_NR": "218535"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "UT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SALT LAKE CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSLC", 
+        "TIME": "1525", 
+        "INDEX_NR": "218668"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "CT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GROTON-NEW LONDON AR", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KGON", 
+        "TIME": "1853", 
+        "INDEX_NR": "218959"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "", 
+        "INDEX_NR": "219172"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON DULLES INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAD", 
+        "TIME": "2225", 
+        "INDEX_NR": "219785"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ORLANDO SANFORD INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSFB", 
+        "TIME": "1219", 
+        "INDEX_NR": "221223"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "", 
+        "INDEX_NR": "221309"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "222093"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "JOHN F KENNEDY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KJFK", 
+        "TIME": "", 
+        "INDEX_NR": "222141"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX SKY HARBOR", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHX", 
+        "TIME": "", 
+        "INDEX_NR": "222665"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "AR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ADAMS FIELD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLIT", 
+        "TIME": "", 
+        "INDEX_NR": "223263"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "MD", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MARTIN STATE ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMTN", 
+        "TIME": "802", 
+        "INDEX_NR": "223294"
+    }, 
+    {
+        "INCIDENT_DATE": "10-May-03", 
+        "STATE": "NJ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TETERBORO AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KTEB", 
+        "TIME": "1930", 
+        "INDEX_NR": "224302"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "212824"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GEORGE BUSH INTERCONTINENTAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAH", 
+        "TIME": "1140", 
+        "INDEX_NR": "214884"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "MD", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BALTIMORE WASH INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBWI", 
+        "TIME": "", 
+        "INDEX_NR": "215754"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "216654"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "NH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PEASE INTL TRADEPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPSM", 
+        "TIME": "", 
+        "INDEX_NR": "217494"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "JOHN F KENNEDY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KJFK", 
+        "TIME": "1333", 
+        "INDEX_NR": "218055"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "RONALD REAGAN WASHINGTON NATL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDCA", 
+        "TIME": "", 
+        "INDEX_NR": "218092"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "FORT LAUDERDALE/HOLLYWOOD INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KFLL", 
+        "TIME": "", 
+        "INDEX_NR": "218132"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ONTARIO INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KONT", 
+        "TIME": "2045", 
+        "INDEX_NR": "218186"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CLEVELAND-HOPKINS INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCLE", 
+        "TIME": "", 
+        "INDEX_NR": "218381"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "WA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SEATTLE-TACOMA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSEA", 
+        "TIME": "2245", 
+        "INDEX_NR": "219225"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "220056"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "WI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GENERAL MITCHELL INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMKE", 
+        "TIME": "1950", 
+        "INDEX_NR": "220070"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "JOHN F KENNEDY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KJFK", 
+        "TIME": "", 
+        "INDEX_NR": "220659"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "100", 
+        "INDEX_NR": "222007"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "1600", 
+        "INDEX_NR": "222081"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "NJ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NEWARK LIBERTY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KEWR", 
+        "TIME": "", 
+        "INDEX_NR": "222095"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "222247"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MINETA SAN JOSE INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSJC", 
+        "TIME": "", 
+        "INDEX_NR": "222282"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "222704"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "DE", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NEW CASTLE COUNTY", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KILG", 
+        "TIME": "", 
+        "INDEX_NR": "225682"
+    }, 
+    {
+        "INCIDENT_DATE": "11-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "HERNANDO COUNTY", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBKV", 
+        "TIME": "1600", 
+        "INDEX_NR": "231062"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "AR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ADAMS FIELD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLIT", 
+        "TIME": "1815", 
+        "INDEX_NR": "5887"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SHEPPARD AIR FORCE BASE", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSPS", 
+        "TIME": "840", 
+        "INDEX_NR": "5995"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "COLORADO SPRINGS MUNICIPAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCOS", 
+        "TIME": "800", 
+        "INDEX_NR": "7181"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "IN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TERRE HAUTE INTL ARPT-HULMAN FIELD", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KHUF", 
+        "TIME": "1000", 
+        "INDEX_NR": "7694"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON DULLES INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAD", 
+        "TIME": "", 
+        "INDEX_NR": "209527"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KANSAS CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCI", 
+        "TIME": "2140", 
+        "INDEX_NR": "212413"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "COLORADO SPRINGS MUNICIPAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCOS", 
+        "TIME": "", 
+        "INDEX_NR": "215734"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "OK", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WILL ROGERS WORLD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOKC", 
+        "TIME": "1050", 
+        "INDEX_NR": "215912"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "216689"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "217094"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "", 
+        "INDEX_NR": "217362"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "KY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOUISVILLE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSDF", 
+        "TIME": "1800", 
+        "INDEX_NR": "218651"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "FORT LAUDERDALE/HOLLYWOOD INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KFLL", 
+        "TIME": "1956", 
+        "INDEX_NR": "218652"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KANSAS CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCI", 
+        "TIME": "1709", 
+        "INDEX_NR": "218940"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "CT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BRADLEY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBDL", 
+        "TIME": "", 
+        "INDEX_NR": "219186"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BATON ROUGE METRO", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBTR", 
+        "TIME": "", 
+        "INDEX_NR": "219809"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "IN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "INDIANAPOLIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIND", 
+        "TIME": "2320", 
+        "INDEX_NR": "220106"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "MN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ANOKA COUNTY-BLAINE", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KANE", 
+        "TIME": "2016", 
+        "INDEX_NR": "220322"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "NV", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MCCARREN INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLAS", 
+        "TIME": "420", 
+        "INDEX_NR": "220472"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "JOHN F KENNEDY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KJFK", 
+        "TIME": "825", 
+        "INDEX_NR": "220939"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GREATER ROCHESTER INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KROC", 
+        "TIME": "", 
+        "INDEX_NR": "220940"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GEORGE BUSH INTERCONTINENTAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAH", 
+        "TIME": "1820", 
+        "INDEX_NR": "221889"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221910"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "221911"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "JOHN F KENNEDY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KJFK", 
+        "TIME": "", 
+        "INDEX_NR": "222162"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "RONALD REAGAN WASHINGTON NATL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDCA", 
+        "TIME": "", 
+        "INDEX_NR": "222621"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BURKE LAKEFRONT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBKL", 
+        "TIME": "", 
+        "INDEX_NR": "225168"
+    }, 
+    {
+        "INCIDENT_DATE": "12-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ARCATA AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KACV", 
+        "TIME": "2145", 
+        "INDEX_NR": "225312"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "NC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLOTTE/DOUGLAS INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCLT", 
+        "TIME": "1420", 
+        "INDEX_NR": "7202"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "WI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GENERAL MITCHELL INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMKE", 
+        "TIME": "1125", 
+        "INDEX_NR": "7521"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "MA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WESTOVER ARB/METRO ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCEF", 
+        "TIME": "125", 
+        "INDEX_NR": "7693"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "", 
+        "INDEX_NR": "212978"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "IN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "INDIANAPOLIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIND", 
+        "TIME": "2305", 
+        "INDEX_NR": "217325"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "217839"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "218523"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KANSAS CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCI", 
+        "TIME": "710", 
+        "INDEX_NR": "218599"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS LOVE FIELD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDAL", 
+        "TIME": "", 
+        "INDEX_NR": "218836"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "IN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "INDIANAPOLIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIND", 
+        "TIME": "2300", 
+        "INDEX_NR": "218858"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LAKEFRONT AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KNEW", 
+        "TIME": "1413", 
+        "INDEX_NR": "219277"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "219676"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "220458"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "AK", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "COLD BAY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "PACD", 
+        "TIME": "", 
+        "INDEX_NR": "220732"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "JOHN F KENNEDY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KJFK", 
+        "TIME": "", 
+        "INDEX_NR": "221135"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "CT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WATERBURY-OXFORD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOXC", 
+        "TIME": "2014", 
+        "INDEX_NR": "221352"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ALBANY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KALB", 
+        "TIME": "", 
+        "INDEX_NR": "221578"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "", 
+        "INDEX_NR": "221872"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX SKY HARBOR", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHX", 
+        "TIME": "", 
+        "INDEX_NR": "222567"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KANSAS CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCI", 
+        "TIME": "2150", 
+        "INDEX_NR": "222612"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS/FORT WORTH INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDFW", 
+        "TIME": "", 
+        "INDEX_NR": "222993"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KANSAS CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCI", 
+        "TIME": "2212", 
+        "INDEX_NR": "223242"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "MA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOGAN INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBOS", 
+        "TIME": "", 
+        "INDEX_NR": "223243"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "IN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "INDIANAPOLIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIND", 
+        "TIME": "2305", 
+        "INDEX_NR": "223431"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "AUSTIN-BERGSTROM INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KAUS", 
+        "TIME": "", 
+        "INDEX_NR": "224018"
+    }, 
+    {
+        "INCIDENT_DATE": "13-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "224363"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BARKSDALE AIR FORCE BASE ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBAD", 
+        "TIME": "", 
+        "INDEX_NR": "7223"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "NJ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ATLANTIC CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KACY", 
+        "TIME": "2200", 
+        "INDEX_NR": "7695"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "NJ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ATLANTIC CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KACY", 
+        "TIME": "2200", 
+        "INDEX_NR": "7831"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "HOUSTON-HOBBY", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KHOU", 
+        "TIME": "", 
+        "INDEX_NR": "215935"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX-MESA GATEWAY", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIWA", 
+        "TIME": "", 
+        "INDEX_NR": "216891"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "KY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOUISVILLE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSDF", 
+        "TIME": "", 
+        "INDEX_NR": "217252"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SAN DIEGO INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSAN", 
+        "TIME": "", 
+        "INDEX_NR": "217304"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOS ANGELES INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLAX", 
+        "TIME": "645", 
+        "INDEX_NR": "217920"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "HI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KAPALUA ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "PHJH", 
+        "TIME": "", 
+        "INDEX_NR": "218222"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX DEER VALLEY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDVT", 
+        "TIME": "", 
+        "INDEX_NR": "218319"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "VALLEY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KHRL", 
+        "TIME": "", 
+        "INDEX_NR": "218323"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CLEVELAND-HOPKINS INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCLE", 
+        "TIME": "", 
+        "INDEX_NR": "218606"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MIAMI INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMIA", 
+        "TIME": "", 
+        "INDEX_NR": "219024"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SANTA BARBARA MUNICIPAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSBA", 
+        "TIME": "", 
+        "INDEX_NR": "219555"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BENITO JUAREZ INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "MMMX", 
+        "TIME": "", 
+        "INDEX_NR": "219769"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "20", 
+        "INDEX_NR": "219818"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS/FORT WORTH INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDFW", 
+        "TIME": "1910", 
+        "INDEX_NR": "219957"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "OR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PORTLAND INTL (OR)", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPDX", 
+        "TIME": "1600", 
+        "INDEX_NR": "220394"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON DULLES INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAD", 
+        "TIME": "2250", 
+        "INDEX_NR": "221572"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KEY WEST INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KEYW", 
+        "TIME": "1210", 
+        "INDEX_NR": "222506"
+    }, 
+    {
+        "INCIDENT_DATE": "14-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CLEVELAND-HOPKINS INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCLE", 
+        "TIME": "", 
+        "INDEX_NR": "225002"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LUBBOCK INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLBB", 
+        "TIME": "1113", 
+        "INDEX_NR": "7566"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "2350", 
+        "INDEX_NR": "212825"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "213039"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "UT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SALT LAKE CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSLC", 
+        "TIME": "", 
+        "INDEX_NR": "216095"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "IN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "INDIANAPOLIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIND", 
+        "TIME": "2330", 
+        "INDEX_NR": "216396"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON DULLES INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAD", 
+        "TIME": "", 
+        "INDEX_NR": "217451"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "MA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WORCESTER REGIONAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORH", 
+        "TIME": "1455", 
+        "INDEX_NR": "218818"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "NE", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "EPPLEY AIRFIELD", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOMA", 
+        "TIME": "925", 
+        "INDEX_NR": "219354"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GREATER ROCHESTER INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KROC", 
+        "TIME": "", 
+        "INDEX_NR": "219374"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "WV", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TRI-STATE MILTON FERGUSON", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KHTS", 
+        "TIME": "1840", 
+        "INDEX_NR": "219588"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "REDDING MUNICIPAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KRDD", 
+        "TIME": "", 
+        "INDEX_NR": "219615"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "219669"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "2355", 
+        "INDEX_NR": "220206"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MINETA SAN JOSE INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSJC", 
+        "TIME": "2315", 
+        "INDEX_NR": "220410"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "220689"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221296"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221837"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON DULLES INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAD", 
+        "TIME": "", 
+        "INDEX_NR": "222153"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "222966"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "AIRBORNE AIRPARK", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KILN", 
+        "TIME": "24", 
+        "INDEX_NR": "223500"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SHREVEPORT REGIONAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSHV", 
+        "TIME": "", 
+        "INDEX_NR": "223886"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "NJ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NEWARK LIBERTY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KEWR", 
+        "TIME": "1755", 
+        "INDEX_NR": "224992"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "SC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLESTON EXECUTIVE ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KJZI", 
+        "TIME": "30", 
+        "INDEX_NR": "244987"
+    }, 
+    {
+        "INCIDENT_DATE": "15-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "1100", 
+        "INDEX_NR": "248457"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "MS", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KEY FLD", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEI", 
+        "TIME": "1005", 
+        "INDEX_NR": "4210"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LUBBOCK INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLBB", 
+        "TIME": "", 
+        "INDEX_NR": "7613"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "212371"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "JOHN WAYNE AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSNA", 
+        "TIME": "2211", 
+        "INDEX_NR": "216725"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "IN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "INDIANAPOLIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIND", 
+        "TIME": "", 
+        "INDEX_NR": "217418"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "RONALD REAGAN WASHINGTON NATL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDCA", 
+        "TIME": "", 
+        "INDEX_NR": "217878"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "KY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CINCINNATI/NORTHERN KENTUCKY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCVG", 
+        "TIME": "", 
+        "INDEX_NR": "218835"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "218879"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LAMBERT-ST LOUIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSTL", 
+        "TIME": "", 
+        "INDEX_NR": "219295"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "ND", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BISMARCK MUNICIPAL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBIS", 
+        "TIME": "1758", 
+        "INDEX_NR": "219312"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "219560"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "2", 
+        "INDEX_NR": "219632"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "2216", 
+        "INDEX_NR": "219767"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SANTA BARBARA MUNICIPAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSBA", 
+        "TIME": "", 
+        "INDEX_NR": "220590"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "55", 
+        "INDEX_NR": "220697"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221008"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON DULLES INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAD", 
+        "TIME": "", 
+        "INDEX_NR": "221263"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "HOUMA-TERREBONNE ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KHUM", 
+        "TIME": "1534", 
+        "INDEX_NR": "221881"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "221953"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "NJ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TETERBORO AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KTEB", 
+        "TIME": "", 
+        "INDEX_NR": "222198"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SAN FRANCISCO INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSFO", 
+        "TIME": "", 
+        "INDEX_NR": "222798"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BURKE LAKEFRONT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBKL", 
+        "TIME": "1300", 
+        "INDEX_NR": "223398"
+    }, 
+    {
+        "INCIDENT_DATE": "16-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO MIDWAY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMDW", 
+        "TIME": "", 
+        "INDEX_NR": "223616"
+    }, 
+    {
+        "INCIDENT_DATE": "17-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS/FORT WORTH INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDFW", 
+        "TIME": "", 
+        "INDEX_NR": "215827"
+    }, 
+    {
+        "INCIDENT_DATE": "17-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SAN DIEGO INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSAN", 
+        "TIME": "", 
+        "INDEX_NR": "217832"
+    }, 
+    {
+        "INCIDENT_DATE": "17-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "JOHN F KENNEDY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KJFK", 
+        "TIME": "", 
+        "INDEX_NR": "218237"
+    }, 
+    {
+        "INCIDENT_DATE": "17-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SAN DIEGO INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSAN", 
+        "TIME": "", 
+        "INDEX_NR": "218504"
+    }, 
+    {
+        "INCIDENT_DATE": "17-May-03", 
+        "STATE": "WI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DANE COUNTY REGIONAL ARPT-TRUAX FLD", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMSN", 
+        "TIME": "915", 
+        "INDEX_NR": "219586"
+    }, 
+    {
+        "INCIDENT_DATE": "17-May-03", 
+        "STATE": "NJ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TETERBORO AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KTEB", 
+        "TIME": "1705", 
+        "INDEX_NR": "219587"
+    }, 
+    {
+        "INCIDENT_DATE": "17-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "", 
+        "INDEX_NR": "220181"
+    }, 
+    {
+        "INCIDENT_DATE": "17-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "2202", 
+        "INDEX_NR": "220673"
+    }, 
+    {
+        "INCIDENT_DATE": "17-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS/FORT WORTH INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDFW", 
+        "TIME": "752", 
+        "INDEX_NR": "221070"
+    }, 
+    {
+        "INCIDENT_DATE": "17-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX DEER VALLEY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDVT", 
+        "TIME": "", 
+        "INDEX_NR": "221706"
+    }, 
+    {
+        "INCIDENT_DATE": "17-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "AIRBORNE AIRPARK", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KILN", 
+        "TIME": "20", 
+        "INDEX_NR": "224730"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "212821"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "RONALD REAGAN WASHINGTON NATL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDCA", 
+        "TIME": "", 
+        "INDEX_NR": "216409"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SOUTHWEST FLORIDA INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KRSW", 
+        "TIME": "", 
+        "INDEX_NR": "216503"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "AR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NW ARKANSAS REGIONAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KXNA", 
+        "TIME": "", 
+        "INDEX_NR": "217357"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "217384"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "NE", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "EPPLEY AIRFIELD", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOMA", 
+        "TIME": "", 
+        "INDEX_NR": "217642"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "217681"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "217812"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MIAMI INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMIA", 
+        "TIME": "1745", 
+        "INDEX_NR": "217833"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "218020"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "200", 
+        "INDEX_NR": "218238"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "218243"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "", 
+        "INDEX_NR": "218327"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "218436"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOS ANGELES INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLAX", 
+        "TIME": "2023", 
+        "INDEX_NR": "221253"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221443"
+    }, 
+    {
+        "INCIDENT_DATE": "18-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221645"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BARKSDALE AIR FORCE BASE ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBAD", 
+        "TIME": "", 
+        "INDEX_NR": "7225"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS/FORT WORTH INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDFW", 
+        "TIME": "1630", 
+        "INDEX_NR": "213909"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "KY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CINCINNATI/NORTHERN KENTUCKY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCVG", 
+        "TIME": "", 
+        "INDEX_NR": "215072"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON DULLES INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAD", 
+        "TIME": "", 
+        "INDEX_NR": "217086"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "SC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLESTON AFB/INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCHS", 
+        "TIME": "1804", 
+        "INDEX_NR": "217630"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHILADELPHIA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHL", 
+        "TIME": "1920", 
+        "INDEX_NR": "218330"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "709", 
+        "INDEX_NR": "219258"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "219557"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "219715"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PORT COLUMBUS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCMH", 
+        "TIME": "", 
+        "INDEX_NR": "220333"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "220337"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BATON ROUGE METRO", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBTR", 
+        "TIME": "", 
+        "INDEX_NR": "220471"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "2115", 
+        "INDEX_NR": "220606"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "MA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOGAN INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBOS", 
+        "TIME": "", 
+        "INDEX_NR": "220870"
+    }, 
+    {
+        "INCIDENT_DATE": "19-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS/FORT WORTH INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDFW", 
+        "TIME": "", 
+        "INDEX_NR": "222921"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LUBBOCK INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLBB", 
+        "TIME": "1600", 
+        "INDEX_NR": "6927"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "MI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MUSKEGON COUNTY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMKG", 
+        "TIME": "1827", 
+        "INDEX_NR": "7177"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "SC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLESTON AFB/INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCHS", 
+        "TIME": "230", 
+        "INDEX_NR": "7178"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "KS", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "HUTCHINSON MUNICIPAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KHUT", 
+        "TIME": "1730", 
+        "INDEX_NR": "7229"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "MI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MUSKEGON COUNTY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMKG", 
+        "TIME": "1115", 
+        "INDEX_NR": "7776"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "212925"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GEORGE BUSH INTERCONTINENTAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAH", 
+        "TIME": "", 
+        "INDEX_NR": "213104"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BURKE LAKEFRONT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBKL", 
+        "TIME": "2045", 
+        "INDEX_NR": "215494"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "1600", 
+        "INDEX_NR": "215629"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "AIRBORNE AIRPARK", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KILN", 
+        "TIME": "", 
+        "INDEX_NR": "215996"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "IN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "INDIANAPOLIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIND", 
+        "TIME": "2335", 
+        "INDEX_NR": "218003"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "OR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "EASTERN OREGON REGIONAL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPDT", 
+        "TIME": "1803", 
+        "INDEX_NR": "218417"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GREATER KANKAKEE ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIKK", 
+        "TIME": "", 
+        "INDEX_NR": "218981"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "JOHN F KENNEDY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KJFK", 
+        "TIME": "1728", 
+        "INDEX_NR": "220459"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "CT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BRADLEY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBDL", 
+        "TIME": "", 
+        "INDEX_NR": "220460"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS LOVE FIELD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDAL", 
+        "TIME": "", 
+        "INDEX_NR": "223142"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "WA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SEATTLE-TACOMA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSEA", 
+        "TIME": "935", 
+        "INDEX_NR": "223366"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "ID", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "FRIEDMAN MEMORIAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSUN", 
+        "TIME": "", 
+        "INDEX_NR": "223367"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "KY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CINCINNATI/NORTHERN KENTUCKY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCVG", 
+        "TIME": "35", 
+        "INDEX_NR": "223499"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LUBBOCK INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLBB", 
+        "TIME": "", 
+        "INDEX_NR": "223778"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "224437"
+    }, 
+    {
+        "INCIDENT_DATE": "20-May-03", 
+        "STATE": "KY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CINCINNATI/NORTHERN KENTUCKY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCVG", 
+        "TIME": "", 
+        "INDEX_NR": "226495"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ONEIDA COUNTY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KUCA", 
+        "TIME": "1350", 
+        "INDEX_NR": "7180"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "IN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TERRE HAUTE INTL ARPT-HULMAN FIELD", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KHUF", 
+        "TIME": "1045", 
+        "INDEX_NR": "7262"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "RICK HUSBAND AMARILLO INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KAMA", 
+        "TIME": "1900", 
+        "INDEX_NR": "7669"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BARKSDALE AIR FORCE BASE ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBAD", 
+        "TIME": "", 
+        "INDEX_NR": "7932"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BARKSDALE AIR FORCE BASE ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBAD", 
+        "TIME": "1600", 
+        "INDEX_NR": "7933"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "", 
+        "INDEX_NR": "215148"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "217308"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NEW ORLEANS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMSY", 
+        "TIME": "", 
+        "INDEX_NR": "217440"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "217811"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "UT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SALT LAKE CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSLC", 
+        "TIME": "1525", 
+        "INDEX_NR": "217948"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "VA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WALLOPS FLIGHT FACILITY", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KWAL", 
+        "TIME": "30", 
+        "INDEX_NR": "218949"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KANSAS CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCI", 
+        "TIME": "1810", 
+        "INDEX_NR": "219579"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "ON", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "OTTAWA/MACDONALD-CARTIER INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "CYOW", 
+        "TIME": "800", 
+        "INDEX_NR": "220194"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHILADELPHIA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHL", 
+        "TIME": "", 
+        "INDEX_NR": "220648"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "400", 
+        "INDEX_NR": "220796"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "NV", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MCCARREN INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLAS", 
+        "TIME": "1715", 
+        "INDEX_NR": "221535"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221879"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "MI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CAPITAL CITY (MI)", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLAN", 
+        "TIME": "1351", 
+        "INDEX_NR": "222803"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "MA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BEVERLY MUNICIPAL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBVY", 
+        "TIME": "", 
+        "INDEX_NR": "223561"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MIAMI INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMIA", 
+        "TIME": "1208", 
+        "INDEX_NR": "223887"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "MN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MINNEAPOLIS-ST PAUL INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMSP", 
+        "TIME": "", 
+        "INDEX_NR": "225163"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KANSAS CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCI", 
+        "TIME": "", 
+        "INDEX_NR": "225196"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TUCSON INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KTUS", 
+        "TIME": "", 
+        "INDEX_NR": "226870"
+    }, 
+    {
+        "INCIDENT_DATE": "21-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LAGUARDIA NY", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLGA", 
+        "TIME": "1700", 
+        "INDEX_NR": "270093"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "MN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DULUTH INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDLH", 
+        "TIME": "2300", 
+        "INDEX_NR": "7224"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GUARULHOS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "SBGR", 
+        "TIME": "", 
+        "INDEX_NR": "216168"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "HI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KAHULUI ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "PHOG", 
+        "TIME": "1728", 
+        "INDEX_NR": "217702"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOS ANGELES INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLAX", 
+        "TIME": "", 
+        "INDEX_NR": "218503"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SHREVEPORT REGIONAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSHV", 
+        "TIME": "635", 
+        "INDEX_NR": "218602"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "219242"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOS ANGELES INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLAX", 
+        "TIME": "", 
+        "INDEX_NR": "219447"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "MD", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MONTGOMERY CO AIRPARK", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KGAI", 
+        "TIME": "", 
+        "INDEX_NR": "219476"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "219655"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "220370"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "220441"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "MN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MINNEAPOLIS-ST PAUL INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMSP", 
+        "TIME": "", 
+        "INDEX_NR": "220442"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "1520", 
+        "INDEX_NR": "220687"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "1435", 
+        "INDEX_NR": "220761"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON DULLES INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAD", 
+        "TIME": "", 
+        "INDEX_NR": "221001"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO MIDWAY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMDW", 
+        "TIME": "", 
+        "INDEX_NR": "222494"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "NE", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "EPPLEY AIRFIELD", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOMA", 
+        "TIME": "920", 
+        "INDEX_NR": "223679"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "223680"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO MIDWAY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMDW", 
+        "TIME": "", 
+        "INDEX_NR": "223852"
+    }, 
+    {
+        "INCIDENT_DATE": "22-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "246139"
+    }, 
+    {
+        "INCIDENT_DATE": "23-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BARKSDALE AIR FORCE BASE ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBAD", 
+        "TIME": "1400", 
+        "INDEX_NR": "7230"
+    }, 
+    {
+        "INCIDENT_DATE": "23-May-03", 
+        "STATE": "AR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ADAMS FIELD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLIT", 
+        "TIME": "1330", 
+        "INDEX_NR": "216688"
+    }, 
+    {
+        "INCIDENT_DATE": "23-May-03", 
+        "STATE": "UT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SALT LAKE CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSLC", 
+        "TIME": "1005", 
+        "INDEX_NR": "218492"
+    }, 
+    {
+        "INCIDENT_DATE": "23-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHILADELPHIA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHL", 
+        "TIME": "", 
+        "INDEX_NR": "219189"
+    }, 
+    {
+        "INCIDENT_DATE": "23-May-03", 
+        "STATE": "GA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ATLANTA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KATL", 
+        "TIME": "1325", 
+        "INDEX_NR": "219610"
+    }, 
+    {
+        "INCIDENT_DATE": "23-May-03", 
+        "STATE": "MN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ST. PAUL DOWNTOWN ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSTP", 
+        "TIME": "1841", 
+        "INDEX_NR": "219698"
+    }, 
+    {
+        "INCIDENT_DATE": "23-May-03", 
+        "STATE": "KY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CINCINNATI/NORTHERN KENTUCKY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCVG", 
+        "TIME": "", 
+        "INDEX_NR": "220731"
+    }, 
+    {
+        "INCIDENT_DATE": "23-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221072"
+    }, 
+    {
+        "INCIDENT_DATE": "23-May-03", 
+        "STATE": "NE", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "EPPLEY AIRFIELD", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOMA", 
+        "TIME": "1432", 
+        "INDEX_NR": "221565"
+    }, 
+    {
+        "INCIDENT_DATE": "23-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO MIDWAY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMDW", 
+        "TIME": "", 
+        "INDEX_NR": "223853"
+    }, 
+    {
+        "INCIDENT_DATE": "23-May-03", 
+        "STATE": "KY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CINCINNATI/NORTHERN KENTUCKY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCVG", 
+        "TIME": "2040", 
+        "INDEX_NR": "224877"
+    }, 
+    {
+        "INCIDENT_DATE": "24-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SAN ANTONIO INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSAT", 
+        "TIME": "", 
+        "INDEX_NR": "213174"
+    }, 
+    {
+        "INCIDENT_DATE": "24-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ORLANDO INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCO", 
+        "TIME": "2045", 
+        "INDEX_NR": "216601"
+    }, 
+    {
+        "INCIDENT_DATE": "24-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "METRO OAKLAND INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOAK", 
+        "TIME": "650", 
+        "INDEX_NR": "216626"
+    }, 
+    {
+        "INCIDENT_DATE": "24-May-03", 
+        "STATE": "NE", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "EPPLEY AIRFIELD", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOMA", 
+        "TIME": "2150", 
+        "INDEX_NR": "217145"
+    }, 
+    {
+        "INCIDENT_DATE": "24-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "10", 
+        "INDEX_NR": "217332"
+    }, 
+    {
+        "INCIDENT_DATE": "24-May-03", 
+        "STATE": "AB", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "EDMONTON INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "CYEG", 
+        "TIME": "2245", 
+        "INDEX_NR": "219342"
+    }, 
+    {
+        "INCIDENT_DATE": "24-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "1342", 
+        "INDEX_NR": "219397"
+    }, 
+    {
+        "INCIDENT_DATE": "24-May-03", 
+        "STATE": "NM", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ALBUQUERQUE INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KABQ", 
+        "TIME": "", 
+        "INDEX_NR": "221073"
+    }, 
+    {
+        "INCIDENT_DATE": "24-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "", 
+        "INDEX_NR": "229730"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "COLORADO SPRINGS MUNICIPAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCOS", 
+        "TIME": "1930", 
+        "INDEX_NR": "6135"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "DE", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NEW CASTLE COUNTY", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KILG", 
+        "TIME": "905", 
+        "INDEX_NR": "215612"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "838", 
+        "INDEX_NR": "215923"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "NJ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NEWARK LIBERTY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KEWR", 
+        "TIME": "55", 
+        "INDEX_NR": "216730"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "UT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SALT LAKE CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSLC", 
+        "TIME": "1402", 
+        "INDEX_NR": "217163"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "METRO OAKLAND INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOAK", 
+        "TIME": "1015", 
+        "INDEX_NR": "217246"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHILADELPHIA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHL", 
+        "TIME": "", 
+        "INDEX_NR": "217754"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "UT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SALT LAKE CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSLC", 
+        "TIME": "", 
+        "INDEX_NR": "218505"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BUCHANAN FLD", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCCR", 
+        "TIME": "1744", 
+        "INDEX_NR": "218969"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "UT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SALT LAKE CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSLC", 
+        "TIME": "1307", 
+        "INDEX_NR": "219709"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX SKY HARBOR", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHX", 
+        "TIME": "", 
+        "INDEX_NR": "219926"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "220338"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "220609"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "220819"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "AK", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SITKA ROCKY GUTIERREZ ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "PASI", 
+        "TIME": "755", 
+        "INDEX_NR": "220865"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "FORT LAUDERDALE/HOLLYWOOD INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KFLL", 
+        "TIME": "", 
+        "INDEX_NR": "221338"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221388"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "IN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "INDIANAPOLIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIND", 
+        "TIME": "", 
+        "INDEX_NR": "221649"
+    }, 
+    {
+        "INCIDENT_DATE": "25-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NASHVILLE INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBNA", 
+        "TIME": "1430", 
+        "INDEX_NR": "222586"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX DEER VALLEY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDVT", 
+        "TIME": "1724", 
+        "INDEX_NR": "217169"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LAMBERT-ST LOUIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSTL", 
+        "TIME": "1930", 
+        "INDEX_NR": "217170"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LONG ISLAND MAC ARTHUR", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KISP", 
+        "TIME": "", 
+        "INDEX_NR": "217929"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "NJ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NEWARK LIBERTY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KEWR", 
+        "TIME": "1050", 
+        "INDEX_NR": "218265"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "218806"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS/FORT WORTH INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDFW", 
+        "TIME": "945", 
+        "INDEX_NR": "218914"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON DULLES INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAD", 
+        "TIME": "1910", 
+        "INDEX_NR": "219456"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NORTH PERRY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KHWO", 
+        "TIME": "", 
+        "INDEX_NR": "219457"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "MD", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BALTIMORE WASH INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBWI", 
+        "TIME": "", 
+        "INDEX_NR": "219989"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GREATER PITTSBURGH", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPIT", 
+        "TIME": "", 
+        "INDEX_NR": "220042"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "AB", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CALGARY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "CYYC", 
+        "TIME": "1127", 
+        "INDEX_NR": "220123"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "220153"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOS ANGELES INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLAX", 
+        "TIME": "", 
+        "INDEX_NR": "220154"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX DEER VALLEY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDVT", 
+        "TIME": "705", 
+        "INDEX_NR": "220468"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PENSACOLA REGIONAL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPNS", 
+        "TIME": "1304", 
+        "INDEX_NR": "220566"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BUFFALO-NIAGARA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBUF", 
+        "TIME": "2103", 
+        "INDEX_NR": "220588"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "CT", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GROTON-NEW LONDON AR", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KGON", 
+        "TIME": "1354", 
+        "INDEX_NR": "221847"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "RONALD REAGAN WASHINGTON NATL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDCA", 
+        "TIME": "", 
+        "INDEX_NR": "222037"
+    }, 
+    {
+        "INCIDENT_DATE": "26-May-03", 
+        "STATE": "LA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NEW ORLEANS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMSY", 
+        "TIME": "1730", 
+        "INDEX_NR": "224129"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "SC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLESTON AFB/INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCHS", 
+        "TIME": "1245", 
+        "INDEX_NR": "6001"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "214276"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "2320", 
+        "INDEX_NR": "215672"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "AK", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TED STEVENS ANCHORAGE INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "PANC", 
+        "TIME": "", 
+        "INDEX_NR": "216030"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "2321", 
+        "INDEX_NR": "216807"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "216808"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "217876"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "AK", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TED STEVENS ANCHORAGE INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "PANC", 
+        "TIME": "830", 
+        "INDEX_NR": "218227"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "AZ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHOENIX SKY HARBOR", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHX", 
+        "TIME": "", 
+        "INDEX_NR": "218271"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TOLEDO EXPRESS ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KTOL", 
+        "TIME": "", 
+        "INDEX_NR": "218485"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "TOLEDO EXPRESS ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KTOL", 
+        "TIME": "815", 
+        "INDEX_NR": "218509"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "JOHN F KENNEDY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KJFK", 
+        "TIME": "1231", 
+        "INDEX_NR": "218851"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GREGG COUNTY ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KGGG", 
+        "TIME": "2140", 
+        "INDEX_NR": "219554"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "VI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CYRIL E KING ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "TIST", 
+        "TIME": "955", 
+        "INDEX_NR": "219671"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHANGI INTL (SINGAPORE)", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "WSSS", 
+        "TIME": "300", 
+        "INDEX_NR": "219887"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "PR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LUIS MUNOZ MARIN INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "TJSJ", 
+        "TIME": "821", 
+        "INDEX_NR": "219930"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "OK", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WILEY POST ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPWA", 
+        "TIME": "1815", 
+        "INDEX_NR": "220696"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SACRAMENTO INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSMF", 
+        "TIME": "303", 
+        "INDEX_NR": "220795"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PHILADELPHIA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPHL", 
+        "TIME": "", 
+        "INDEX_NR": "220928"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "221138"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221139"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "221381"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "NY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BUFFALO-NIAGARA INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBUF", 
+        "TIME": "1115", 
+        "INDEX_NR": "221420"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "805", 
+        "INDEX_NR": "222759"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "NC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLOTTE/DOUGLAS INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCLT", 
+        "TIME": "924", 
+        "INDEX_NR": "223365"
+    }, 
+    {
+        "INCIDENT_DATE": "27-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO MIDWAY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMDW", 
+        "TIME": "", 
+        "INDEX_NR": "223854"
+    }, 
+    {
+        "INCIDENT_DATE": "28-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "EGLIN AFB/NW FLORIDA REGIONAL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KVPS", 
+        "TIME": "1450", 
+        "INDEX_NR": "8019"
+    }, 
+    {
+        "INCIDENT_DATE": "28-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "VALLEY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KHRL", 
+        "TIME": "602", 
+        "INDEX_NR": "216554"
+    }, 
+    {
+        "INCIDENT_DATE": "28-May-03", 
+        "STATE": "MD", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BALTIMORE WASH INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBWI", 
+        "TIME": "", 
+        "INDEX_NR": "216707"
+    }, 
+    {
+        "INCIDENT_DATE": "28-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON COUNTY", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KAFJ", 
+        "TIME": "", 
+        "INDEX_NR": "217143"
+    }, 
+    {
+        "INCIDENT_DATE": "28-May-03", 
+        "STATE": "ME", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PORTLAND INTL JETPORT (ME)", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPWM", 
+        "TIME": "", 
+        "INDEX_NR": "217588"
+    }, 
+    {
+        "INCIDENT_DATE": "28-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS LOVE FIELD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDAL", 
+        "TIME": "1824", 
+        "INDEX_NR": "218195"
+    }, 
+    {
+        "INCIDENT_DATE": "28-May-03", 
+        "STATE": "MA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOGAN INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBOS", 
+        "TIME": "", 
+        "INDEX_NR": "218248"
+    }, 
+    {
+        "INCIDENT_DATE": "28-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON DULLES INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAD", 
+        "TIME": "", 
+        "INDEX_NR": "219016"
+    }, 
+    {
+        "INCIDENT_DATE": "28-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CLEVELAND-HOPKINS INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCLE", 
+        "TIME": "", 
+        "INDEX_NR": "219195"
+    }, 
+    {
+        "INCIDENT_DATE": "28-May-03", 
+        "STATE": "NJ", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "NEWARK LIBERTY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KEWR", 
+        "TIME": "2357", 
+        "INDEX_NR": "219459"
+    }, 
+    {
+        "INCIDENT_DATE": "28-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "SAN DIEGO INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSAN", 
+        "TIME": "", 
+        "INDEX_NR": "219569"
+    }, 
+    {
+        "INCIDENT_DATE": "28-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON DULLES INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAD", 
+        "TIME": "1850", 
+        "INDEX_NR": "219654"
+    }, 
+    {
+        "INCIDENT_DATE": "28-May-03", 
+        "STATE": "ID", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BOISE AIR TERMINAL/GOWEN FIELD", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBOI", 
+        "TIME": "700", 
+        "INDEX_NR": "220250"
+    }, 
+    {
+        "INCIDENT_DATE": "28-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "222839"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "AR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ADAMS FIELD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLIT", 
+        "TIME": "1228", 
+        "INDEX_NR": "6929"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "AR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ADAMS FIELD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLIT", 
+        "TIME": "1325", 
+        "INDEX_NR": "6930"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "NC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLOTTE/DOUGLAS INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCLT", 
+        "TIME": "1610", 
+        "INDEX_NR": "7203"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "58", 
+        "INDEX_NR": "215168"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "JAMES M COX DAYTON INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDAY", 
+        "TIME": "910", 
+        "INDEX_NR": "216350"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "217136"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "MI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GERALD R FORD INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KGRR", 
+        "TIME": "1334", 
+        "INDEX_NR": "217464"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "EL PASO INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KELP", 
+        "TIME": "2015", 
+        "INDEX_NR": "217525"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MCGHEE TYSON ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KTYS", 
+        "TIME": "448", 
+        "INDEX_NR": "217526"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "GREATER ROCKFORD", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KRFD", 
+        "TIME": "2301", 
+        "INDEX_NR": "217693"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "", 
+        "INDEX_NR": "218373"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "BURKE LAKEFRONT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KBKL", 
+        "TIME": "810", 
+        "INDEX_NR": "219993"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "222354"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "222509"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "223687"
+    }, 
+    {
+        "INCIDENT_DATE": "29-May-03", 
+        "STATE": "OR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PORTLAND INTL (OR)", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KPDX", 
+        "TIME": "", 
+        "INDEX_NR": "234340"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "OR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KLAMATH FALLS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLMT", 
+        "TIME": "955", 
+        "INDEX_NR": "4323"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "KS", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "FORBES FIELD AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KFOE", 
+        "TIME": "", 
+        "INDEX_NR": "5890"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "AR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "FORT SMITH MUNICIPAL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KFSM", 
+        "TIME": "1015", 
+        "INDEX_NR": "7270"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "OR", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KLAMATH FALLS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KLMT", 
+        "TIME": "1000", 
+        "INDEX_NR": "7614"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "SC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLESTON AFB/INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCHS", 
+        "TIME": "555", 
+        "INDEX_NR": "7617"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "EGLIN AFB/NW FLORIDA REGIONAL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KVPS", 
+        "TIME": "1620", 
+        "INDEX_NR": "7671"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MIDLAND INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMAF", 
+        "TIME": "", 
+        "INDEX_NR": "7960"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS/FORT WORTH INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDFW", 
+        "TIME": "2200", 
+        "INDEX_NR": "217382"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "218805"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "2240", 
+        "INDEX_NR": "218823"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO MIDWAY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMDW", 
+        "TIME": "2200", 
+        "INDEX_NR": "219175"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "219176"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "CA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "METRO OAKLAND INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KOAK", 
+        "TIME": "1645", 
+        "INDEX_NR": "219328"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "FL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "ORLANDO INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCO", 
+        "TIME": "738", 
+        "INDEX_NR": "219524"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CORPUS CHRISTI INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCRP", 
+        "TIME": "", 
+        "INDEX_NR": "219597"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "TX", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DALLAS LOVE FIELD ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDAL", 
+        "TIME": "", 
+        "INDEX_NR": "220586"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "MO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "KANSAS CITY INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMCI", 
+        "TIME": "820", 
+        "INDEX_NR": "222706"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "HARRISBURG INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMDT", 
+        "TIME": "30", 
+        "INDEX_NR": "222707"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "248", 
+        "INDEX_NR": "222708"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "404", 
+        "INDEX_NR": "222709"
+    }, 
+    {
+        "INCIDENT_DATE": "30-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "2335", 
+        "INDEX_NR": "223411"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "HI", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "HONOLULU INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "PHNL", 
+        "TIME": "", 
+        "INDEX_NR": "215218"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CLEVELAND-HOPKINS INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCLE", 
+        "TIME": "", 
+        "INDEX_NR": "218113"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "219320"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "SC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MYRTLE BEACH INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMYR", 
+        "TIME": "1310", 
+        "INDEX_NR": "219365"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "HARRISBURG INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMDT", 
+        "TIME": "1201", 
+        "INDEX_NR": "220202"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "220373"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "IN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "INDIANAPOLIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIND", 
+        "TIME": "504", 
+        "INDEX_NR": "220603"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "DC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "WASHINGTON DULLES INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KIAD", 
+        "TIME": "1327", 
+        "INDEX_NR": "220604"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "OH", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "PORT COLUMBUS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCMH", 
+        "TIME": "855", 
+        "INDEX_NR": "220623"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "TN", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "MEMPHIS INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMEM", 
+        "TIME": "1617", 
+        "INDEX_NR": "220977"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO O'HARE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KORD", 
+        "TIME": "847", 
+        "INDEX_NR": "221688"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "IL", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHICAGO MIDWAY INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMDW", 
+        "TIME": "", 
+        "INDEX_NR": "221689"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "PA", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "HARRISBURG INTL", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KMDT", 
+        "TIME": "1000", 
+        "INDEX_NR": "221727"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "CO", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "DENVER INTL AIRPORT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KDEN", 
+        "TIME": "", 
+        "INDEX_NR": "222779"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "KY", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "LOUISVILLE INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KSDF", 
+        "TIME": "216", 
+        "INDEX_NR": "223533"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "NC", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "CHARLOTTE/DOUGLAS INTL ARPT", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "KCLT", 
+        "TIME": "1523", 
+        "INDEX_NR": "223534"
+    }, 
+    {
+        "INCIDENT_DATE": "31-May-03", 
+        "STATE": "N/A", 
+        "INCIDENT_YEAR": "2003", 
+        "AIRPORT": "UNKNOWN", 
+        "INCIDENT_MONTH": "5", 
+        "AIRPORT_ID": "UNK", 
+        "TIME": "", 
+        "INDEX_NR": "224963"
+    }
+]
