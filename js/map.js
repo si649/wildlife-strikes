@@ -10,7 +10,7 @@ window.WSR = window.WSR || {};
 $.extend(true,WSR,{
 	vars: {}
 });	
-	
+
 var Map = (function($,_,d3){
 	return function(){		
 		this.initMap = function(parent) {
@@ -27,7 +27,8 @@ var Map = (function($,_,d3){
 			
 			var chartLines = svg.append("g");	
 			var chartNodes = svg.append("g");
-			
+			var chartInfoBox = svg.append("g");
+
 			// Use Leaflet to implement a D3 geographic projection.
 			function project(x) {
 				var point = map.latLngToLayerPoint(new L.LatLng(x[1], x[0]));
@@ -43,9 +44,61 @@ var Map = (function($,_,d3){
 				var airport = chartNodes.selectAll("path")
 				    .data(collection.features)
 				    .enter().append("path")
-					    .attr("class", function (d) { return d.id + " leaflet-zoom-hide"});
-				    
+					    .attr("class", function (d) { return d.id + " leaflet-zoom-hide"})
+					    .on("mouseover", function (d, i) { infobox(d, d3.mouse(this), this); })//infobox)
+						.on("mouseout", function (d, i) { infoboxRemove(this); });
 
+				//Constructs the SVG elements for the infobox. Each line of text needs its own element and all of the elements need to be in the same "g" group
+				var infoBox = chartInfoBox.append("rect");
+				var infoBoxTextAirportID = chartInfoBox.append("text");
+				var infoBoxTextAirPortStrikeCount = chartInfoBox.append("text");
+
+				//Adds an infobox on a mouseon event
+				function infobox(d, mousePos, path) {
+
+					var airportData = d;
+		
+					//console.log("This is the x: " + mousePos[0] + " This is the y: " + mousePos[1]);
+					
+					d3.select(path).style("fill","crimson");
+					
+					infoBox
+						.attr("x", (mousePos[0] + 20) + "px") //+ "px")
+						.attr("y", (mousePos[1] - 80) + "px") //+ "px")
+						.attr("width", 200)
+						.attr("height", 100)
+						.attr("opacity", .80)
+						.style("fill","white")
+						.style("stroke","black");
+
+					infoBoxTextAirportID
+						.attr("x", (mousePos[0] + 22) + "px")
+						.attr("y", (mousePos[1] - 65) + "px")
+						.attr("opacity", 1)
+						.text(function (d, i) { return "Airport Code: " + airportData.id; })
+						.style("font-size", 14);
+						
+					infoBoxTextAirPortStrikeCount
+						.attr("x", (mousePos[0] + 22) + "px")
+						.attr("y", (mousePos[1] - 50) + "px")
+						.attr("opacity", 1)
+						.text(function (d, i) { return "Airport Name: " + airportData.properties.name; })
+						.style("font-size", 14);
+							
+				}
+
+				//Removes the info box on a mouseout event
+				function infoboxRemove(path) {
+
+					d3.select(path).style("fill","teal"); 
+					infoBox.attr("opacity",0)
+						.attr("x",0)
+						.attr("y",0);
+					
+					infoBoxTextAirportID.attr("opacity", 0);
+					infoBoxTextAirPortStrikeCount.attr("opacity", 0);
+				}
+			
 				map.on("viewreset", reset);
 				reset();
 
@@ -61,7 +114,10 @@ var Map = (function($,_,d3){
 			  
 			      chartNodes.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
 			      chartLines.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
-
+			      infoBox.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
+			      infoBoxTextAirportID.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
+			      infoBoxTextAirPortStrikeCount.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
+			      
 				    airport.attr("d", path);
 				}
 				
