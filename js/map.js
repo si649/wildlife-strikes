@@ -4,6 +4,8 @@
 **		Exposes Events:		'strikesByAnimal'	view,airport list
 **							'deselectAnimal'	view
 **							'updateLines'		view
+
+** Map just cares about getting a set of airports, from either time or from animals
 */
 
 window.WSR = window.WSR || {};
