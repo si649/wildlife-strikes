@@ -59,7 +59,7 @@ var Map = (function($,_,d3){
 					    .attr("class", function (d) { return d.id + " leaflet-zoom-hide"})
 					    .on("mouseover", function (d, i) { infobox(d, this); })//infobox)
 						.on("mouseout", function (d, i) { infoboxRemove(this); })
-						.on("click", function (d, i) { infoboxClick(this); }); // What do we want to do with this? *** M Bostock Example http://bl.ocks.org/2086461
+						.on("click", function (d, i) { infoboxClick(d, this); }); // What do we want to do with this? *** M Bostock Example http://bl.ocks.org/2086461
 
 				//Constructs the SVG elements for the infobox. Each line of text needs its own element and all of the elements need to be in the same "g" group
 
@@ -71,52 +71,63 @@ var Map = (function($,_,d3){
 									.style("visibility","hidden");
 
 				//https://groups.google.com/forum/?fromgroups=#!topic/d3-js/GgFTf24ltjc
-				var mouseOverActive = true;
+				
 				//Adds an infobox on a mouseon event
-				function infoboxClick (path) {
+				function infoboxClick (d, path) {
 
-					d3.select(path).style("fill","black");
-					mouseOverActive = false;
+					// Light Box Code From: http://kyleschaeffer.com/development/lightbox-jquery-css/
 
-				}
+					// Still need to refresht the airport variable after you visit a site, go back and click on another site. 
 
-				function updateMouseOver() {
+					//d3.json()
 
-					mouseOverActive = true;
+					var airportData = d;
+					var incidents = "./Data/incidents/1999_10_incidents.json";
+
+					var infoboxContents = d3.select("body")
+											.append("div")
+												.attr("id","infoboxContents")
+												.html(	"Airport ID: " + airportData.id + "<br />" + 
+
+														"Airport Name: " + airportData.properties.name  + "<br />" + 
+
+														"<a href=\"http://maps.google.com/?q=" + airportData.id + "\">Google Map</a>" + "<br />" + 
+
+														"Incident State: " + incidents[1].State + "<br />"
+
+													 );
+
+					lightbox($('#infoboxContents').html());
+					//d3.select(path).style("fill","black");
+
 				}
 
 				function infobox(d, path) {
 
 					var airportData = d;
-		
-					//console.log("This is the x: " + mousePos[0] + " This is the y: " + mousePos[1]);
 					
-					if(mouseOverActive == true) {
-
-						d3.select(path).style("fill","crimson");
-						
-						//console.log("Mouse Position x: " + mousePos[0] + " Mouse Position y: " + mousePos[1])
-						infoBox
-							.style("top", (d3.event.pageY) + "px") //+ "px")
-							.style("left", (d3.event.pageX + 20) + "px") //+ "px")
-							.style("width", 300 + "px")
-							.style("height", 100 + "px")
-							.style("opacity", .80)
-							.style("visibility","visible")
-							.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name + "<br />" + "<a href=\"\" onclick=\"updateMouseOver\">Click Me To Close</a>");
-							//<a href=\"http://maps.google.com/?q=" Google Query
-					}
+					d3.select(path).style("fill","crimson");
+					
+					//console.log("Mouse Position x: " + mousePos[0] + " Mouse Position y: " + mousePos[1])
+					infoBox
+						.style("top", (d3.event.pageY) + "px") //+ "px")
+						.style("left", (d3.event.pageX + 20) + "px") //+ "px")
+						.style("width", 300 + "px")
+						.style("height", 60 + "px")
+						.style("opacity", .80)
+						.style("visibility","visible")
+						.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name);
+						//<br />" + "<a href=\"http://maps.google.com/?q=" + airportData.id + "\">Google Map</a>" + "<br />" + "<a href=\"\" onclick=\"updateMouseOver\">Click Me To Close</a>"
+						//<a href=\"http://maps.google.com/?q=" Google Query
+	
 				}
 
 				//Removes the info box on a mouseout event
 				function infoboxRemove(path) {
 
-					if(mouseOverActive == true) {
+					d3.select(path).style("fill","teal"); 
+					infoBox.style("visibility","hidden")
 
-						d3.select(path).style("fill","teal"); 
-						infoBox.style("visibility","hidden")
-
-					}
 				}
 			
 				map.on("viewreset", reset);
