@@ -45,16 +45,18 @@ var Map = (function($,_,d3){
 			    path.pointRadius(5);
 
 			   	/////// TESTING UPDATING AIRPORTS - IGNORE ////////
-			    var currentAirports = [{"type":"Feature","id":"KDDC","properties":{"name":"Dodge City Regional Airport",
-									"address":"100 Airport Road, Dodge City, KS, United States"},"geometry":{"type":"Point","coordinates":[-99.965556,37.763333]}},
-									{"type":"Feature","id":"KVQQ","properties":{"name":"Cecil Airport",
-									"address":"13365 Aeronautical Circle, Jacksonville, FL, United States"},"geometry":{"type":"Point","coordinates":[-81.880964,30.221704]}},
-									{"type":"Feature","id":"6B6","properties":{"name":"Minute Man Air Field",
-									"address":"302 Boxboro Road, Stow, MA, United States"},"geometry":{"type":"Point","coordinates":[-71.517166,42.462046]}}];
+			    var currentAirports = collection.features;
+
+			    //var currentAirports = [{"type":"Feature","id":"KDDC","properties":{"name":"Dodge City Regional Airport",
+				//					"address":"100 Airport Road, Dodge City, KS, United States"},"geometry":{"type":"Point","coordinates":[-99.965556,37.763333]}},
+				//					{"type":"Feature","id":"KVQQ","properties":{"name":"Cecil Airport",
+				//					"address":"13365 Aeronautical Circle, Jacksonville, FL, United States"},"geometry":{"type":"Point","coordinates":[-81.880964,30.221704]}},
+				//					{"type":"Feature","id":"6B6","properties":{"name":"Minute Man Air Field",
+				//					"address":"302 Boxboro Road, Stow, MA, United States"},"geometry":{"type":"Point","coordinates":[-71.517166,42.462046]}}];
 				///////////////////////////////////////////////////
 
 				var airport = chartNodes.selectAll("path")
-				    .data(collection.features)	// will be replaced by currentAirports - a filtered array of objects
+				    .data(currentAirports)
 				    .enter().append("path")
 					    .attr("class", function (d) { return d.id + " leaflet-zoom-hide"})
 					    .on("mouseover", function (d, i) { infobox(d, this); })//infobox)
@@ -180,7 +182,6 @@ var Map = (function($,_,d3){
 				WSR.vars.map.on('updateAirports', function(ev,updatedAirports) {
 					// filter collection.features by airports in currentAirports
 					// make this data available to the airport drawing object
-					// Q: will I also need to pass in view?
 					// Q: where will collection.features be stored to be made available to this function?
 					// Q: where will we store the array of current airports?
 				}); // END map.on updateAirports

@@ -1,7 +1,6 @@
 /*Time module to do:
 * map listens for a change from time (e.g. see 'updatelines')
 * map updates its data to just those current airports - where should map hold the list of current airports?
-* add time initializer to index.html
 * time triggers a change with data -- an array of airports
 * once i have that working, get time to look at incidents.json for the given date,
   pull out airports, and put them in an array that is then passed to map
