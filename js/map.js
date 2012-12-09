@@ -46,14 +46,6 @@ var Map = (function($,_,d3){
 
 			    var currentAirports = collection.features;
 
-				var airport = chartNodes.selectAll("path")
-				    .data(currentAirports)
-				    .enter().append("path")
-					    .attr("class", function (d) { return d.id + " leaflet-zoom-hide"})
-					    .on("mouseover", function (d, i) { infobox(d, this); })//infobox)
-						.on("mouseout", function (d, i) { infoboxRemove(this); })
-						.on("click", function (d, i) { infoboxClick(d, this); }); // What do we want to do with this? *** M Bostock Example http://bl.ocks.org/2086461
-
 				//Constructs the SVG elements for the infobox. Each line of text needs its own element and all of the elements need to be in the same "g" group
 
 				var infoBox = d3.select("body")
@@ -154,19 +146,35 @@ var Map = (function($,_,d3){
 				
 				// Reposition the SVG to cover the features.
 				function reset() {
-			      var bottomLeft = project(bounds[0]),
-			          topRight = project(bounds[1]);
+					// set up outer bounds of graph
+			      	var bottomLeft = project(bounds[0]),
+			          	topRight = project(bounds[1]);
 			  
-			      svg.attr("width", topRight[0] - bottomLeft[0])
-			          .attr("height", bottomLeft[1] - topRight[1])
-			          .style("margin-left", bottomLeft[0] + "px")
-			          .style("margin-top", topRight[1] + "px");
-			  
-			      chartNodes.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
-			      chartLines.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
-			      infoBox.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
+			      	svg.attr("width", topRight[0] - bottomLeft[0])
+			          	.attr("height", bottomLeft[1] - topRight[1])
+			          	.style("margin-left", bottomLeft[0] + "px")
+			          	.style("margin-top", topRight[1] + "px");
 
-				  airport.attr("d", path);
+			      	// create airport nodes based on data in currentAirports
+			      	var airport = chartNodes.selectAll("path")
+				    	.data(currentAirports);
+				 
+				 	// draw new airport nodes
+					airport.enter().append("path")
+					    .attr("class", function (d) { return d.id + " leaflet-zoom-hide"})
+					    .on("mouseover", function (d, i) { infobox(d, this); })//infobox)
+						.on("mouseout", function (d, i) { infoboxRemove(this); })
+						.on("click", function (d, i) { infoboxClick(d, this); }); // What do we want to do with this? *** M Bostock Example http://bl.ocks.org/2086461
+
+					// remove airport nodes not in current data
+					airport.exit().remove();
+			  
+			  		// 
+			      	chartNodes.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
+			      	chartLines.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
+			      	infoBox.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
+
+				  	airport.attr("d", path);
 				}
 				
 				// Event handler for updating the airports based on the current time window
