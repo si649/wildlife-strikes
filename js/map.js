@@ -24,6 +24,7 @@ var Map = (function($,_,d3){
 			    zoom: 4
 			});
 			map.addLayer(layer);
+			map.zoomControl.setPosition("topright");
 			
 			var svg = d3.select(map.getPanes().overlayPane).append("svg");
 			
@@ -110,8 +111,34 @@ var Map = (function($,_,d3){
 				}
 			
 				map.on("viewreset", reset);
+				map.on("drag", updateDrag);
+				map.on("zoomend", updateZoom);
 				reset();
-
+				
+				function updateDrag(ev){
+					chartLines.selectAll("line")
+						.attr("x1", function(d) { 
+							var newPos = map.containerPointToLayerPoint([d.uiView.getXAnchor(),d.uiView.getYAnchor()]);
+							return newPos.x; 
+						})
+						.attr("y1", function(d) { 
+							var newPos = map.containerPointToLayerPoint([d.uiView.getXAnchor(),d.uiView.getYAnchor()]);
+							return newPos.y; 
+						});
+				}
+				function updateZoom(ev){
+					chartLines.selectAll("line")
+						.attr("x2", function(d) { 
+							var newPos = project(d.mapCoord);
+							return newPos[0]
+						})
+						.attr("y2", function(d) { 
+							var newPos = project(d.mapCoord);
+							return newPos[1]
+						});
+					
+				}
+				
 				// Reposition the SVG to cover the features.
 				function reset() {
 			      var bottomLeft = project(bounds[0]),
@@ -149,14 +176,25 @@ var Map = (function($,_,d3){
 						airportData = _.where(collection.features,{id:airport})[0];
 						if (airportData){ // airport has strikes of current animal
 							mapPoint = project(airportData.geometry.coordinates);
+							var datm = {"mapCoord":airportData.geometry.coordinates,
+										"uiView":view
+										}
 							chartLines.append('line')
+								.datum(datm)
 								.attr('class', function () { return view.model.id +" line"})
-								.attr("x1", function() { return view.getXAnchor() })
-								.attr("y1", function() { return view.getYAnchor() })
+								.attr("x1", function(d) { 
+									newPos = map.containerPointToLayerPoint([d.uiView.getXAnchor(),d.uiView.getYAnchor()]);
+									return newPos.x; 
+								})
+								.attr("y1", function(d) { 
+									newPos = map.containerPointToLayerPoint([d.uiView.getXAnchor(),d.uiView.getYAnchor()]);
+									return newPos.y; 
+								})								
 								.attr("x2", function() { return mapPoint[0]; })
 								.attr("y2", function() { return mapPoint[1]; })
 								.attr("stroke",lineColor)
-								.attr("opacity",1);
+								.attr("opacity",1)
+								.on('click', function(d,i) { console.log(d.getID()) });
 								//.transition()
 									//.delay(function(d,i) { return count * 150 })
 									//.duration(500)
@@ -180,8 +218,14 @@ var Map = (function($,_,d3){
 			
 			WSR.vars.map.on('updateLines',function(ev,view) {
 				chartLines.selectAll("."+view.model.id)
-					.attr("x1", function() { return view.getXAnchor() })
-					.attr("y1", function() { return view.getYAnchor() });
+					.attr("x1", function(d) { 
+						newPos = map.containerPointToLayerPoint([d.uiView.getXAnchor(),d.uiView.getYAnchor()]);
+						return newPos.x; 
+					})
+					.attr("y1", function(d) { 
+						newPos = map.containerPointToLayerPoint([d.uiView.getXAnchor(),d.uiView.getYAnchor()]);
+						return newPos.y; 
+					})
 			}); // END map.on updateLines
 			
 		} // END initMap
