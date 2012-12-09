@@ -17,7 +17,6 @@
 window.WSR = window.WSR || {};
 $.extend(true,WSR,{
 	vars: {}
-	date:{}  // declare now that we will use it, set it later
 });	
 
 var Time = (function($,_,d3){	// is "Time" a library name in JS? completely blanking...

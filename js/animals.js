@@ -110,6 +110,10 @@ var AnimalUI = (function($,_,d3){
 			});
 		} // END SpeciesButton Constructor
 		
+		WSR.views.SpeciesButton.prototype.getID = function(){
+			return this.model.id;
+		} // END getYAnchor
+		
 		// calculate all the airports the current view connects to under the current date 
 		WSR.views.SpeciesButton.prototype.drawStrikeLines = function(){
 			var strikes = this.model.strikes? this.model.strikes : this.model.extractAnimalStrikes();
