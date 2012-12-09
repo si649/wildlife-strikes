@@ -28,7 +28,7 @@ var Time = (function($,_,d3){	// is "Time" a library name in JS? completely blan
 			// simple function (for now) to send array of current airports to map module
 			updateTime = function () {
 				var airports = ['KDDC','KVQQ','6B6'];
-				WSR.vars.map.trigger('updateAirports', airports);
+				WSR.vars.map.trigger('updateAirports', [airports]);
 			}
 		
 			// allow user to start/stop time's auto-increment
