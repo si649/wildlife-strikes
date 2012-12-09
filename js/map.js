@@ -46,15 +46,6 @@ var Map = (function($,_,d3){
 
 			    var currentAirports = collection.features;
 
-			   	/////// TESTING UPDATING AIRPORTS - IGNORE ////////
-			    //var currentAirports = [{"type":"Feature","id":"KDDC","properties":{"name":"Dodge City Regional Airport",
-				//					"address":"100 Airport Road, Dodge City, KS, United States"},"geometry":{"type":"Point","coordinates":[-99.965556,37.763333]}},
-				//					{"type":"Feature","id":"KVQQ","properties":{"name":"Cecil Airport",
-				//					"address":"13365 Aeronautical Circle, Jacksonville, FL, United States"},"geometry":{"type":"Point","coordinates":[-81.880964,30.221704]}},
-				//					{"type":"Feature","id":"6B6","properties":{"name":"Minute Man Air Field",
-				//					"address":"302 Boxboro Road, Stow, MA, United States"},"geometry":{"type":"Point","coordinates":[-71.517166,42.462046]}}];
-				///////////////////////////////////////////////////
-
 				var airport = chartNodes.selectAll("path")
 				    .data(currentAirports)
 				    .enter().append("path")
@@ -174,15 +165,15 @@ var Map = (function($,_,d3){
 			      chartNodes.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
 			      chartLines.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
 			      infoBox.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
-			      
-				    airport.attr("d", path);
+
+				  airport.attr("d", path);
 				}
 				
-				// Placeholder for event handler for updating the array airports in the current time
+				// Event handler for updating the airports based on the current time window
 				WSR.vars.map.on('updateAirports', function(ev,updatedAirports) {
 					console.log('updated: ' + updatedAirports);
 					// filter collection.features by airports in updatedAirports
-					// and store this filtered set of airports in currentAirports
+					// and store this filtered set of airports in currentAirports for use by D3
 					currentAirports = _.filter(collection.features, function(airport){
 						return _.contains(updatedAirports, airport.id);
 					});
