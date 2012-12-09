@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<title> WSR Visualization - Terror in the Skies! </title>
+<link rel="shortcut icon" href="favicon.png" />
+<link rel="stylesheet" href="css/style2.css" type="text/css" />
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.css" />
+
+
+</head>
+<body>
+
+    <div id="background">
+        <img alt="" class="stretch" src="images/background.jpg">
+    </div>
+
+    <!-- Div floating over the map -->
+<!--     <div id="textBackground">
+
+    
+    </div> -->
+    <img id = "birdimg" src="images/bird_logo_28x30.png">
+
+    <div id="main">
+        
+        <div id="header"> 
+                <h1><a href="landing.html">Wild Life Strikes</a></h1>
+                <img id = "headerimg" src="images/bird_logo_28x30.png">
+        </div>
+        
+        <div id="contentborder">
+
+
+
+            <div id="content">
+                
+                
+                <div class="button"><a href="index.html">Go to the visualization</a></div>
+
+                <h3>About</h3>
+                <p>
+                    Our goal was to make it easier to explore the FAA's <a href="http://wildlife-mitigation.tc.faa.gov/wildlife/"> Wildlife Stike Database</a>.  This data has an incredible amount of information, but the size makes it difficult to explore in an efficient manner.<br>
+                    
+                </p>
+                <h3>The Data</h3>
+                <p>
+                    The main data for this project comes from the FAA's  <a href="http://wildlife-mitigation.tc.faa.gov/wildlife/"> Wildlife Stike Database</a>.  We used a subset of the data from 1999 through July of 2012.  This gave us 110,942 incidents.  <br>
+                    
+                </p>
+                <h3>Tools</h3>
+                <p>
+                    Once we had the data we used the <a href="https://developers.google.com/places/">Google Places API</a> to find latitude and longitude for all of the airports where strikes occured.  <a href="http://d3js.org">D3 </a>  is a javascript visualization library that we used to plot the airports on a map originally designed by <a href="http://maps.stamen.com/"> Stamen Design</a>. <br>
+                </p>
+                <h3>Team</h3>
+                <p>
+                    <a href="http://wesleylauka.com/">Wesley Lauka</a>, <a href="http://onceyougodigital.com/about/">Jeremy Salfen</a>, <a href="http://www.philliptularak.com/">Phillip Tularak</a>, <a href="http://nikkiroda.com/">Nikki Roda</a>, and <a href="http://www.linkedin.com/in/paulellebrecht">Paul Ellebrecht</a> created this visualization as a final project for Information Visualization at the University of Michigan - School of Information in the Fall of 2012.<br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
