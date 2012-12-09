@@ -278,11 +278,6 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYA
 	left: 0;
 	z-index: 10;
 }
-circle {
-	fill: orange;
-	stroke: #fff;
-	stroke-width: 1.5px;
-}
 
 path {
 	fill: teal;
