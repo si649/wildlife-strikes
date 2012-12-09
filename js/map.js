@@ -184,7 +184,7 @@ var Map = (function($,_,d3){
 					// filter collection.features by airports in updatedAirports
 					// and store this filtered set of airports in currentAirports
 					currentAirports = _.filter(collection.features, function(airport){
-						return _.contains([updatedAirports], airport.id);
+						return _.contains(updatedAirports, airport.id);
 					});
 					console.log('current: ' + currentAirports);
 
