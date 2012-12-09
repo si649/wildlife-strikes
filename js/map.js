@@ -45,58 +45,66 @@ var Map = (function($,_,d3){
 				    .data(collection.features)
 				    .enter().append("path")
 					    .attr("class", function (d) { return d.id + " leaflet-zoom-hide"})
-					    .on("mouseover", function (d, i) { infobox(d, d3.mouse(this), this); })//infobox)
-						.on("mouseout", function (d, i) { infoboxRemove(this); });
+					    .on("mouseover", function (d, i) { infobox(d, this); })//infobox)
+						.on("mouseout", function (d, i) { infoboxRemove(this); })
+						.on("click", function (d, i) { infoboxClick(this); }); // What do we want to do with this? *** M Bostock Example http://bl.ocks.org/2086461
 
 				//Constructs the SVG elements for the infobox. Each line of text needs its own element and all of the elements need to be in the same "g" group
-				var infoBox = chartInfoBox.append("rect");
-				var infoBoxTextAirportID = chartInfoBox.append("text");
-				var infoBoxTextAirPortStrikeCount = chartInfoBox.append("text");
 
+				var infoBox = d3.select("body")
+								.append("div")
+									.attr("id","tooltip")
+									.style("position","absolute")
+									.style("z-index","10")
+									.style("visibility","hidden");
+
+				//https://groups.google.com/forum/?fromgroups=#!topic/d3-js/GgFTf24ltjc
+				var mouseOverActive = true;
 				//Adds an infobox on a mouseon event
-				function infobox(d, mousePos, path) {
+				function infoboxClick (path) {
+
+					d3.select(path).style("fill","black");
+					mouseOverActive = false;
+
+				}
+
+				function updateMouseOver() {
+
+					mouseOverActive = true;
+				}
+
+				function infobox(d, path) {
 
 					var airportData = d;
 		
 					//console.log("This is the x: " + mousePos[0] + " This is the y: " + mousePos[1]);
 					
-					d3.select(path).style("fill","crimson");
-					
-					infoBox
-						.attr("x", (mousePos[0] + 20) + "px") //+ "px")
-						.attr("y", (mousePos[1] - 80) + "px") //+ "px")
-						.attr("width", 200)
-						.attr("height", 100)
-						.attr("opacity", .80)
-						.style("fill","white")
-						.style("stroke","black");
+					if(mouseOverActive == true) {
 
-					infoBoxTextAirportID
-						.attr("x", (mousePos[0] + 22) + "px")
-						.attr("y", (mousePos[1] - 65) + "px")
-						.attr("opacity", 1)
-						.text(function (d, i) { return "Airport Code: " + airportData.id; })
-						.style("font-size", 14);
+						d3.select(path).style("fill","crimson");
 						
-					infoBoxTextAirPortStrikeCount
-						.attr("x", (mousePos[0] + 22) + "px")
-						.attr("y", (mousePos[1] - 50) + "px")
-						.attr("opacity", 1)
-						.text(function (d, i) { return "Airport Name: " + airportData.properties.name; })
-						.style("font-size", 14);
-							
+						//console.log("Mouse Position x: " + mousePos[0] + " Mouse Position y: " + mousePos[1])
+						infoBox
+							.style("top", (d3.event.pageY) + "px") //+ "px")
+							.style("left", (d3.event.pageX + 20) + "px") //+ "px")
+							.style("width", 300 + "px")
+							.style("height", 100 + "px")
+							.style("opacity", .80)
+							.style("visibility","visible")
+							.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name + "<br />" + "<a href=\"\" onclick=\"updateMouseOver\">Click Me To Close</a>");
+							//<a href=\"http://maps.google.com/?q=" Google Query
+					}
 				}
 
 				//Removes the info box on a mouseout event
 				function infoboxRemove(path) {
 
-					d3.select(path).style("fill","teal"); 
-					infoBox.attr("opacity",0)
-						.attr("x",0)
-						.attr("y",0);
-					
-					infoBoxTextAirportID.attr("opacity", 0);
-					infoBoxTextAirPortStrikeCount.attr("opacity", 0);
+					if(mouseOverActive == true) {
+
+						d3.select(path).style("fill","teal"); 
+						infoBox.style("visibility","hidden")
+
+					}
 				}
 			
 				map.on("viewreset", reset);
@@ -115,8 +123,6 @@ var Map = (function($,_,d3){
 			      chartNodes.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
 			      chartLines.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
 			      infoBox.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
-			      infoBoxTextAirportID.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
-			      infoBoxTextAirPortStrikeCount.attr("transform", "translate(" + -bottomLeft[0] + "," + -topRight[1] + ")");
 			      
 				    airport.attr("d", path);
 				}

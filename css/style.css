@@ -301,3 +301,11 @@ path {
 	stroke-width: 2;
 	cursor: pointer;
 }
+#tooltip{
+
+	background-color: #FFFFFF;
+	border: solid;
+	border-width: 1px;
+	font-size: 1em;
+
+}
