@@ -16,6 +16,7 @@
 	.script("js/animals.js")
 	.script("http://cdn.leafletjs.com/leaflet-0.4/leaflet.js")
 	.script("http://maps.stamen.com/js/tile.stamen.js?v1.2.0").wait()
+	.script("js/time.js")
 	.script("js/map.js")
 	.wait(function(){
 		$(document).ready(function(){
@@ -45,8 +46,8 @@
 			var animalUI = new AnimalUI();
 			animalUI.initAnimalUI("#animals"); // initialize Species Buttons
 			
-			// var time = new Time();
-			// time.initTime();
+			var time = new Time();
+			time.initTime("#time");
 			
 		}); // END $.ready
 	});
@@ -55,5 +56,6 @@
 <body>
 <ul id="animals"></ul>
 <div id="map"></div>
+<div id="time"><button class="testbutton" id="run">Launch model</button></div>
 </body>
 </html>

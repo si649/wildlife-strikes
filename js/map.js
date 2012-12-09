@@ -44,9 +44,9 @@ var Map = (function($,_,d3){
 
 			    path.pointRadius(5);
 
-			   	/////// TESTING UPDATING AIRPORTS - IGNORE ////////
 			    var currentAirports = collection.features;
 
+			   	/////// TESTING UPDATING AIRPORTS - IGNORE ////////
 			    //var currentAirports = [{"type":"Feature","id":"KDDC","properties":{"name":"Dodge City Regional Airport",
 				//					"address":"100 Airport Road, Dodge City, KS, United States"},"geometry":{"type":"Point","coordinates":[-99.965556,37.763333]}},
 				//					{"type":"Feature","id":"KVQQ","properties":{"name":"Cecil Airport",
@@ -180,10 +180,15 @@ var Map = (function($,_,d3){
 				
 				// Placeholder for event handler for updating the array airports in the current time
 				WSR.vars.map.on('updateAirports', function(ev,updatedAirports) {
-					// filter collection.features by airports in currentAirports
-					// make this data available to the airport drawing object
-					// Q: where will collection.features be stored to be made available to this function?
-					// Q: where will we store the array of current airports?
+					console.log('updated: ' + updatedAirports);
+					// filter collection.features by airports in updatedAirports
+					// and store this filtered set of airports in currentAirports
+					currentAirports = _.filter(collection.features, function(airport){
+						return _.contains([updatedAirports], airport.id);
+					});
+					console.log('current: ' + currentAirports);
+
+					reset();
 				}); // END map.on updateAirports
 				
 				/* Event Handler for Drawing Lines to Animals */

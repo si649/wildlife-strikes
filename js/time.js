@@ -24,6 +24,12 @@ var Time = (function($,_,d3){	// is "Time" a library name in JS? completely blan
 		// other function stuff goes here
 			
 			// increment time, ajax new incident, update globals, trigger map
+			
+			// simple function (for now) to send array of current airports to map module
+			updateTime = function () {
+				var airports = ['KDDC','KVQQ','6B6'];
+				WSR.vars.map.trigger('updateAirports', airports);
+			}
 		
 			// allow user to start/stop time's auto-increment
 			
@@ -33,9 +39,14 @@ var Time = (function($,_,d3){	// is "Time" a library name in JS? completely blan
 		
 		
 		// Constructor Function
-		this.initTime = function() {
+		this.initTime = function(parent) {
 			// start the time change "loop"  -> check out d3's Timer, or just setInterval
-			
+
+			// call function to send airport array to map - this will definitely change
+			$(".testbutton").on("click", function(ev) {
+				updateTime();
+			})
+
 			// call function to draw widgets
 			
 			
