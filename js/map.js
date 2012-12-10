@@ -64,27 +64,31 @@ var Map = (function($,_,d3){
 
 					// Still need to refresht the airport variable after you visit a site, go back and click on another site. 
 
-					//d3.json()
-
 					var airportData = d;
-					var incidents = "./Data/incidents/1999_10_incidents.json";
 
-					var infoboxContents = d3.select("body")
+					$.getJSON("./Data/incidents/1999_10_incidents.json",function(data){
+
+						console.log(data[1]);
+
+						var infoboxContents = d3.select("body")
 											.append("div")
 												.attr("id","infoboxContents")
 												.html(	"Airport ID: " + airportData.id + "<br />" + 
 
 														"Airport Name: " + airportData.properties.name  + "<br />" + 
 
-														"<a href=\"http://maps.google.com/?q=" + airportData.id + "\">Google Map</a>" + "<br />" + 
+														"<a href=\"http://maps.google.com/?q=" + airportData.properties.name + "\">Google Map</a>" + "<br />" + 
 
-														"Incident State: " + incidents[1].State + "<br />"
+														"Incident State: " + data[1]["STATE"] + "<br />"
 
 													 );
 
-					lightbox($('#infoboxContents').html());
-					//d3.select(path).style("fill","black");
+						//html templating in javascript - http://handlebarsjs.com/
 
+						lightbox($('#infoboxContents').html());
+						
+
+					});
 				}
 
 				function infobox(d, path) {
