@@ -46,7 +46,7 @@
 			var animalUI = new AnimalUI();
 			animalUI.initAnimalUI("#animals"); // initialize Species Buttons
 			
-			var time = new Time();
+			var time = new Timer();
 			time.initTime("#time");	// initialize time controls
 			
 		}); // END $.ready
@@ -57,5 +57,7 @@
 <ul id="animals"></ul>
 <div id="map"></div>
 <div id="time"><button class="testbutton" id="run">Filter airports</button></div>
+<div id="stepDate" style="width:200px;font-size:36px;float:right;z-index:9999;"></div>
+
 </body>
 </html>
