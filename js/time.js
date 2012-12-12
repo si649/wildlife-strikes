@@ -46,6 +46,9 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 						success: function(data){
 							// merge airports into current airports, removing any duplicates
 							currentAirports = _.union(currentAirports, fetchAirports(data));
+							// check for end of array, then call...
+							updateMap(currentAirports);
+							// check if playing, then call setTimeout(incrementTime)
 						},
 						error: function(jqXHR, textStatus, errorThrown){
 							console.log(textStatus, errorThrown);
@@ -63,6 +66,7 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			// update globals: date and current airports
 			updateGlobals = function (time,airports) {
 				// store current date array in global variable
+				// store current incidents in global variable
 				// store current airport array in global variable
 			}
 			
@@ -129,7 +133,7 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 				incrementTime();
 				fetchIncidents();
 				console.log(currentAirports);
-				updateMap(currentAirports);
+				//updateMap(currentAirports);
 				stepThroughDates();
 			})
 
