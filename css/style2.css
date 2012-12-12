@@ -475,12 +475,12 @@ a {
     -moz-border-radius:29px;
     -webkit-border-radius:29px;
     border-radius:29px;
-    //border:1px solid #3866a3;
+    /* border:1px solid #3866a3; */
     display:inline-block;
     color: rgb(255,255,255);
     font-family:arial;
     font-size:18px;
-    //font-weight:bold;
+    /* font-weight:bold; */
     padding:9px 24px;
     text-decoration:none;
     text-shadow:1px 1px 0px #7cacde;

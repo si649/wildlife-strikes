@@ -13,7 +13,9 @@ $.extend(true,WSR,{
 
 var AnimalUI = (function($,_,d3){
 	return function(){
-	// Create Animal Model
+	
+		var sci_names = {}; // module reference for scientific names
+		// Create Animal Model
 		WSR.models.Animal = function(data){
 			this.id = data.id;
 			this.name = data.name;
@@ -142,10 +144,11 @@ var AnimalUI = (function($,_,d3){
 			this.el.find('span').on('mouseover', {src:this}, function(ev){
 				var target = this;
 				// this is using the regular name right now, getting the scientific name in would be much better
-				var text = ev.data.src.model.name
+				
 				var key = "33e34c279602f7ce0b89978eccc93bb5" // 3600 calls an hr
 				
 				var baseUrl = "http://api.flickr.com/services/rest/?"
+				var text = _.chain(sci_names).pick(ev.data.src.model.id).values().value()[0];
 				var attrs = [
 					"method=flickr.photos.search",
 					"api_key="+key,
@@ -157,9 +160,9 @@ var AnimalUI = (function($,_,d3){
 					"nojsoncallback=1"
 				]
 				var req = baseUrl + attrs.join("&");
+				console.log(req);
 				$.getJSON(req,function(data){
 					// http://www.flickr.com/services/api/misc.urls.html
-					console.log('test');
 					var photo = data.photos.photo[0] // only asked for 1 photo
 					var size = "s"	// 75x75 square  
 					var url = "http://farm"
@@ -244,6 +247,17 @@ var AnimalUI = (function($,_,d3){
 				error: function(jqXHR, textStatus, errorThrown){
 					console.log(textStatus, errorThrown)
 			}})
+			// load scientific names use with photos
+			$.ajax({
+				url:"data/sci_names.json",
+				dataType:"json",
+				success: function(data){
+					sci_names = data[0]; // save to variable
+				},
+				error: function(jqXHR, textStatus, errorThrown){
+					console.log(textStatus, errorThrown)
+			}});
+			
 		} // END initAnimalUI()
 	} // end return closure
 })(jQuery,_,d3);

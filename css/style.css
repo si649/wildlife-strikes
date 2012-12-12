@@ -332,7 +332,9 @@ path {
 #infoboxContents {
 
 	font-family: verdana;
-
+}
+.nodeClicked {
+	fill: orange;
 }
 #time .testbutton {
 	position: absolute;
