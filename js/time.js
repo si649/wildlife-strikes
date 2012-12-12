@@ -1,8 +1,3 @@
-/*Time module to do:
-* once i have that working, get time to look at incidents.json for the given date,
-  pull out airports, and put them in an array that is then passed to map
-*/
-
 /*
 **	Time Module
 **		Initializer:		initTime();
@@ -29,7 +24,7 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			// NO SETTIMEOUT LOOPING YET - JUST TRYING TO GET AIRPORT EXTRACTION WORKING
 			fetchIncidents = function (data) {
 				// temporary - ulimately will get this from the data parameter
-				var months = ['1999_10'];
+				var months = ['1999_10','1999_11'];
 				// for each month, load the incidents file
 				_.each(months, function(m) {
 					var dataUrl = "data/incidents/" + m + "_incidents.json";
@@ -37,7 +32,8 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 						url:dataUrl,
 						dataType:"json",
 						success: function(data){
-							currentAirports = fetchAirports(data);
+							// merge airports into current airports, removing any duplicates
+							currentAirports = _.union(currentAirports, fetchAirports(data));
 						},
 						error: function(jqXHR, textStatus, errorThrown){
 							console.log(textStatus, errorThrown);
@@ -119,7 +115,6 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 
 			// call function to send airport array to map - this will definitely change
 			$(".testbutton").on("click", function(ev) {
-				//updateMap();
 				fetchIncidents();
 				console.log(currentAirports);
 				updateMap(currentAirports);
