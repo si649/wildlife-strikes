@@ -32,6 +32,10 @@ var Map = (function($,_,d3){
 			var chartNodes = svg.append("g");
 			var chartInfoBox = svg.append("g");
 
+			//InfoBox Variables
+
+			var nodeClicked = false;
+
 			// Use Leaflet to implement a D3 geographic projection.
 			function project(x) {
 				var point = map.latLngToLayerPoint(new L.LatLng(x[1], x[0]));
@@ -60,36 +64,105 @@ var Map = (function($,_,d3){
 				//Adds an infobox on a mouseon event
 				function infoboxClick (d, path) {
 
-					// Light Box Code From: http://kyleschaeffer.com/development/lightbox-jquery-css/
+					nodeClicked = true;
 
-					// Still need to refresht the airport variable after you visit a site, go back and click on another site. 
+					d3.select(path).style("fill","crimson");
+
+					// Light Box Code From: http://kyleschaeffer.com/development/lightbox-jquery-css/
 
 					var airportData = d;
 
-					$.getJSON("./Data/incidents/1999_10_incidents.json",function(data){
 
-						console.log(data[1]);
+					//Grab JSON File and then Iterate Over It
+					$.getJSON("./Data/incidents/1999_10_incidents.json",function(data) {
 
-						var infoboxContents = d3.select("body")
-											.append("div")
-												.attr("id","infoboxContents")
-												.html(	"Airport ID: " + airportData.id + "<br />" + 
+//********************
+//
+// Begin Iterating Over Incidents
+//
+//********************  							
+/*
+  							$.each(data,function(i) {
 
-														"Airport Name: " + airportData.properties.name  + "<br />" + 
+  								if(data[i].INDEX_NR == //what variable do I compare to? I need a primary key to function on)
+								console.log("this is...." + data[i].STATE);
 
-														"<a href=\"http://maps.google.com/?q=" + airportData.properties.name + "\">Google Map</a>" + "<br />" + 
+							})
+*/
+//********************
+//
+// End Iterating Over Incidents
+//
+//********************
 
-														"Incident State: " + data[1]["STATE"] + "<br />"
+						//Grab the Template and Compile
+						$.get("templates/nodeDetails.html", function(nodeTemplate) {
 
-													 );
+							template = Handlebars.compile(nodeTemplate)
 
-						//html templating in javascript - http://handlebarsjs.com/
+							//Test Data For The Template
+							var context = { SPECIES: "My First Blog Post!", REMARKS: "Remarks go here"};
+							// var context = {
 
-						lightbox($('#infoboxContents').html());
+							// 					items: [
+
+							// 								{
+							// 									SPECIES: "My First Blog Post!",
+							// 									REMARKS: "Remarks go here"
+							// 								},
+
+							// 								{
+							// 									SPECIES: "My Second Blog Post!",
+							// 									REMARKS: "Remarks go here"
+							// 								},
+
+							// 								{
+							// 									SPECIES: "My Third Blog Post!",
+							// 									REMARKS: "Remarks go here"
+							// 								}
+							// 							]
+							// };
+
+//***********************************
+//
+// Start: Old Working infoboxContents
+//
+//***********************************
+/*
+							var infoboxContents = d3.select("body")
+							 					.append("div")
+						 							.attr("id","infoboxContents")
+													.html(	"Airport ID: " + airportData.id + "<br />" + 
+
+															"Airport Name: " + airportData.properties.name  + "<br />" + 
+
+															"<a href=\"http://maps.google.com/?q=" + airportData.properties.name + "\">Google Map</a>" + "<br />" + 
+
+															"Incident State: " + data[1]["STATE"] + "<br />"
+
+														 );
+*/
+//***********************************
+//
+// End: Old Working infoboxContents
+//
+//***********************************
+							var infoboxContents = d3.select("body")
+							 					.append("div")
+						 							.attr("id","infoboxContents");
+													//.html(template(context));
+							//Diagnostics
+							console.log("This is the template: " + template)
+							console.log("This is the context: " + context)
+							console.log("This is the infoboxContents: " + infoboxContents)
+							
+							//Old Working Lightbox
+								//lightbox($("#infoboxContents").html());
+							lightbox($("#infoboxContents").html(template(context)));
 						
-
-					});
-				}
+						}); // End of the $.get("templates/nodeDetails") call
+					}); //End of the $.getJSON incidents call
+				} //End of the infoClick Function
 
 				function infobox(d, path) {
 
@@ -114,8 +187,18 @@ var Map = (function($,_,d3){
 				//Removes the info box on a mouseout event
 				function infoboxRemove(path) {
 
-					d3.select(path).style("fill","teal"); 
-					infoBox.style("visibility","hidden")
+					console.log("Node Clicked Status: " + nodeClicked)
+					if(nodeClicked == false) {
+	
+						d3.select(path)
+							.style("fill","teal")
+							.style("transition-property","fill")
+							.style("transition-duration","4s");
+
+
+						infoBox.style("visibility","hidden");
+
+					}
 
 				}
 			

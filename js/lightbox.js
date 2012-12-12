@@ -4,7 +4,6 @@
 	kyleschaeffer.com
 	* requires jQuery
 ****************************************/
-
 // display the lightbox
 function lightbox(insertContent, ajaxContentUrl){
 
@@ -13,6 +12,7 @@ function lightbox(insertContent, ajaxContentUrl){
 		var theLightbox = $('<div id="lightbox"/>');
 		var theShadow = $('<div id="lightbox-shadow"/>');
 		$(theShadow).click(function(e){
+
 			closeLightbox();
 		});
 		$('body').append(theShadow);
@@ -59,10 +59,17 @@ function lightbox(insertContent, ajaxContentUrl){
 // close the lightbox
 function closeLightbox(){
 
+	//**** Start -> Modified Code To Work With Wildlife Strikes
+			console.log("Inside the lightbox: " + nodeClicked);
+			nodeClicked = false;
+	
+	//**** End -> //Modified Code To Work With Wildlife Strikes
+	
 	// hide lightbox and shadow <div/>'s
 	$('#lightbox').hide();
 	$('#lightbox-shadow').hide();
 
 	// remove contents of lightbox in case a video or other content is actively playing
 	$('#lightbox').empty();
+
 }
