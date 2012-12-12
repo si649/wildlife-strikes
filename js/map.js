@@ -240,13 +240,11 @@ var Map = (function($,_,d3){
 				
 				// Event handler for updating the airports based on the current time window
 				WSR.vars.map.on('updateAirports', function(ev,updatedAirports) {
-					console.log('updated: ' + updatedAirports);
 					// filter collection.features by airports in updatedAirports
 					// and store this filtered set of airports in currentAirports for use by D3
 					currentAirports = _.filter(collection.features, function(airport){
 						return _.contains(updatedAirports, airport.id);
 					});
-					console.log('current: ' + currentAirports);
 
 					reset();
 				}); // END map.on updateAirports

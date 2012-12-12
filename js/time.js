@@ -39,20 +39,22 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 				var months = ['1999_10','1999_11'];
 				WSR.vars.incidents = {};
 				// for each month, load the incidents file
-				_.each(months, function(m) {
+				_.each(months, function(m,i) {
 					var dataUrl = "data/incidents/" + m + "_incidents.json";
 					$.ajax({
 						url:dataUrl,
 						dataType:"json",
 						success: function(data){
-							// store geojson data in global array
+							// store incidents json data in global variable
 							WSR.vars.incidents[m] = data;
 							// merge airports into current airports, removing any duplicates
 							currentAirports = _.union(currentAirports, fetchAirports(data));
-							// check for end of array, then call...
-							updateMap(currentAirports);
-							WSR.vars.date = months;
-							// check if playing, then call setTimeout(incrementTime)
+							// check for final iteration, then update map and global date variable
+							if (i == months.length - 1) {
+								updateMap(currentAirports);
+								WSR.vars.date = months;
+								// check if playing, then call setTimeout(incrementTime)
+							};
 						},
 						error: function(jqXHR, textStatus, errorThrown){
 							console.log(textStatus, errorThrown);
@@ -129,7 +131,7 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			$(".testbutton").on("click", function(ev) {
 				incrementTime();
 				fetchIncidents();
-				console.log(currentAirports);
+				//console.log(currentAirports);
 				//updateMap(currentAirports);
 				stepThroughDates();
 			})
