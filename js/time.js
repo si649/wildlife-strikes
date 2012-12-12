@@ -24,9 +24,24 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 
 			// ajax new incident file
 			fetchIncidents = function (data) {
-				months = data;
-				// for month in months
-				// ajax incidents file
+				// temporary - ulimately will get this from the data parameter
+				var months = ['1999_10'];
+				// for each month, load the incidents file
+				airports = _.map(months, function(m) {
+					var dataUrl = "data/incidents/" + m + "_incidents.json";
+					$.ajax({
+						url:dataUrl,
+						dataType:"json",
+						success: function(data){
+
+							console.log(data);
+
+						},
+						error: function(jqXHR, textStatus, errorThrown){
+							console.log(textStatus, errorThrown);
+						}
+					});
+				}); // END airport map
 				// pass the data to fetchAirports function
 				// call updateGlobals
 			}
@@ -106,7 +121,8 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 
 			// call function to send airport array to map - this will definitely change
 			$(".testbutton").on("click", function(ev) {
-				updateMap();
+				//updateMap();
+				fetchIncidents();
 				stepThroughDates();
 			})
 
