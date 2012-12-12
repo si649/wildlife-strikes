@@ -17,6 +17,9 @@ $.extend(true,WSR,{
 
 var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely blanking...
 	return function(){
+
+		// temporarily storing array of current airports here
+		var currentAirports = [];
 		
 		// other function stuff goes here
 			
@@ -34,35 +37,30 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 						url:dataUrl,
 						dataType:"json",
 						success: function(data){
-							fetchAirports(data);
+							currentAirports = fetchAirports(data);
 						},
 						error: function(jqXHR, textStatus, errorThrown){
 							console.log(textStatus, errorThrown);
 						}
 					});
-				}); // END airport map
-				// WHO IS GOING TO CALL UPDATEGLOBALS?
-			}
+				}); // END month loop
+			} // END fetchIncidents
 
 			// extract airports from incident file
 			fetchAirports = function (data) {
-				// use underscore chaining to create array of airports
-				var airports = _.chain(data).pluck('AIRPORT_ID').flatten().uniq().without(undefined).value();
-				console.log(airports);
-				// return array of airports???
-			}
+				// use underscore chaining to return unique array of airports
+				return _.chain(data).pluck('AIRPORT_ID').flatten().uniq().without(undefined).value();
+			} // END fetchAirports
 
 			// update globals: date and current airports
 			updateGlobals = function (time,airports) {
 				// store current date array in global variable
 				// store current airport array in global variable
-				// call updateMap?
 			}
 			
 			// trigger map, sending array of current airports to map module
-			updateMap = function (airports) {
-				// temporary airport array
-				var airports = ['KDDC','KVQQ','6B6'];
+			updateMap = function (data) {
+				var airports = data;
 				WSR.vars.map.trigger('updateAirports', [airports]);
 			}
 		
@@ -123,6 +121,8 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			$(".testbutton").on("click", function(ev) {
 				//updateMap();
 				fetchIncidents();
+				console.log(currentAirports);
+				updateMap(currentAirports);
 				stepThroughDates();
 			})
 
