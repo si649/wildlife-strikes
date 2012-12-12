@@ -27,10 +27,9 @@
 			window.WSR = window.WSR || {};
 			$.extend(true,WSR,{
 				vars: {
-					date: function() {
-						// this will get more complex, but becomes a global way to grab the current "time"
-						return '2010';
-					},
+					date: [],
+					incidents: {},
+					airports: [],
 					mapH: $(window).height(), // set in $ready
 					mapW: $(window).width()	// set in $ready
 				},

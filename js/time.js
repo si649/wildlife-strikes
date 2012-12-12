@@ -33,10 +33,11 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 				});
 			} // END incrementTime
 
-			// ajax new incident file
+			// load new incident files
 			fetchIncidents = function (data) {
 				// temporary - ulimately will get this from the data parameter
 				var months = ['1999_10','1999_11'];
+				WSR.vars.incidents = {};
 				// for each month, load the incidents file
 				_.each(months, function(m) {
 					var dataUrl = "data/incidents/" + m + "_incidents.json";
@@ -44,10 +45,13 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 						url:dataUrl,
 						dataType:"json",
 						success: function(data){
+							// store geojson data in global array
+							WSR.vars.incidents[m] = data;
 							// merge airports into current airports, removing any duplicates
 							currentAirports = _.union(currentAirports, fetchAirports(data));
 							// check for end of array, then call...
 							updateMap(currentAirports);
+							WSR.vars.date = months;
 							// check if playing, then call setTimeout(incrementTime)
 						},
 						error: function(jqXHR, textStatus, errorThrown){
@@ -62,13 +66,6 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 				// use underscore chaining to return unique array of airports
 				return _.chain(data).pluck('AIRPORT_ID').flatten().uniq().without(undefined).value();
 			} // END fetchAirports
-
-			// update globals: date and current airports
-			updateGlobals = function (time,airports) {
-				// store current date array in global variable
-				// store current incidents in global variable
-				// store current airport array in global variable
-			}
 			
 			// trigger map, sending array of current airports to map module
 			updateMap = function (data) {
