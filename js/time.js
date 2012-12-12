@@ -23,13 +23,30 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			// increment time
 
 			// ajax new incident file
+			fetchIncidents = function (data) {
+				months = data;
+				// for month in months
+				// ajax incidents file
+				// pass the data to fetchAirports function
+				// call updateGlobals
+			}
 
 			// extract airports from incident file
+			fetchAirports = function (data) {
+				// use underscore chaining to create array of airports
+				// return array of airports
+			}
 
 			// update globals: date and current airports
+			updateGlobals = function (time,airports) {
+				// store current date array in global variable
+				// store current airport array in global variable
+				// call updateMap?
+			}
 			
 			// trigger map, sending array of current airports to map module
-			updateTime = function () {
+			updateMap = function (airports) {
+				// temporary airport array
 				var airports = ['KDDC','KVQQ','6B6'];
 				WSR.vars.map.trigger('updateAirports', [airports]);
 			}
@@ -89,7 +106,7 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 
 			// call function to send airport array to map - this will definitely change
 			$(".testbutton").on("click", function(ev) {
-				updateTime();
+				updateMap();
 				stepThroughDates();
 			})
 
