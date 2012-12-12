@@ -18,10 +18,22 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 		
 		// other function stuff goes here
 			
-			// increment time
+			// increment time - range: 1999_1 to 2012_7
+			incrementTime = function (data) {
+				var months = ['1999_11','1999_12','2000_1']; // temporary - ulimately will get this from the data parameter
+				months = _.map(months, function(m) {
+					if (m != '2012_7') {
+						mSplit = m.split('_');
+						// increment month if not december
+						if (mSplit[1] != '12') m = mSplit[0] + '_' + ++mSplit[1];
+						// increment year and set month to january
+						else m = ++mSplit[0] + '_' + '1';
+					}
+					return m;
+				});
+			} // END incrementTime
 
 			// ajax new incident file
-			// NO SETTIMEOUT LOOPING YET - JUST TRYING TO GET AIRPORT EXTRACTION WORKING
 			fetchIncidents = function (data) {
 				// temporary - ulimately will get this from the data parameter
 				var months = ['1999_10','1999_11'];
@@ -56,8 +68,7 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			
 			// trigger map, sending array of current airports to map module
 			updateMap = function (data) {
-				var airports = data;
-				WSR.vars.map.trigger('updateAirports', [airports]);
+				WSR.vars.map.trigger('updateAirports', [data]);
 			}
 		
 			// allow user to start/stop time's auto-increment
@@ -115,6 +126,7 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 
 			// call function to send airport array to map - this will definitely change
 			$(".testbutton").on("click", function(ev) {
+				incrementTime();
 				fetchIncidents();
 				console.log(currentAirports);
 				updateMap(currentAirports);
