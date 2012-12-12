@@ -1,10 +1,9 @@
-<script id="nodeDetails-Template" type="text/x-handlebars-template">
 <div id="nodeDetails">
 <h1>Testing!!!!</h1>
 	<dl>
-		// {{#each items}}
-		<dt class="animal">{{SPECIES}}</dt>
-			<dd class="remark">{{REMARKS}}</dd>
-		// {{/each}}
+		 {{#each items}}
+		<dt class="animal">Species: {{items.SPECIES}}</dt>
+			<dd class="remark">Remark: {{items.REMARKS}}</dd>
+		 {{/each}}
 	</dl>
-</script>
+</div>
