@@ -344,3 +344,12 @@ path {
 	width: 50px;
 	z-index: 100;
 }
+
+#reset .resetbutton {
+	position: absolute;
+	top: 130px;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	z-index: 100;
+}

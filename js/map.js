@@ -71,29 +71,19 @@ var Map = (function($,_,d3){
 					// Light Box Code From: http://kyleschaeffer.com/development/lightbox-jquery-css/
 
 					var airportData = d;
-
+					var testData = [];
 
 					//Grab JSON File and then Iterate Over It
-					$.getJSON("./Data/incidents/1999_10_incidents.json",function(data) {
-
-//********************
-//
-// Begin Iterating Over Incidents
-//
-//********************  							
-/*
+					$.getJSON("./Data/incidents/1999_10_incidents.json",function(data) { //This will need to be tied together to the time element
+						
   							$.each(data,function(i) {
 
-  								if(data[i].INDEX_NR == //what variable do I compare to? I need a primary key to function on)
-								console.log("this is...." + data[i].STATE);
+  								if(data[i].AIRPORT_ID == airportData.id) { //Compares all of the incidents in the file to the current airport and returns values that match
 
+  										testData.push({ SPECIES : data[i].SPECIES, REMARKS: data[i].REMARKS});
+										console.log("this is...." + data[i].SPECIES);
+								}
 							})
-*/
-//********************
-//
-// End Iterating Over Incidents
-//
-//********************
 
 						//Grab the Template and Compile
 						$.get("templates/nodeDetails.html", function(nodeTemplate) {
@@ -101,13 +91,20 @@ var Map = (function($,_,d3){
 							template = Handlebars.compile(nodeTemplate)
 
 							//Test Data For The Template
-							var context = { SPECIES: "My First Blog Post!", REMARKS: "Remarks go here"};
-							// var context = {
+							//var context = { SPECIES: "My First Blog Post!", REMARKS: "Remarks go here"};
+							console.log("the new array is : " + testData);
+							
+							//I need to figure out how to turn this JSON into a format the context can handle
+							testData = jQuery.parseJSON(testData);
+							console.log("this is the json" + testData);
+
+							var context = testData;
+							// var context = { 
 
 							// 					items: [
 
 							// 								{
-							// 									SPECIES: "My First Blog Post!",
+							// 									SPECIES: data.STATE,
 							// 									REMARKS: "Remarks go here"
 							// 								},
 
@@ -121,32 +118,9 @@ var Map = (function($,_,d3){
 							// 									REMARKS: "Remarks go here"
 							// 								}
 							// 							]
-							// };
+							// }
 
-//***********************************
-//
-// Start: Old Working infoboxContents
-//
-//***********************************
-/*
-							var infoboxContents = d3.select("body")
-							 					.append("div")
-						 							.attr("id","infoboxContents")
-													.html(	"Airport ID: " + airportData.id + "<br />" + 
 
-															"Airport Name: " + airportData.properties.name  + "<br />" + 
-
-															"<a href=\"http://maps.google.com/?q=" + airportData.properties.name + "\">Google Map</a>" + "<br />" + 
-
-															"Incident State: " + data[1]["STATE"] + "<br />"
-
-														 );
-*/
-//***********************************
-//
-// End: Old Working infoboxContents
-//
-//***********************************
 							var infoboxContents = d3.select("body")
 							 					.append("div")
 						 							.attr("id","infoboxContents");
@@ -348,6 +322,11 @@ var Map = (function($,_,d3){
 					})
 			}); // END map.on updateLines
 			
+			// experimenting with a reset button for the map
+			$(".resetbutton").on("click", function(ev) {
+				map.setView([39.810556, -98.556111],4);
+			});
+
 		} // END initMap
 	} // end return closure
 })(jQuery,_,d3);

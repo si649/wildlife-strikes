@@ -1,6 +1,10 @@
 <div id="nodeDetails">
 <h1>Testing!!!!</h1>
 	<dl>
-		<dt class="animal">{{SPECIES}}</dt>
-			<dd class="remark">{{REMARKS}}</dd>
+		 {{#each items}}
+		<dt class="animal">Species: {{items.SPECIES}}</dt>
+			<dd class="remark">Remark: {{items.REMARKS}}</dd>
+		 {{/each}}
 	</dl>
+</div>
+
