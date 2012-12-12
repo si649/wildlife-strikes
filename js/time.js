@@ -23,33 +23,33 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			// increment time
 
 			// ajax new incident file
+			// NO SETTIMEOUT LOOPING YET - JUST TRYING TO GET AIRPORT EXTRACTION WORKING
 			fetchIncidents = function (data) {
 				// temporary - ulimately will get this from the data parameter
 				var months = ['1999_10'];
 				// for each month, load the incidents file
-				airports = _.map(months, function(m) {
+				_.each(months, function(m) {
 					var dataUrl = "data/incidents/" + m + "_incidents.json";
 					$.ajax({
 						url:dataUrl,
 						dataType:"json",
 						success: function(data){
-
-							console.log(data);
-
+							fetchAirports(data);
 						},
 						error: function(jqXHR, textStatus, errorThrown){
 							console.log(textStatus, errorThrown);
 						}
 					});
 				}); // END airport map
-				// pass the data to fetchAirports function
-				// call updateGlobals
+				// WHO IS GOING TO CALL UPDATEGLOBALS?
 			}
 
 			// extract airports from incident file
 			fetchAirports = function (data) {
 				// use underscore chaining to create array of airports
-				// return array of airports
+				var airports = _.chain(data).pluck('AIRPORT_ID').flatten().uniq().without(undefined).value();
+				console.log(airports);
+				// return array of airports???
 			}
 
 			// update globals: date and current airports
