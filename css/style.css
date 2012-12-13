@@ -336,18 +336,9 @@ path {
 .nodeClicked {
 	fill: orange;
 }
-#time .testbutton {
+#time .playbutton {
 	position: absolute;
-	top: 75px;
-	right: 0;
-	height: 50px;
-	width: 50px;
-	z-index: 100;
-}
-
-#reset .resetbutton {
-	position: absolute;
-	top: 130px;
+	top: 150px;
 	right: 0;
 	height: 50px;
 	width: 50px;

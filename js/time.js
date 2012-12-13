@@ -38,6 +38,7 @@ var Timer = (function($,_,d3){
 						}
 						return m;
 					});
+					timeInterval = months;
 				};
 				fetchIncidents(months);
 			}; // END incrementTime
@@ -118,8 +119,7 @@ var Timer = (function($,_,d3){
 		this.initTime = function(parent) {
 
 			// call function to send airport array to map - this will definitely change
-			$(".testbutton").on("click", function(ev) {
-				//updateTime(['1999_1']);
+			$(".playbutton").on("click", function(ev) {
 				if (playing) playing = false;
 				else {
 					playing = true;
