@@ -14,13 +14,14 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 	return function(){
 
 		// TO DO: 
-		// cache incidents data in time module
+		// cache incidents data. check incidents before doing ajax call.
+		// make updates if last month a function.
 
-		var 
+		var incidents = {},
 			playInterval = 1000,
 			playing = false;
 		
-		changeTime = function (data) {
+		updateTime = function (data) {
 
 			var months = data;
 
@@ -46,10 +47,12 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 
 			// load new incident files
 			fetchIncidents = function (data) {
-				// temporary - ulimately will get this from the data parameter
 				var months = data;
+
+				// reset local and global variables
 				WSR.vars.incidents = {};
 				var currentAirports = [];
+
 				// for each month, load the incidents file
 				_.each(months, function(m,i) {
 					var dataUrl = "data/incidents/" + m + "_incidents.json";
@@ -57,19 +60,21 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 						url:dataUrl,
 						dataType:"json",
 						success: function(data){
-							// store incidents json data in global variable
+							// store incidents json data in local and global variables
 							WSR.vars.incidents[m] = data;
+							incidents[m] = data;
 							// merge airports into current airports, removing any duplicates
 							currentAirports = _.union(currentAirports, fetchAirports(data));
 							// check for final iteration, then update map and global variables
 							if (i == months.length - 1) {
+								// trigger change in map module
 								updateMap(currentAirports);
+								// update global variables
 								WSR.vars.date = months;
 								WSR.vars.airports = currentAirports;
-								console.log(currentAirports.length);
-								// if playing, call the settimeout loop
+								// if playing, call the loop
 								if (playing) {
-									setTimeout(function() {changeTime(months)}, playInterval);
+									setTimeout(function() {updateTime(months)}, playInterval);
 								};
 							};
 						},
@@ -78,6 +83,9 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 						}
 					});
 				}); // END month loop
+
+			console.log(incidents);
+
 			}; // END fetchIncidents
 
 			// extract airports from incident file
@@ -89,18 +97,18 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			// trigger map, sending array of current airports to map module
 			updateMap = function (data) {
 				WSR.vars.map.trigger('updateAirports', [data]);
-			};
+			}; // END updateMap
 
 			incrementTime(months);
 		
-		}; //END changeTime
+		}; //END updateTime
 		
 		// Constructor Function
 		this.initTime = function(parent) {
 
 			// call function to send airport array to map - this will definitely change
 			$(".testbutton").on("click", function(ev) {
-				changeTime(['1999_1']);
+				updateTime(['1999_1']);
 			});
 
 			//Call the function to build the time line
@@ -221,7 +229,7 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			  }
 			  console.log("call to months between", arrayOfDates(brush.extent()[0],brush.extent()[1]));
 
-			  changeTime(arrayOfDates(brush.extent()[0],brush.extent()[1]));
+			  updateTime(arrayOfDates(brush.extent()[0],brush.extent()[1]));
 
 			}
 			
