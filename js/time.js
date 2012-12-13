@@ -23,8 +23,9 @@ var Timer = (function($,_,d3){
 		updateTime = function (data) {
 
 			var months = data;
+			var currentAirports = [];
 
-			console.log('starting time - updateTime: ' + months);
+			//console.log('starting time - updateTime: ' + months);
 
 			// increment time - range: 1999_1 to 2012_7
 			incrementTime = function () {
@@ -43,7 +44,7 @@ var Timer = (function($,_,d3){
 						return m;
 					});
 
-				console.log('after incrementTime - playing or forward: ' + months);
+				//console.log('after incrementTime - playing or forward: ' + months);
 
 				};
 				if (backward) decrementTime();
@@ -65,7 +66,7 @@ var Timer = (function($,_,d3){
 					return m;
 				});
 
-				console.log('after decrementTime: ' + months);
+				//console.log('after decrementTime: ' + months);
 
 			}; // END decrementTime
 
@@ -73,7 +74,7 @@ var Timer = (function($,_,d3){
 			fetchIncidents = function () {
 				// reset local and global variables
 				WSR.vars.incidents = {};
-				var currentAirports = [];
+				//var currentAirports = [];
 
 				// for each month, load the incidents file
 				_.each(months, function(m,i) {
@@ -96,35 +97,63 @@ var Timer = (function($,_,d3){
 					}; // END else
 				}); // END month loop
 
-				updateIncidents = function (jsondata,m,i) {
-					// store incidents in global variable
-					WSR.vars.incidents[m] = jsondata;
-					// merge airports into current airports, removing any duplicates
-					currentAirports = _.union(currentAirports, fetchAirports(jsondata));
-					// check for final iteration, then update map and global variables
-					if (i == months.length - 1) {
-						console.log('updateIncidents final month: ' + months);
-						// trigger change in map module
-						updateMap(currentAirports);
-						// update local time variable
-						timeInterval = months;
-						// update global variables
-						WSR.vars.date = months;
-						WSR.vars.airports = currentAirports;
-						// trigger time update
-						updateTimeView();
-						// toggle forward / backward off
-						if (forward) forward = false;
-						if (backward) backward = false;
-						// if playing, call the loop
-						if (playing) {
-							console.log('playing is on - before setTimeout: ' + months);
-							setTimeout(function() {updateTime(months)}, playInterval);
-						};
-					};
-				}; // END updateIncidents
+				// updateIncidents = function (jsondata,m,i) {
+				// 	// store incidents in global variable
+				// 	WSR.vars.incidents[m] = jsondata;
+				// 	// merge airports into current airports, removing any duplicates
+				// 	currentAirports = _.union(currentAirports, fetchAirports(jsondata));
+				// 	// check for final iteration, then update map and global variables
+				// 	if (i == months.length - 1) {
+				// 		console.log('updateIncidents final month: ' + months);
+				// 		// trigger change in map module
+				// 		updateMap(currentAirports);
+				// 		// update local time variable
+				// 		timeInterval = months;
+				// 		// update global variables
+				// 		WSR.vars.date = months;
+				// 		WSR.vars.airports = currentAirports;
+				// 		// trigger time update
+				// 		updateTimeView();
+				// 		// toggle forward / backward off
+				// 		if (forward) forward = false;
+				// 		if (backward) backward = false;
+				// 		// if playing, call the loop
+				// 		if (playing) {
+				// 			console.log('playing is on - before setTimeout: ' + months);
+				// 			setTimeout(function() {updateTime(months)}, playInterval);
+				// 		};
+				// 	};
+				// }; // END updateIncidents
 
 			}; // END fetchIncidents
+
+			updateIncidents = function (jsondata,m,i) {
+				// store incidents in global variable
+				WSR.vars.incidents[m] = jsondata;
+				// merge airports into current airports, removing any duplicates
+				currentAirports = _.union(currentAirports, fetchAirports(jsondata));
+				// check for final iteration, then update map and global variables
+				if (i == months.length - 1) {
+					//console.log('updateIncidents final month: ' + months);
+					// trigger change in map module
+					updateMap(currentAirports);
+					// update local time variable
+					timeInterval = months;
+					// update global variables
+					WSR.vars.date = months;
+					WSR.vars.airports = currentAirports;
+					// trigger time update
+					updateTimeView();
+					// toggle forward / backward off
+					if (forward) forward = false;
+					if (backward) backward = false;
+					// if playing, call the loop
+					if (playing) {
+						//console.log('playing is on - before setTimeout: ' + months);
+						setTimeout(function() {updateTime(months)}, playInterval);
+					};
+				};
+			}; // END updateIncidents
 
 			// extract airports from incident file
 			fetchAirports = function (jsondata) {
