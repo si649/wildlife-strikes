@@ -801,8 +801,19 @@ a {
 
 }
 
-#nodeDetails dl, dl:nth-child(odd) {
+#nodeDetails dl, dt { 
 
-	background-color:#eee; 
 	clear: both;
+}
+
+#nodeDetails dt {
+
+	padding: 5px 5px 5px 5px;
+	background-color: #008080;
+}
+
+#nodeDetails dd {
+
+	padding: 5px 5px 5px 5px;
+	background-color: #CC6600;
 }

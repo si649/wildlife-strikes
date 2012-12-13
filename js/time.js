@@ -97,35 +97,6 @@ var Timer = (function($,_,d3){
 						}); // END ajax
 					}; // END else
 				}); // END month loop
-
-				// updateIncidents = function (jsondata,m,i) {
-				// 	// store incidents in global variable
-				// 	WSR.vars.incidents[m] = jsondata;
-				// 	// merge airports into current airports, removing any duplicates
-				// 	currentAirports = _.union(currentAirports, fetchAirports(jsondata));
-				// 	// check for final iteration, then update map and global variables
-				// 	if (i == months.length - 1) {
-				// 		console.log('updateIncidents final month: ' + months);
-				// 		// trigger change in map module
-				// 		updateMap(currentAirports);
-				// 		// update local time variable
-				// 		timeInterval = months;
-				// 		// update global variables
-				// 		WSR.vars.date = months;
-				// 		WSR.vars.airports = currentAirports;
-				// 		// trigger time update
-				// 		updateTimeView();
-				// 		// toggle forward / backward off
-				// 		if (forward) forward = false;
-				// 		if (backward) backward = false;
-				// 		// if playing, call the loop
-				// 		if (playing) {
-				// 			console.log('playing is on - before setTimeout: ' + months);
-				// 			setTimeout(function() {updateTime(months)}, playInterval);
-				// 		};
-				// 	};
-				// }; // END updateIncidents
-
 			}; // END fetchIncidents
 
 			updateIncidents = function (jsondata,m,i) {
@@ -174,8 +145,16 @@ var Timer = (function($,_,d3){
 				WSR.vars.map.trigger('updateAirports', [airportdata]);
 			}; // END updateMap
 
+			// update time display in UI controls
 			updateTimeView = function () {
 				console.log('CURRENT TIME INTERVAL: ' + months);
+				var firstMonth = months[0].split('_');
+				var monthDisplay = firstMonth[1] + '/' + firstMonth[0];
+				if (months.length > 1) {
+					var lastMonth = months[months.length - 1].split('_');
+					monthDisplay += ' - ' + lastMonth[1] + '/' + lastMonth[0];
+				};
+				$("#date span").html(monthDisplay);
 			}; // END updateTimeView
 
 			// start the whole she-bang
