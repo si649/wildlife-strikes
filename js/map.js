@@ -59,7 +59,8 @@ var Map = (function($,_,d3){
 				//Variable to hold the incident data that is loaded
 				var incidentData;
 
-				//Adds an infobox on a mouseon event
+				//*** Mouseclick Event Infobox
+			
 				function infoboxClick (d, path) {
 
 					//Airport Node Visual Effects
@@ -117,7 +118,8 @@ var Map = (function($,_,d3){
 				} //End of the infoClick Function
 
 
-				//Adds the infobox on a mouseover event
+				//*** Mouseover Event Infobox
+		
 				function infobox(d, path) {
 
 					var airportData = d;
@@ -127,58 +129,35 @@ var Map = (function($,_,d3){
 					
 					var strikesCount = 0;
 					
-					incidentData = WSR.vars.incidents["1999_1"];
+					//Grab the global variable
+					incidentData = WSR.vars.incidents; 
 
-					console.log("this is the incident data" + incidentData[1]);
-		  			
-		  			$.each(incidentData,function(i) {
+					$.each(incidentData, function(i){
+						$.each(incidentData[i], function(j){
 
-		  				if(incidentData[i].AIRPORT_ID == airportData.id) { //Compares all of the incidents in the file to the current airport and returns values that match
+							if(incidentData[i][j].AIRPORT_ID == airportData.id){
 
-		  					strikesCount++;
-		  					$("#tooltip p").html("Strike Count: " + strikesCount);
-
-		  					//console.log("this is the count for 1999_1 ---->" + strikesCount)
-							//console.log("this is the strike count..." + strikesCount);
-							//console.log("this is...." + data[i].SPECIES);
-						}
-		
-					});
-
-//**** Testing ****
-/*
-					$.getJSON("./Data/incidents/1999_10_incidents.json",function(data) { //This will need to be tied together to the time element
+								strikesCount++;
+								$("#tooltip p").html("Strike Count: " + strikesCount);
+								console.log("This is the strikes count..." + strikesCount);
 							
-							incidentData = data;
-				  			
-				  			$.each(data,function(i) {
-
-				  				if(data[i].AIRPORT_ID == airportData.id) { //Compares all of the incidents in the file to the current airport and returns values that match
-
-				  					strikesCount++;
-				  					$("#tooltip p").html("Strike Count: " + strikesCount);
-
-				  					//console.log("this is the count for 1999_1 ---->" + strikesCount)
-									//console.log("this is the strike count..." + strikesCount);
-									//console.log("this is...." + data[i].SPECIES);
-								}
+							}
 						});
 					});
-*/
-//**** End Testing ****
-					//Grabs the page X and Y position and moves the div infobox accordingly
+		
 					infoBox
-						.style("top", (d3.event.pageY) + "px") //+ "px")
-						.style("left", (d3.event.pageX + 20) + "px") //+ "px")
-						.style("width", 300 + "px")
-						.style("height", 60 + "px")
-						.style("opacity", .80)
-						.style("visibility","visible")
-						.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name + "<br />" + "<p>Strike Count: " + 0 + "</p>");
+							.style("top", (d3.event.pageY) + "px") //+ "px")
+							.style("left", (d3.event.pageX + 20) + "px") //+ "px")
+							.style("width", 300 + "px")
+							.style("height", 60 + "px")
+							.style("opacity", .80)
+							.style("visibility","visible")
+							.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name + "<br />" + "<p>Strike Count: " + 0 + "</p>");
 						
 				}
-
-				//Removes the infobox on a mouseout event
+				
+				//*** Mouseout Event Infobox
+				
 				function infoboxRemove(path) {
 
 					d3.select(path).classed("redDotMouse", false);
