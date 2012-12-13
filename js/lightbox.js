@@ -58,13 +58,10 @@ function lightbox(insertContent, ajaxContentUrl){
 
 // close the lightbox
 function closeLightbox(){
-
-	//**** Start -> Modified Code To Work With Wildlife Strikes
-			console.log("Inside the lightbox: " + nodeClicked);
-			nodeClicked = false;
 	
-	//**** End -> //Modified Code To Work With Wildlife Strikes
-	
+	//CSS Fade Effect
+	d3.select(".redDotClicked").classed("redDotClicked", false)
+			
 	// hide lightbox and shadow <div/>'s
 	$('#lightbox').hide();
 	$('#lightbox-shadow').hide();

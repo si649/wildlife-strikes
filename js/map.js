@@ -32,10 +32,6 @@ var Map = (function($,_,d3){
 			var chartNodes = svg.append("g");
 			var chartInfoBox = svg.append("g");
 
-			//InfoBox Variables
-
-			var nodeClicked = false;
-
 			// Use Leaflet to implement a D3 geographic projection.
 			function project(x) {
 				var point = map.latLngToLayerPoint(new L.LatLng(x[1], x[0]));
@@ -64,14 +60,15 @@ var Map = (function($,_,d3){
 				//Adds an infobox on a mouseon event
 				function infoboxClick (d, path) {
 
-					nodeClicked = true;
-
-					d3.select(path).style("fill","crimson");
-
+					//$(".redDotMouse").addClass("redDotClicked");
+					//d3.select(path).style("fill","crimson");
+					d3.select(path).classed("redDotClicked", true);
+					d3.select(path).classed("redDotTransition", true);
 					// Light Box Code From: http://kyleschaeffer.com/development/lightbox-jquery-css/
 
 					var airportData = d;
-					var testData = [];
+					var testData = {};
+					testData.items = [];
 
 					//Grab JSON File and then Iterate Over It
 					$.getJSON("./Data/incidents/1999_10_incidents.json",function(data) { //This will need to be tied together to the time element
@@ -80,7 +77,7 @@ var Map = (function($,_,d3){
 
   								if(data[i].AIRPORT_ID == airportData.id) { //Compares all of the incidents in the file to the current airport and returns values that match
 
-  										testData.push({ SPECIES : data[i].SPECIES, REMARKS: data[i].REMARKS});
+  										testData.items.push({ SPECIES : data[i].SPECIES, REMARKS: data[i].REMARKS});
 										console.log("this is...." + data[i].SPECIES);
 								}
 							})
@@ -90,37 +87,10 @@ var Map = (function($,_,d3){
 
 							template = Handlebars.compile(nodeTemplate)
 
-							//Test Data For The Template
-							//var context = { SPECIES: "My First Blog Post!", REMARKS: "Remarks go here"};
-							console.log("the new array is : " + testData);
-							
-							//I need to figure out how to turn this JSON into a format the context can handle
-							testData = jQuery.parseJSON(testData);
 							console.log("this is the json" + testData);
 
 							var context = testData;
-							// var context = { 
-
-							// 					items: [
-
-							// 								{
-							// 									SPECIES: data.STATE,
-							// 									REMARKS: "Remarks go here"
-							// 								},
-
-							// 								{
-							// 									SPECIES: "My Second Blog Post!",
-							// 									REMARKS: "Remarks go here"
-							// 								},
-
-							// 								{
-							// 									SPECIES: "My Third Blog Post!",
-							// 									REMARKS: "Remarks go here"
-							// 								}
-							// 							]
-							// }
-
-
+					
 							var infoboxContents = d3.select("body")
 							 					.append("div")
 						 							.attr("id","infoboxContents");
@@ -138,11 +108,14 @@ var Map = (function($,_,d3){
 					}); //End of the $.getJSON incidents call
 				} //End of the infoClick Function
 
+
+				//Adds the infobox on a mouseover event
 				function infobox(d, path) {
 
 					var airportData = d;
 					
-					d3.select(path).style("fill","crimson");
+					d3.select(path).classed("redDotMouse", true);
+					d3.select(path).classed("redDotTransition", false);
 					
 					//console.log("Mouse Position x: " + mousePos[0] + " Mouse Position y: " + mousePos[1])
 					infoBox
@@ -153,26 +126,14 @@ var Map = (function($,_,d3){
 						.style("opacity", .80)
 						.style("visibility","visible")
 						.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name);
-						//<br />" + "<a href=\"http://maps.google.com/?q=" + airportData.id + "\">Google Map</a>" + "<br />" + "<a href=\"\" onclick=\"updateMouseOver\">Click Me To Close</a>"
-						//<a href=\"http://maps.google.com/?q=" Google Query
-	
+						
 				}
 
-				//Removes the info box on a mouseout event
+				//Removes the infobox on a mouseout event
 				function infoboxRemove(path) {
 
-					console.log("Node Clicked Status: " + nodeClicked)
-					if(nodeClicked == false) {
-	
-						d3.select(path)
-							.style("fill","teal")
-							.style("transition-property","fill")
-							.style("transition-duration","4s");
-
-
-						infoBox.style("visibility","hidden");
-
-					}
+					d3.select(path).classed("redDotMouse", false);
+					infoBox.style("visibility","hidden");
 
 				}
 			
