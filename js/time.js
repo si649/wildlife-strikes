@@ -192,6 +192,7 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			    .on("brush", brush);
 
 			var svg = d3.select("body").append("svg")
+				.attr("class", "timeline")
 			    .attr("width", width + margin.left + margin.right)
 			    .attr("height", height + margin.top + margin.bottom);
 
@@ -200,7 +201,7 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 
 			// d3.csv("sp500.csv", function(error, data) {
 			// d3.json("../Data/incidents/1999_10_incidents.json", function(error, data) {
-			d3.json("../Data/incidents/totalincidents.json", function(error, data) {
+			d3.json("Data/incidents/totalincidents.json", function(data, error) {
 
 			  //Need to format the dates for chart
 			  data.forEach(function(d) {
