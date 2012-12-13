@@ -223,10 +223,12 @@ var Timer = (function($,_,d3){
 			    y = d3.scale.linear().range([height, 0]);
 
 			var xAxis = d3.svg.axis().scale(x).orient("bottom");
-			    // yAxis = d3.svg.axis().scale(y).orient("left");
 
 			var brush = d3.svg.brush()
 			    .x(x)
+			    .on("brushstart", function(d) {
+			    	$("#animals").trigger("clearLines");
+			    })
 			    .on("brush", brush);
 
 			var svg = d3.select("body").append("svg")
@@ -274,10 +276,6 @@ var Timer = (function($,_,d3){
 			      .attr("class", "x axis")
 			      .attr("transform", "translate(0," + height + ")")
 			      .call(xAxis);
-
-			  // brushChart.append("g")
-			  //     .attr("class", "y axis")
-			  //     .call(yAxis);
 
 			  brushChart.append("g")
 			      .attr("class", "brush") //was "x brush"
@@ -332,19 +330,14 @@ var Timer = (function($,_,d3){
 			}//end of brush
 
 			function clearBrushing() {
-
 				console.log("Made it into clear brushing function...")
 				d3.select(".brush").call(brush.clear());
-
-
-
 			}//end of clearBrushing
 
 			// call function to reset brushing
 			$(".clearbrushingbutton").on("click", function(ev) {
 				clearBrushing();
-			})
-			
+			})			
 
 		}//end of buildTimeLine
 		
