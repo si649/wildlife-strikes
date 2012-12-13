@@ -14,6 +14,7 @@ var Timer = (function($,_,d3){
 	return function(){
 
 		var incidents = {},
+			timeInterval = [],
 			playInterval = 1000,
 			playing = false;
 		
@@ -91,8 +92,6 @@ var Timer = (function($,_,d3){
 
 			}; // END fetchIncidents
 
-			console.log(incidents);
-
 			// extract airports from incident file
 			fetchAirports = function (data) {
 				// use underscore chaining to return unique array of airports
@@ -104,6 +103,7 @@ var Timer = (function($,_,d3){
 				WSR.vars.map.trigger('updateAirports', [data]);
 			}; // END updateMap
 
+			// start the whole she-bang
 			incrementTime(months);
 		
 		}; //END updateTime
@@ -113,7 +113,12 @@ var Timer = (function($,_,d3){
 
 			// call function to send airport array to map - this will definitely change
 			$(".testbutton").on("click", function(ev) {
-				updateTime(['1999_1']);
+				//updateTime(['1999_1']);
+				if (playing) playing = false;
+				else {
+					playing = true;
+					updateTime(timeInterval);
+				}
 			});
 
 			//Call the function to build the time line
@@ -238,9 +243,9 @@ var Timer = (function($,_,d3){
 			    console.log(monthsArray);
 			    return monthsArray;
 			  }
-			  console.log("call to months between", arrayOfDates(brush.extent()[0],brush.extent()[1]));
-
-			  updateTime(arrayOfDates(brush.extent()[0],brush.extent()[1]));
+			  timeInterval = arrayOfDates(brush.extent()[0],brush.extent()[1]);
+			  console.log("call to months between", timeInterval);
+			  updateTime(timeInterval);
 
 			}//end of brush
 
