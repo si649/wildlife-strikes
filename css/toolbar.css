@@ -12,11 +12,23 @@
 
 
 /********** 4. TimeLine / Toolbar  **********/
+#timeControler { /*Main div for time controls*/
+	width: 710px;
+	height: 140px;
+	background-color: lightgrey;
+	border: 1px;
+	border-color: black;
+	z-index: 999999999;
+	position:fixed;
+	top:30px;
+	right:10%;
+	left:24.55%;
 
+}
 
 .timeline {
 	position:fixed;
-	top:40px;
+	top:38px;
 	right:10%;
 	left:25%;
 	z-index: 1000;
@@ -33,9 +45,8 @@
 	fill:white;
 	stroke:black;
 }
-.timelineBackground rect{
-	fill:white;
-	stroke:black;
+.timeControler .timelineBackground rect{
+	background-color: white;
 }
 
 .brush .extent {
@@ -51,7 +62,7 @@
 	right:10%;
 	left:25%;
 	top:110px;
-	width: 798px;
+	width: 698px;
 	height: 50px;
 
 
@@ -61,7 +72,7 @@
 #toolbarbottom li{
 	display: inline-block;
 	vertical-align: top;
-	width: 19.8%;
+	width: 19.75%;
 	height: 50px;
 }
 
@@ -72,7 +83,7 @@
 
 }
 #toolbarbottom a{
-	width: 158px;
+	width: 138px;
 	height: 50px;
 
 }
