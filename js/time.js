@@ -16,7 +16,8 @@ var Timer = (function($,_,d3){
 		var incidents = {},
 			timeInterval = [],
 			playInterval = 1000,
-			playing = false;
+			playing = false,
+			forward = false;
 		
 		updateTime = function (data) {
 
@@ -24,7 +25,7 @@ var Timer = (function($,_,d3){
 
 			// increment time - range: 1999_1 to 2012_7
 			incrementTime = function (data) {
-				if (playing) {
+				if (playing || forward) {
 					months = _.map(months, function(m) {
 						if (m != '2012_7') {
 							mSplit = m.split('_');
@@ -86,6 +87,8 @@ var Timer = (function($,_,d3){
 						WSR.vars.airports = currentAirports;
 						// trigger time update
 						updateTimeView();
+						// toggle forward off
+						if (forward) forward = false;
 						// if playing, call the loop
 						if (playing) {
 							setTimeout(function() {updateTime(months)}, playInterval);
@@ -118,13 +121,19 @@ var Timer = (function($,_,d3){
 		// Constructor Function
 		this.initTime = function(parent) {
 
-			// call function to send airport array to map - this will definitely change
+			// play / pause
 			$(".playbutton").on("click", function(ev) {
 				if (playing) playing = false;
 				else {
 					playing = true;
 					updateTime(timeInterval);
 				}
+			});
+
+			// forward
+			$(".forwardbutton").on("click", function(ev) {
+				forward = true;
+				updateTime(timeInterval);
 			});
 
 			//Call the function to build the time line
