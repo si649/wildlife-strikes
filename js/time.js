@@ -13,14 +13,14 @@ $.extend(true,WSR,{
 var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely blanking...
 	return function(){
 
-		// TO DO: fix settimeout, cache incidents data in time module
+		// TO DO: cache incidents data in time module
 
-		// try play(['1999_1'])
+		// try changeTime(['1999_1'])
 
 		var playInterval = 1000,
-			playing = true;
+			playing = false;
 		
-		play = function (data) {
+		changeTime = function (data) {
 
 			var months = data;
 
@@ -73,7 +73,7 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 									console.log(currentAirports.length);
 									// if playing, call the settimeout loop
 									if (playing) {
-										setTimeout(play(months));
+										setTimeout(changeTime(months));
 									};
 								};
 							},
