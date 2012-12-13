@@ -51,23 +51,25 @@ var AnimalUI = (function($,_,d3){
 		// retrieve the family's json file, and execute a callback function if passed
 		// using the callback here lets us call getStrikes() without having to worry if async data is already loaded
 		WSR.models.Family.prototype.fetchAnimalData = function(view,callback) {
-			var dataUrl = "data/families/family"+this.id+".json";
+			var dataUrl = "data/families_bymonth/family"+this.id+".json";
 			var family = this;
 			view.el.append('<div class="spinner">');
 			$.ajax({
 				url:dataUrl,
 				dataType:"json",
 				success: function(data){
-					var animals = _.groupBy(data,"SPECIES_ID");
+					dataFlat = _.chain(data).values().flatten().value();
+					var animals = _.groupBy(dataFlat,"SPECIES_ID");
+					
 					_.each(animals, function(animal,key){
 						var strikes = {};
 						// sorts the strike records by year
 						// should offload more of this work directly into the JSON ?
 						_.each(animal, function(strike){ 
-							if(_.isUndefined(strikes[strike.INCIDENT_YEAR])){
-								strikes[strike.INCIDENT_YEAR] = [strike.AIRPORT_ID];
+							if(_.isUndefined(strikes[strike.INCIDENT_YEAR + "_" + strike.INCIDENT_MONTH])){
+								strikes[strike.INCIDENT_YEAR + "_" + strike.INCIDENT_MONTH] = [strike.AIRPORT_ID];
 							} else { 
-								strikes[strike.INCIDENT_YEAR].push(strike.AIRPORT_ID);
+								strikes[strike.INCIDENT_YEAR + "_" + strike.INCIDENT_MONTH].push(strike.AIRPORT_ID);
 							}
 						});
 						// push each animal to the Family Model's animals array
@@ -122,7 +124,19 @@ var AnimalUI = (function($,_,d3){
 			// depending on if the model is a Family or an Animal, make sure strikes is an Array of Objects
 			if(!$.isArray(strikes)) strikes = [strikes];
 			// extract just a list of the airport codes
-			var airports = _.chain(strikes).pluck(WSR.vars.date()).flatten().uniq().without(undefined).value();
+			var airports = [];
+			// *****  TEMP for when date is empty, everything has to start somewhere
+			if(WSR.vars.date.length < 1){
+				var mydate = "2010";
+			} else {
+				var mydate = WSR.vars.date;
+			}
+			
+			_.each(mydate, function(dateName){
+			
+				airports = airports.concat( _.chain(strikes).pluck(dateName).flatten().uniq().without(undefined).value());
+			});
+			console.log(airports);
 			// trigger the map's implementation of line drawing, passing view and airport list
 			WSR.vars.map.trigger('strikesByAnimal',[this,airports]);
 		} // END drawStrikeLines

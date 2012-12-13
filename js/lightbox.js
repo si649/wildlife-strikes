@@ -4,7 +4,7 @@
 	kyleschaeffer.com
 	* requires jQuery
 
-	Modified By: Phillip Tularak for FAA Airstrikes Visualization
+	Modified By: Phillip Tularak, Nikki Roda, Jeremy Salfen, Paul Ellebrecht, and Wesley Lauka for FAA Airstrikes Visualization SI649: Information Visualization www.si.umich.edu
 	www.philliptularak.com
 ****************************************/
 // display the lightbox
