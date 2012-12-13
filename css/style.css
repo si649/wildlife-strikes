@@ -336,9 +336,19 @@ path {
 .nodeClicked {
 	fill: orange;
 }
+
 #time .playbutton {
 	position: absolute;
 	top: 150px;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	z-index: 100;
+}
+
+#time .forwardbutton {
+	position: absolute;
+	top: 200px;
 	right: 0;
 	height: 50px;
 	width: 50px;
