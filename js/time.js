@@ -214,7 +214,7 @@ var Timer = (function($,_,d3){
 
 			var margin = {top: 10, right: 10, bottom: 10, left: 10},
 		    width = 1050 - margin.left - margin.right,
-		    height = 150 - margin.top - margin.bottom,
+		    height = 70 - margin.top - margin.bottom,
 		    barPadding = 1;
 
 			var parseDate = d3.time.format("%Y_%m").parse;
