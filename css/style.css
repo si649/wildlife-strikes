@@ -346,7 +346,7 @@ path {
 	z-index: 100;
 }
 
-#reset .resetbutton {
+#reset .leaflet-control-reset {
 	position: absolute;
 	top: 130px;
 	right: 0;
