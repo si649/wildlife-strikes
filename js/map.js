@@ -25,6 +25,7 @@ var Map = (function($,_,d3){
 			});
 			map.addLayer(layer);
 			map.zoomControl.setPosition("topright");
+			$("#map .leaflet-control a").eq(0).after('<a class="leaflet-control-reset" href="#" title="Reset Map"></a>');
 			
 			var svg = d3.select(map.getPanes().overlayPane).append("svg");
 			
@@ -55,57 +56,64 @@ var Map = (function($,_,d3){
 									.style("z-index","10")
 									.style("visibility","hidden");
 
-				//https://groups.google.com/forum/?fromgroups=#!topic/d3-js/GgFTf24ltjc
-				
+				//Variable to hold the incident data that is loaded
+				var incidentData;
+
 				//Adds an infobox on a mouseon event
 				function infoboxClick (d, path) {
 
-					//$(".redDotMouse").addClass("redDotClicked");
-					//d3.select(path).style("fill","crimson");
+					//Airport Node Visual Effects
 					d3.select(path).classed("redDotClicked", true);
 					d3.select(path).classed("redDotTransition", true);
-					// Light Box Code From: http://kyleschaeffer.com/development/lightbox-jquery-css/
 
+					//Load Airport Data From d3.select(path) Function
 					var airportData = d;
-					var testData = {};
-					testData.items = [];
 
-					//Grab JSON File and then Iterate Over It
-					$.getJSON("./Data/incidents/1999_10_incidents.json",function(data) { //This will need to be tied together to the time element
-						
-  							$.each(data,function(i) {
+					//Create Object To Store Filtered Data
+					var templateData = {};
+					var strikesCount = 0;
 
-  								if(data[i].AIRPORT_ID == airportData.id) { //Compares all of the incidents in the file to the current airport and returns values that match
-
-  										testData.items.push({ SPECIES : data[i].SPECIES, REMARKS: data[i].REMARKS});
-										console.log("this is...." + data[i].SPECIES);
-								}
-							})
-
-						//Grab the Template and Compile
-						$.get("templates/nodeDetails.html", function(nodeTemplate) {
-
-							template = Handlebars.compile(nodeTemplate)
-
-							console.log("this is the json" + testData);
-
-							var context = testData;
+					//Creates property items and makes it an array
+					templateData.items = [];
+					templateData.airport = airportData.properties.name;
 					
-							var infoboxContents = d3.select("body")
-							 					.append("div")
-						 							.attr("id","infoboxContents");
-													//.html(template(context));
-							//Diagnostics
-							console.log("This is the template: " + template)
-							console.log("This is the context: " + context)
-							console.log("This is the infoboxContents: " + infoboxContents)
-							
-							//Old Working Lightbox
-								//lightbox($("#infoboxContents").html());
-							lightbox($("#infoboxContents").html(template(context)));
+					//Uses the JSON file from infobox function and iterates over it
+					$.each(incidentData,function(i) {
+
+						if(incidentData[i].AIRPORT_ID == airportData.id) { //Compares all of the incidents in the file to the current airport and returns values that match
+
+								strikesCount++;
+								console.log("this is the strike count..." + strikesCount);
+								templateData.items.push({ SPECIES : incidentData[i].SPECIES, REMARKS: incidentData[i].REMARKS});
+								
+
+							console.log("this is...." + incidentData[i].SPECIES);
+							console.log("test test test")
+							console.log("this is.........." + incidentData[i].AIRPORT);
+						}
+					})
+					
+					//Grab the Template and Compile
+					$.get("templates/nodeDetails.html", function(nodeTemplate) {
+
+						template = Handlebars.compile(nodeTemplate)
+
+						//Set the Context Data
+						var context = templateData;
+				
+						var infoboxContents = d3.select("body")
+						 					.append("div")
+					 							.attr("id","infoboxContents");
+											
+						//Diagnostics
+						// console.log("This is the template: " + template)
+						// console.log("This is the context: " + context)
+						// console.log("This is the infoboxContents: " + infoboxContents)
 						
-						}); // End of the $.get("templates/nodeDetails") call
-					}); //End of the $.getJSON incidents call
+						//Lightbox call to nodeDetails Template
+						lightbox($("#infoboxContents").html(template(context)));
+					
+					}); // End of the $.get("templates/nodeDetails") call
 				} //End of the infoClick Function
 
 
@@ -117,7 +125,26 @@ var Map = (function($,_,d3){
 					d3.select(path).classed("redDotMouse", true);
 					d3.select(path).classed("redDotTransition", false);
 					
-					//console.log("Mouse Position x: " + mousePos[0] + " Mouse Position y: " + mousePos[1])
+					var strikesCount = 0;
+					
+					$.getJSON("./Data/incidents/1999_10_incidents.json",function(data) { //This will need to be tied together to the time element
+							
+							incidentData = data;
+				  			
+				  			$.each(data,function(i) {
+
+				  				if(data[i].AIRPORT_ID == airportData.id) { //Compares all of the incidents in the file to the current airport and returns values that match
+
+				  					strikesCount++;
+				  					$("#tooltip p").html("Strike Count: " + strikesCount);
+
+									//console.log("this is the strike count..." + strikesCount);
+									//console.log("this is...." + data[i].SPECIES);
+								}
+						});
+					});
+
+					//Grabs the page X and Y position and moves the div infobox accordingly
 					infoBox
 						.style("top", (d3.event.pageY) + "px") //+ "px")
 						.style("left", (d3.event.pageX + 20) + "px") //+ "px")
@@ -125,7 +152,7 @@ var Map = (function($,_,d3){
 						.style("height", 60 + "px")
 						.style("opacity", .80)
 						.style("visibility","visible")
-						.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name);
+						.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name + "<br />" + "<p>Strike Count: " + 0 + "</p>");
 						
 				}
 
@@ -282,7 +309,7 @@ var Map = (function($,_,d3){
 			}); // END map.on updateLines
 			
 			// experimenting with a reset button for the map
-			$(".resetbutton").on("click", function(ev) {
+			$(".leaflet-control-reset").on("click", function(ev) {
 				map.setView([39.810556, -98.556111],4);
 			});
 
