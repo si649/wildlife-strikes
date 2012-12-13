@@ -93,7 +93,8 @@ var Map = (function($,_,d3){
 										incidentRemarks = "No Remarks For This Incident";
 
 									}
-
+									
+									templateData.strikes = strikesCount;
 									templateData.items.push({ SPECIES : incidentData[i][j].SPECIES, REMARKS: incidentRemarks, DATE: incidentData[i][j].INCIDENT_DATE});
 									
 

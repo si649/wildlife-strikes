@@ -375,7 +375,7 @@ path {
 
 #nodeDetails {
 
-	width: 500px;
+	width: 500px;	
 
 }
 
@@ -474,6 +474,7 @@ path {
 	background: #fff;
 	z-index: 1001;
 	display: none;
+
 }
 #lightbox-shadow {
 	position: absolute;
@@ -514,6 +515,7 @@ path {
 
 #nodeDetails {
 
+	width: 760px;
 	padding: 20px 20px 20px 20px;
 
 }
@@ -782,5 +784,25 @@ a {
     width: 100%;
 }
 
-.mapbox{
+.mapbox {
+
     float:right;
+	vertical-align: top;
+    width: 300px;
+    padding: 20px 20px 40px 20px;
+    
+}
+.airportInfo {
+
+	float:left;
+    vertical-align: top;
+	width: 300px;
+	padding: 20px 20px 40px 20px;
+
+}
+
+#nodeDetails dl, dl:nth-child(odd) {
+
+	background-color:#eee; 
+	clear: both;
+}

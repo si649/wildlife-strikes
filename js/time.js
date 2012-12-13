@@ -18,7 +18,8 @@ var Timer = (function($,_,d3){
 			playInterval = 1000,
 			playing = false,
 			forward = false,
-			backward = false;
+			backward = false,
+			moveBrush;
 		
 		updateTime = function (data) {
 
@@ -145,10 +146,17 @@ var Timer = (function($,_,d3){
 					// trigger time update
 					updateTimeView();
 					// toggle forward / backward off
-					if (forward) forward = false;
-					if (backward) backward = false;
+					if (forward) {
+						moveBrush(true);
+						forward = false;
+					};
+					if (backward) {
+						moveBrush(false);
+						backward = false;
+					};
 					// if playing, call the loop
 					if (playing) {
+						moveBrush(true);
 						//console.log('playing is on - before setTimeout: ' + months);
 						setTimeout(function() {updateTime(months)}, playInterval);
 					};
@@ -201,10 +209,10 @@ var Timer = (function($,_,d3){
 				updateTime(timeInterval);
 			});
 
-			updateTime(defaultTime);
-
 			//Call the function to build the time line
 			buildTimeLine()
+
+			updateTime(defaultTime);
 
 		} // END initTime()
 		
@@ -337,7 +345,24 @@ var Timer = (function($,_,d3){
 			// call function to reset brushing
 			$(".clearbrushingbutton").on("click", function(ev) {
 				clearBrushing();
-			})			
+			})	
+
+			// shift brush left or right
+			moveBrush = function (right) {
+				// get current months
+				//console.log('left: ' + brush.extent()[0], 'right: ' + brush.extent()[1]); 
+				var leftDate = brush.extent()[0];
+				var rightDate = brush.extent()[1];
+
+				// increment or decrement depending on whether 'right' is true
+				brush.extent()[0] = leftDate.setMonth( (right? leftDate.getMonth() + 1 : leftDate.getMonth() - 1) );
+				brush.extent()[1] = rightDate.setMonth( (right? rightDate.getMonth() + 1 : rightDate.getMonth() - 1) );
+
+				// update brush
+				//console.log('new left: ' + leftDate, 'new right: ' + rightDate);
+				svg.select(".brush").call(brush.extent([leftDate, rightDate]));
+
+			}; // END moveBrush	
 
 		}//end of buildTimeLine
 		
