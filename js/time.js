@@ -25,26 +25,24 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			var months = data;
 
 			setTimeout(function() {
-
-				//console.log(months);
 			
 				// increment time - range: 1999_1 to 2012_7
 				incrementTime = function (data) {
-					//var months = data;
-					console.log('months ' + data);
-					months = _.map(months, function(m) {
-						if (m != '2012_7') {
-							mSplit = m.split('_');
-							// increment month if not december
-							if (mSplit[1] != '12') m = mSplit[0] + '_' + ++mSplit[1];
-							// increment year and set month to january
-							else m = ++mSplit[0] + '_' + '1';
-						} else {
-							// reset to first month in data
-							m = '1999_1';
-						}
-						return m;
-					});
+					if (playing) {
+						months = _.map(months, function(m) {
+							if (m != '2012_7') {
+								mSplit = m.split('_');
+								// increment month if not december
+								if (mSplit[1] != '12') m = mSplit[0] + '_' + ++mSplit[1];
+								// increment year and set month to january
+								else m = ++mSplit[0] + '_' + '1';
+							} else {
+								// reset to first month in data
+								m = '1999_1';
+							}
+							return m;
+						});
+					};
 					fetchIncidents(months);
 				} // END incrementTime
 
@@ -149,18 +147,9 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			} //)(); //end of stepThroughDates
 
 
-
-
-
-
-
 			// call function to send airport array to map - this will definitely change
 			$(".testbutton").on("click", function(ev) {
-				incrementTime();
-				fetchIncidents();
-				//console.log(currentAirports);
-				//updateMap(currentAirports);
-				stepThroughDates();
+				changeTime(['1999_1']);
 			})
 
 			// call function to draw widgets
