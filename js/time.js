@@ -22,13 +22,12 @@ var Timer = (function($,_,d3){
 		
 		updateTime = function (data) {
 
-			var months1 = data;
+			var months = data;
 
 			// increment time - range: 1999_1 to 2012_7
-			incrementTime = function (data) {
-				var months2 = data;
+			incrementTime = function () {
 				if (playing || forward) {
-					months2 = _.map(months2, function(m) {
+					months = _.map(months, function(m) {
 						if (m != '2012_7') {
 							mSplit = m.split('_');
 							// increment month if not december
@@ -41,16 +40,14 @@ var Timer = (function($,_,d3){
 						}
 						return m;
 					});
-					timeInterval = months2;
 				};
-				if (backward) months2 = decrementTime(months2);
-				fetchIncidents(months2);
+				if (backward) decrementTime();
+				timeInterval = months;
+				fetchIncidents();
 			}; // END incrementTime
 
-			decrementTime = function (data) {
-				var months4 = data;
-
-				months4 = _.map(months4, function(m) {
+			decrementTime = function () {
+				months = _.map(months, function(m) {
 					if (m != '1999_1') {
 						mSplit = m.split('_');
 						// decrement month if not january
@@ -63,22 +60,16 @@ var Timer = (function($,_,d3){
 					}
 					return m;
 				});
-				timeInterval = months4;
-
-				return months4;
-
 			}; // END decrementTime
 
 			// load new incident files
-			fetchIncidents = function (data) {
-				var months3 = data;
-
+			fetchIncidents = function () {
 				// reset local and global variables
 				WSR.vars.incidents = {};
 				var currentAirports = [];
 
 				// for each month, load the incidents file
-				_.each(months3, function(m,i) {
+				_.each(months, function(m,i) {
 					// check if incidents data already exists
 					if (m in incidents) updateIncidents(incidents[m],m,i);
 					else {
@@ -86,10 +77,10 @@ var Timer = (function($,_,d3){
 						$.ajax({
 							url:dataUrl,
 							dataType:"json",
-							success: function(data){
+							success: function(jsondata){
 								// store incidents json data in local variable
-								incidents[m] = data;
-								updateIncidents(data,m,i);
+								incidents[m] = jsondata;
+								updateIncidents(jsondata,m,i);
 							},
 							error: function(jqXHR, textStatus, errorThrown){
 								console.log(textStatus, errorThrown);
@@ -98,26 +89,26 @@ var Timer = (function($,_,d3){
 					}; // END else
 				}); // END month loop
 
-				updateIncidents = function (data,m,i) {
+				updateIncidents = function (jsondata,m,i) {
 					// store incidents in global variable
-					WSR.vars.incidents[m] = data;
+					WSR.vars.incidents[m] = jsondata;
 					// merge airports into current airports, removing any duplicates
-					currentAirports = _.union(currentAirports, fetchAirports(data));
+					currentAirports = _.union(currentAirports, fetchAirports(jsondata));
 					// check for final iteration, then update map and global variables
-					if (i == months3.length - 1) {
+					if (i == months.length - 1) {
 						// trigger change in map module
 						updateMap(currentAirports);
 						// update global variables
-						WSR.vars.date = months3;
+						WSR.vars.date = months;
 						WSR.vars.airports = currentAirports;
 						// trigger time update
-						updateTimeView(months3);
+						updateTimeView();
 						// toggle forward / backward off
 						if (forward) forward = false;
 						if (backward) backward = false;
 						// if playing, call the loop
 						if (playing) {
-							setTimeout(function() {updateTime(months3)}, playInterval);
+							setTimeout(function() {updateTime(months)}, playInterval);
 						};
 					};
 				}; // END updateIncidents
@@ -125,22 +116,22 @@ var Timer = (function($,_,d3){
 			}; // END fetchIncidents
 
 			// extract airports from incident file
-			fetchAirports = function (data) {
+			fetchAirports = function (jsondata) {
 				// use underscore chaining to return unique array of airports
-				return _.chain(data).pluck('AIRPORT_ID').flatten().uniq().without(undefined).value();
+				return _.chain(jsondata).pluck('AIRPORT_ID').flatten().uniq().without(undefined).value();
 			}; // END fetchAirports
 			
 			// trigger map, sending array of current airports to map module
-			updateMap = function (data) {
-				WSR.vars.map.trigger('updateAirports', [data]);
+			updateMap = function (airportdata) {
+				WSR.vars.map.trigger('updateAirports', [airportdata]);
 			}; // END updateMap
 
-			updateTimeView = function (data) {
-				console.log('CURRENT TIME INTERVAL: ' + data);
+			updateTimeView = function () {
+				console.log('CURRENT TIME INTERVAL: ' + months);
 			}; // END updateTimeView
 
 			// start the whole she-bang
-			incrementTime(months1);
+			incrementTime();
 		
 		}; //END updateTime
 		
