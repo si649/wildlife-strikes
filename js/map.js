@@ -73,7 +73,7 @@ var Map = (function($,_,d3){
 					var templateData = {};
 					var strikesCount = 0;
 
-					//Creates property items and makes it an array
+					//Creates property items annd makes it an array
 					templateData.items = [];
 					templateData.airport = airportData.properties.name;
 					
@@ -127,6 +127,26 @@ var Map = (function($,_,d3){
 					
 					var strikesCount = 0;
 					
+					incidentData = WSR.vars.incidents["1999_1"];
+
+					console.log("this is the incident data" + incidentData[1]);
+		  			
+		  			$.each(incidentData,function(i) {
+
+		  				if(incidentData[i].AIRPORT_ID == airportData.id) { //Compares all of the incidents in the file to the current airport and returns values that match
+
+		  					strikesCount++;
+		  					$("#tooltip p").html("Strike Count: " + strikesCount);
+
+		  					//console.log("this is the count for 1999_1 ---->" + strikesCount)
+							//console.log("this is the strike count..." + strikesCount);
+							//console.log("this is...." + data[i].SPECIES);
+						}
+		
+					});
+
+//**** Testing ****
+/*
 					$.getJSON("./Data/incidents/1999_10_incidents.json",function(data) { //This will need to be tied together to the time element
 							
 							incidentData = data;
@@ -138,12 +158,14 @@ var Map = (function($,_,d3){
 				  					strikesCount++;
 				  					$("#tooltip p").html("Strike Count: " + strikesCount);
 
+				  					//console.log("this is the count for 1999_1 ---->" + strikesCount)
 									//console.log("this is the strike count..." + strikesCount);
 									//console.log("this is...." + data[i].SPECIES);
 								}
 						});
 					});
-
+*/
+//**** End Testing ****
 					//Grabs the page X and Y position and moves the div infobox accordingly
 					infoBox
 						.style("top", (d3.event.pageY) + "px") //+ "px")
