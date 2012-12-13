@@ -176,6 +176,8 @@ var Timer = (function($,_,d3){
 
 			updateTimeView = function () {
 				console.log('CURRENT TIME INTERVAL: ' + months);
+				// $("#tooltip p").html("Strike Count: " + strikesCount);
+				$("#date span").html('HI!');
 			}; // END updateTimeView
 
 			// start the whole she-bang
