@@ -10,12 +10,8 @@ $.extend(true,WSR,{
 	vars: {}
 });	
 
-var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely blanking...
+var Timer = (function($,_,d3){
 	return function(){
-
-		// TO DO: 
-		// cache incidents data. check incidents before doing ajax call.
-		// make updates if last month a function.
 
 		var incidents = {},
 			playInterval = 1000,
@@ -55,38 +51,47 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 
 				// for each month, load the incidents file
 				_.each(months, function(m,i) {
-					var dataUrl = "data/incidents/" + m + "_incidents.json";
-					$.ajax({
-						url:dataUrl,
-						dataType:"json",
-						success: function(data){
-							// store incidents json data in local and global variables
-							WSR.vars.incidents[m] = data;
-							incidents[m] = data;
-							// merge airports into current airports, removing any duplicates
-							currentAirports = _.union(currentAirports, fetchAirports(data));
-							// check for final iteration, then update map and global variables
-							if (i == months.length - 1) {
-								// trigger change in map module
-								updateMap(currentAirports);
-								// update global variables
-								WSR.vars.date = months;
-								WSR.vars.airports = currentAirports;
-								// if playing, call the loop
-								if (playing) {
-									setTimeout(function() {updateTime(months)}, playInterval);
-								};
-							};
-						},
-						error: function(jqXHR, textStatus, errorThrown){
-							console.log(textStatus, errorThrown);
-						}
-					});
+					// check if incidents data already exists
+					if (m in incidents) updateIncidents(incidents[m],m,i);
+					else {
+						var dataUrl = "data/incidents/" + m + "_incidents.json";
+						$.ajax({
+							url:dataUrl,
+							dataType:"json",
+							success: function(data){
+								// store incidents json data in local variable
+								incidents[m] = data;
+								updateIncidents(data,m,i);
+							},
+							error: function(jqXHR, textStatus, errorThrown){
+								console.log(textStatus, errorThrown);
+							}
+						}); // END ajax
+					}; // END else
 				}); // END month loop
 
-			console.log(incidents);
+				updateIncidents = function (data,m,i) {
+					// store incidents in global variable
+					WSR.vars.incidents[m] = data;
+					// merge airports into current airports, removing any duplicates
+					currentAirports = _.union(currentAirports, fetchAirports(data));
+					// check for final iteration, then update map and global variables
+					if (i == months.length - 1) {
+						// trigger change in map module
+						updateMap(currentAirports);
+						// update global variables
+						WSR.vars.date = months;
+						WSR.vars.airports = currentAirports;
+						// if playing, call the loop
+						if (playing) {
+							setTimeout(function() {updateTime(months)}, playInterval);
+						};
+					};
+				}; // END updateIncidents
 
 			}; // END fetchIncidents
+
+			console.log(incidents);
 
 			// extract airports from incident file
 			fetchAirports = function (data) {
