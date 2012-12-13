@@ -366,7 +366,7 @@ path {
 
 #nodeDetails {
 
-
+	width: 500px;
 
 }
 
@@ -459,8 +459,8 @@ path {
 	font-size: 1.2em;
 	position: absolute;
 	top: 0;
-	left: 50%;
-	width: 500px;
+	left: 40%;
+	width: 800px;
 	margin-left: -250px;
 	background: #fff;
 	z-index: 1001;
@@ -505,7 +505,18 @@ path {
 
 #nodeDetails {
 
+	padding: 20px 20px 20px 20px;
 
+}
+
+#nodeDetails h1 {
+
+	font-size: 1.2em;
+}
+
+#nodeDetailsList p {
+
+	margin-top: 20px;
 
 }
 
@@ -535,7 +546,7 @@ path {
 	position:absolute;
 	bottom:0;
 	right:5%;
-	z-index: 99999999;
+	z-index: 1000;
 }
 
 .timeline .axis path,
