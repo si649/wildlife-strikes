@@ -269,7 +269,10 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYA
 }
 
 /********** 3. Map  **********/
-
+.leaflet-control-zoom a.leaflet-control-reset {
+	background-image: url(../images/leaflet_reset.png);
+	margin-bottom: 5px;
+}
 #map {
 	width: 0px;	/* set on load to window size */
 	height: 0px; /* set on load to window size */
