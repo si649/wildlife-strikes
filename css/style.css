@@ -269,6 +269,144 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYA
 }
 
 /********** 3. Map  **********/
+#map {
+	width: 0px;	/* set on load to window size */
+	height: 0px; /* set on load to window size */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+path {
+	fill: teal;
+	stroke: #fff;
+	stroke-width: 1.5px;
+
+}
+.line {
+	stroke-width: .5;
+	-webkit-transform: translateZ(0); /* force gpu render */
+	-webkit-transition: stroke-width 0.2s ease-out;  /* Safari 3.2+, Chrome */
+	   -moz-transition: stroke-width 0.2s ease-out;  /* Firefox 4-15 */
+	     -o-transition: stroke-width 0.2s ease-out;  /* Opera 10.5–12.00 */
+	        transition: stroke-width 0.2s ease-out;  /* Firefox 16+, Opera 12.50+ */
+}
+.line:hover {
+	stroke-width: 2;
+	cursor: pointer;
+}
+#tooltip{
+
+	background-color: #FFFFFF;
+	border: solid;
+	border-width: 1px;
+	font-size: 1.2em;
+
+}
+#lightbox {
+	font-size: 1.2em;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 500px;
+	margin-left: -250px;
+	background: #fff;
+	z-index: 1001;
+	display: none;
+}
+#lightbox-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+	z-index: 1000;
+	display: none;
+}
+#infoboxContents {
+
+	font-family: verdana;
+}
+.nodeClicked {
+	fill: orange;
+}
+#time .testbutton {
+	position: absolute;
+	top: 75px;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	z-index: 100;
+}
+
+#reset .resetbutton {
+	position: absolute;
+	top: 130px;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	z-index: 100;
+}
+
+#nodeDetails {
+
+
+
+}
+
+.redDotMouse {
+
+	fill: crimson;
+}
+
+.redDotClicked {
+
+	fill: crimson;
+
+}
+
+.redDotTransition {
+
+	-webkit-transform: translateZ(0); /* force gpu render */
+	-webkit-transition: fill 3s ease-out;  /* Safari 3.2+, Chrome */
+	   -moz-transition: fill 3s ease-out;  /* Firefox 4-15 */
+	     -o-transition: fill 3s ease-out;  /* Opera 10.5–12.00 */
+	        transition: fill 3s ease-out;  /* Firefox 16+, Opera 12.50+ */
+	
+}
+
+/********** 4. TimeLine  **********/
+.timeline {
+	position:fixed;
+	bottom:0;
+	right:0;
+	z-index: 99999999;
+}
+
+.timeline .axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.timeline .timelineBackground {
+	fill:white;
+}
+
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
 .leaflet-control-zoom a.leaflet-control-reset {
 	background-image: url(../images/leaflet_reset.png);
 	margin-bottom: 5px;
@@ -344,7 +482,6 @@ path {
 	height: 50px;
 	width: 50px;
 	z-index: 100;
-<<<<<<< HEAD
 }
 
 #reset .resetbutton {
@@ -617,7 +754,3 @@ a {
 
 .mapbox{
     float:right;
-
-=======
->>>>>>> origin
-}

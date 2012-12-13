@@ -1,4 +1,4 @@
-var margin = {top: 10, right: 10, bottom: 100, left: 40},
+var margin = {top: 10, right: 10, bottom: 10, left: 40},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom,
     barPadding = 1;
@@ -51,7 +51,7 @@ d3.json("../Data/incidents/totalincidents.json", function(error, data) {
 
   brushChart.append("g")
       .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
+      //.attr("transform", "translate(0," + height + ")")
       .call(xAxis);
 
   brushChart.append("g")
@@ -63,7 +63,8 @@ d3.json("../Data/incidents/totalincidents.json", function(error, data) {
       .call(brush)
     .selectAll("rect")
       .attr("y", -6)
-      .attr("height", height + 7);
+      .attr("height", height + 7)
+      .on("click", clearBrush);
 });
 
 function brush() {
@@ -106,4 +107,8 @@ function brush() {
   }
   console.log("call to months between", arrayOfDates(brush.extent()[0],brush.extent()[1]));
 
+}
+
+function clearBrush () {
+  d3.select("g .x .brush").call(brush.clear());
 }
