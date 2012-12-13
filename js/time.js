@@ -221,7 +221,7 @@ var Timer = (function($,_,d3){
 		function buildTimeLine () {
 
 			var margin = {top: 10, right: 10, bottom: 10, left: 10},
-		    width = 1050 - margin.left - margin.right,
+		    width = 700 - margin.left - margin.right,
 		    height = 70 - margin.top - margin.bottom,
 		    barPadding = 1;
 
@@ -247,8 +247,10 @@ var Timer = (function($,_,d3){
 			//rectangle for back of chart
 			svg.append("rect")
 				.attr("class", "timelineBackground")
-			    .attr("width", width + margin.left + margin.right)
-			    .attr("height", height + margin.top + margin.bottom);
+				.attr("x",-10)
+				.attr("y",-10)
+			    .attr("width", width + margin.left + margin.right + 20 )
+			    .attr("height", height + margin.top + margin.bottom + 20);
 
 			var brushChart = svg.append("g")
 			    .attr("transform", "translate(" + margin.left + ", 0)"); // + margin.top + ")");
