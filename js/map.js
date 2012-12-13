@@ -304,7 +304,7 @@ var Map = (function($,_,d3){
 			}); // END map.on updateLines
 			
 			// experimenting with a reset button for the map
-			$(".resetbutton").on("click", function(ev) {
+			$(".leaflet-control-reset").on("click", function(ev) {
 				map.setView([39.810556, -98.556111],4);
 			});
 
