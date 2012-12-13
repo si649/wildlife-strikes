@@ -16,7 +16,8 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 		// TO DO: 
 		// cache incidents data in time module
 
-		var playInterval = 1000,
+		var 
+			playInterval = 1000,
 			playing = false;
 		
 		changeTime = function (data) {
