@@ -227,7 +227,7 @@ var Timer = (function($,_,d3){
 			var brush = d3.svg.brush()
 			    .x(x)
 			    .on("brushstart", function(d) {
-			    	$("#animals").trigger("clearLines");
+			    	WSR.vars.map.trigger("clearLines");
 			    })
 			    .on("brush", brush);
 
