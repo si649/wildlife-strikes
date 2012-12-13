@@ -25,6 +25,7 @@ var Map = (function($,_,d3){
 			});
 			map.addLayer(layer);
 			map.zoomControl.setPosition("topright");
+			$("#map .leaflet-control a").eq(0).after('<a class="leaflet-control-reset" href="#" title="Reset Map"></a>');
 			
 			var svg = d3.select(map.getPanes().overlayPane).append("svg");
 			
