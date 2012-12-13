@@ -24,6 +24,8 @@ var Timer = (function($,_,d3){
 
 			var months = data;
 
+			console.log('starting time - updateTime: ' + months);
+
 			// increment time - range: 1999_1 to 2012_7
 			incrementTime = function () {
 				if (playing || forward) {
@@ -40,9 +42,11 @@ var Timer = (function($,_,d3){
 						}
 						return m;
 					});
+
+				console.log('after incrementTime - playing or forward: ' + months);
+
 				};
 				if (backward) decrementTime();
-				timeInterval = months;
 				fetchIncidents();
 			}; // END incrementTime
 
@@ -60,6 +64,9 @@ var Timer = (function($,_,d3){
 					}
 					return m;
 				});
+
+				console.log('after decrementTime: ' + months);
+
 			}; // END decrementTime
 
 			// load new incident files
@@ -96,8 +103,11 @@ var Timer = (function($,_,d3){
 					currentAirports = _.union(currentAirports, fetchAirports(jsondata));
 					// check for final iteration, then update map and global variables
 					if (i == months.length - 1) {
+						console.log('updateIncidents final month: ' + months);
 						// trigger change in map module
 						updateMap(currentAirports);
+						// update local time variable
+						timeInterval = months;
 						// update global variables
 						WSR.vars.date = months;
 						WSR.vars.airports = currentAirports;
@@ -108,6 +118,7 @@ var Timer = (function($,_,d3){
 						if (backward) backward = false;
 						// if playing, call the loop
 						if (playing) {
+							console.log('playing is on - before setTimeout: ' + months);
 							setTimeout(function() {updateTime(months)}, playInterval);
 						};
 					};
@@ -138,6 +149,8 @@ var Timer = (function($,_,d3){
 		// Constructor Function
 		this.initTime = function(parent) {
 
+			var defaultTime = ['2009_1'];
+
 			// play / pause
 			$(".playbutton").on("click", function(ev) {
 				if (playing) playing = false;
@@ -158,6 +171,8 @@ var Timer = (function($,_,d3){
 				backward = true;
 				updateTime(timeInterval);
 			});
+
+			updateTime(defaultTime);
 
 			//Call the function to build the time line
 			buildTimeLine()
