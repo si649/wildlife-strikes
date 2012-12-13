@@ -355,6 +355,15 @@ path {
 	z-index: 100;
 }
 
+#time .backwardbutton {
+	position: absolute;
+	top: 250px;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	z-index: 100;
+}
+
 #nodeDetails {
 
 

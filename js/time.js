@@ -17,16 +17,18 @@ var Timer = (function($,_,d3){
 			timeInterval = [],
 			playInterval = 1000,
 			playing = false,
-			forward = false;
+			forward = false,
+			backward = false;
 		
 		updateTime = function (data) {
 
-			var months = data;
+			var months1 = data;
 
 			// increment time - range: 1999_1 to 2012_7
 			incrementTime = function (data) {
+				var months2 = data;
 				if (playing || forward) {
-					months = _.map(months, function(m) {
+					months2 = _.map(months2, function(m) {
 						if (m != '2012_7') {
 							mSplit = m.split('_');
 							// increment month if not december
@@ -39,21 +41,44 @@ var Timer = (function($,_,d3){
 						}
 						return m;
 					});
-					timeInterval = months;
+					timeInterval = months2;
 				};
-				fetchIncidents(months);
+				if (backward) months2 = decrementTime(months2);
+				fetchIncidents(months2);
 			}; // END incrementTime
+
+			decrementTime = function (data) {
+				var months4 = data;
+
+				months4 = _.map(months4, function(m) {
+					if (m != '1999_1') {
+						mSplit = m.split('_');
+						// decrement month if not january
+						if (mSplit[1] != '1') m = mSplit[0] + '_' + --mSplit[1];
+						// decrement year and set month to december
+						else m = --mSplit[0] + '_' + '12';
+					} else {
+						// reset to first month in data
+						m = '2012_7';
+					}
+					return m;
+				});
+				timeInterval = months4;
+
+				return months4;
+
+			}; // END decrementTime
 
 			// load new incident files
 			fetchIncidents = function (data) {
-				var months = data;
+				var months3 = data;
 
 				// reset local and global variables
 				WSR.vars.incidents = {};
 				var currentAirports = [];
 
 				// for each month, load the incidents file
-				_.each(months, function(m,i) {
+				_.each(months3, function(m,i) {
 					// check if incidents data already exists
 					if (m in incidents) updateIncidents(incidents[m],m,i);
 					else {
@@ -79,19 +104,20 @@ var Timer = (function($,_,d3){
 					// merge airports into current airports, removing any duplicates
 					currentAirports = _.union(currentAirports, fetchAirports(data));
 					// check for final iteration, then update map and global variables
-					if (i == months.length - 1) {
+					if (i == months3.length - 1) {
 						// trigger change in map module
 						updateMap(currentAirports);
 						// update global variables
-						WSR.vars.date = months;
+						WSR.vars.date = months3;
 						WSR.vars.airports = currentAirports;
 						// trigger time update
-						updateTimeView();
-						// toggle forward off
+						updateTimeView(months3);
+						// toggle forward / backward off
 						if (forward) forward = false;
+						if (backward) backward = false;
 						// if playing, call the loop
 						if (playing) {
-							setTimeout(function() {updateTime(months)}, playInterval);
+							setTimeout(function() {updateTime(months3)}, playInterval);
 						};
 					};
 				}; // END updateIncidents
@@ -109,12 +135,12 @@ var Timer = (function($,_,d3){
 				WSR.vars.map.trigger('updateAirports', [data]);
 			}; // END updateMap
 
-			updateTimeView = function () {
-				console.log('CURRENT TIME INTERVAL: ' + months);
+			updateTimeView = function (data) {
+				console.log('CURRENT TIME INTERVAL: ' + data);
 			}; // END updateTimeView
 
 			// start the whole she-bang
-			incrementTime(months);
+			incrementTime(months1);
 		
 		}; //END updateTime
 		
@@ -133,6 +159,12 @@ var Timer = (function($,_,d3){
 			// forward
 			$(".forwardbutton").on("click", function(ev) {
 				forward = true;
+				updateTime(timeInterval);
+			});
+
+			// forward
+			$(".backwardbutton").on("click", function(ev) {
+				backward = true;
 				updateTime(timeInterval);
 			});
 
