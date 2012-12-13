@@ -384,9 +384,9 @@ path {
 
 /********** 4. TimeLine  **********/
 .timeline {
-	position:absolute;
+	position:fixed;
 	bottom:0;
-	right:5%;
+	right:0;
 	z-index: 99999999;
 }
 
@@ -397,8 +397,14 @@ path {
   shape-rendering: crispEdges;
 }
 
+.timeline .timelineBackground {
+	fill:white;
+}
+
+
 .brush .extent {
   stroke: #fff;
   fill-opacity: .125;
   shape-rendering: crispEdges;
 }
+

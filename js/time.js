@@ -174,9 +174,9 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 		//This is the function to build the 
 		function buildTimeLine () {
 
-			var margin = {top: 10, right: 10, bottom: 100, left: 40},
-		    width = 960 - margin.left - margin.right,
-		    height = 500 - margin.top - margin.bottom,
+			var margin = {top: 10, right: 10, bottom: 10, left: 10},
+		    width = 1050 - margin.left - margin.right,
+		    height = 150 - margin.top - margin.bottom,
 		    barPadding = 1;
 
 			var parseDate = d3.time.format("%Y_%m").parse;
@@ -184,8 +184,8 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			var x = d3.time.scale().range([0, width]),
 			    y = d3.scale.linear().range([height, 0]);
 
-			var xAxis = d3.svg.axis().scale(x).orient("bottom"),
-			    yAxis = d3.svg.axis().scale(y).orient("left");
+			var xAxis = d3.svg.axis().scale(x).orient("bottom");
+			    // yAxis = d3.svg.axis().scale(y).orient("left");
 
 			var brush = d3.svg.brush()
 			    .x(x)
@@ -196,8 +196,14 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			    .attr("width", width + margin.left + margin.right)
 			    .attr("height", height + margin.top + margin.bottom);
 
+			//rectangle for back of chart
+			svg.append("rect")
+				.attr("class", "timelineBackground")
+			    .attr("width", width + margin.left + margin.right)
+			    .attr("height", height + margin.top + margin.bottom);
+
 			var brushChart = svg.append("g")
-			    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+			    .attr("transform", "translate(" + margin.left + ", 0)"); // + margin.top + ")");
 
 			// d3.csv("sp500.csv", function(error, data) {
 			// d3.json("../Data/incidents/1999_10_incidents.json", function(error, data) {
@@ -231,12 +237,12 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			      .attr("transform", "translate(0," + height + ")")
 			      .call(xAxis);
 
-			  brushChart.append("g")
-			      .attr("class", "y axis")
-			      .call(yAxis);
+			  // brushChart.append("g")
+			  //     .attr("class", "y axis")
+			  //     .call(yAxis);
 
 			  brushChart.append("g")
-			      .attr("class", "x brush")
+			      .attr("class", "brush") //was "x brush"
 			      .call(brush)
 			    .selectAll("rect")
 			      .attr("y", -6)
@@ -283,7 +289,18 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			  }
 			  console.log("call to months between", arrayOfDates(brush.extent()[0],brush.extent()[1]));
 
-			}
+			}//end of brush
+
+			function clearBrushing() {
+
+
+			}//end of clearBrushing
+
+			// call function to reset brushing
+			$(".resetBrush").on("click", function(ev) {
+				clearBrushing();
+			})
+
 			
 
 		}//end of buildTimeLine
