@@ -213,7 +213,7 @@ var Timer = (function($,_,d3){
 		function buildTimeLine () {
 
 			var margin = {top: 10, right: 10, bottom: 10, left: 10},
-		    width = 1050 - margin.left - margin.right,
+		    width = 800 - margin.left - margin.right,
 		    height = 70 - margin.top - margin.bottom,
 		    barPadding = 1;
 
