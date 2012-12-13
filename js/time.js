@@ -13,38 +13,36 @@ $.extend(true,WSR,{
 var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely blanking...
 	return function(){
 
-		// TO DO: fix settimeout, cache incidents data in time module
+		// TO DO: cache incidents data in time module
 
-		// try play(['1999_1'])
+		// try changeTime(['1999_1'])
 
 		var playInterval = 1000,
-			playing = true;
+			playing = false;
 		
-		play = function (data) {
+		changeTime = function (data) {
 
 			var months = data;
 
 			setTimeout(function() {
-
-				//console.log(months);
 			
 				// increment time - range: 1999_1 to 2012_7
 				incrementTime = function (data) {
-					//var months = data;
-					console.log('months ' + data);
-					months = _.map(months, function(m) {
-						if (m != '2012_7') {
-							mSplit = m.split('_');
-							// increment month if not december
-							if (mSplit[1] != '12') m = mSplit[0] + '_' + ++mSplit[1];
-							// increment year and set month to january
-							else m = ++mSplit[0] + '_' + '1';
-						} else {
-							// reset to first month in data
-							m = '1999_1';
-						}
-						return m;
-					});
+					if (playing) {
+						months = _.map(months, function(m) {
+							if (m != '2012_7') {
+								mSplit = m.split('_');
+								// increment month if not december
+								if (mSplit[1] != '12') m = mSplit[0] + '_' + ++mSplit[1];
+								// increment year and set month to january
+								else m = ++mSplit[0] + '_' + '1';
+							} else {
+								// reset to first month in data
+								m = '1999_1';
+							}
+							return m;
+						});
+					};
 					fetchIncidents(months);
 				} // END incrementTime
 
@@ -73,7 +71,7 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 									console.log(currentAirports.length);
 									// if playing, call the settimeout loop
 									if (playing) {
-										setTimeout(play(months));
+										setTimeout(changeTime(months));
 									};
 								};
 							},
@@ -149,18 +147,9 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			} //)(); //end of stepThroughDates
 
 
-
-
-
-
-
 			// call function to send airport array to map - this will definitely change
 			$(".testbutton").on("click", function(ev) {
-				incrementTime();
-				fetchIncidents();
-				//console.log(currentAirports);
-				//updateMap(currentAirports);
-				stepThroughDates();
+				changeTime(['1999_1']);
 			})
 
 			// call function to draw widgets
@@ -192,6 +181,7 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 			    .on("brush", brush);
 
 			var svg = d3.select("body").append("svg")
+				.attr("class", "timeline")
 			    .attr("width", width + margin.left + margin.right)
 			    .attr("height", height + margin.top + margin.bottom);
 
@@ -200,7 +190,7 @@ var Timer = (function($,_,d3){	// is "Time" a library name in JS? completely bla
 
 			// d3.csv("sp500.csv", function(error, data) {
 			// d3.json("../Data/incidents/1999_10_incidents.json", function(error, data) {
-			d3.json("../Data/incidents/totalincidents.json", function(error, data) {
+			d3.json("Data/incidents/totalincidents.json", function(data, error) {
 
 			  //Need to format the dates for chart
 			  data.forEach(function(d) {
