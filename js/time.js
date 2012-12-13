@@ -223,13 +223,13 @@ var Timer = (function($,_,d3){
 			    .attr("width", width + margin.left + margin.right)
 			    .attr("height", height + margin.top + margin.bottom);
 
-			//rectangle for back of chart
-			svg.append("rect")
-				.attr("class", "timelineBackground")
-				.attr("x",-10)
-				.attr("y",-10)
-			    .attr("width", width + margin.left + margin.right + 20 )
-			    .attr("height", height + margin.top + margin.bottom + 20);
+			// //rectangle for back of chart
+			// svg.append("rect")
+			// 	.attr("class", "timelineBackground")
+			// 	.attr("x",-10)
+			// 	.attr("y",-10)
+			//     .attr("width", width + margin.left + margin.right + 20 )
+			//     .attr("height", height + margin.top + margin.bottom + 20);
 
 			var brushChart = svg.append("g")
 			    .attr("transform", "translate(" + margin.left + ", 0)"); // + margin.top + ")");
