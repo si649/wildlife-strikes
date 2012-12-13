@@ -75,7 +75,8 @@ var Map = (function($,_,d3){
 
 					//Creates property items and makes it an array
 					templateData.items = [];
-
+					templateData.airport = airportData.properties.name;
+					
 					//Uses the JSON file from infobox function and iterates over it
 					$.each(incidentData,function(i) {
 
@@ -84,7 +85,11 @@ var Map = (function($,_,d3){
 								strikesCount++;
 								console.log("this is the strike count..." + strikesCount);
 								templateData.items.push({ SPECIES : incidentData[i].SPECIES, REMARKS: incidentData[i].REMARKS});
+								
+
 							console.log("this is...." + incidentData[i].SPECIES);
+							console.log("test test test")
+							console.log("this is.........." + incidentData[i].AIRPORT);
 						}
 					})
 					
@@ -101,9 +106,9 @@ var Map = (function($,_,d3){
 					 							.attr("id","infoboxContents");
 											
 						//Diagnostics
-						console.log("This is the template: " + template)
-						console.log("This is the context: " + context)
-						console.log("This is the infoboxContents: " + infoboxContents)
+						// console.log("This is the template: " + template)
+						// console.log("This is the context: " + context)
+						// console.log("This is the infoboxContents: " + infoboxContents)
 						
 						//Lightbox call to nodeDetails Template
 						lightbox($("#infoboxContents").html(template(context)));
