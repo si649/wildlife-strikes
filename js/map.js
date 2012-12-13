@@ -138,7 +138,7 @@ var Map = (function($,_,d3){
 							if(incidentData[i][j].AIRPORT_ID == airportData.id){
 
 								strikesCount++;
-								$("#tooltip p").html("Strike Count: " + strikesCount);
+								//$("#tooltip p").html("Strike Count: 88888"); //+ strikesCount); --> old working
 								console.log("This is the strikes count..." + strikesCount);
 							
 							}
@@ -146,13 +146,14 @@ var Map = (function($,_,d3){
 					});
 		
 					infoBox
-							.style("top", (d3.event.pageY) + "px") //+ "px")
-							.style("left", (d3.event.pageX + 20) + "px") //+ "px")
+							.style("top", (d3.event.pageY) + "px")
+							.style("left", (d3.event.pageX + 20) + "px")
 							.style("width", 300 + "px")
 							.style("height", 60 + "px")
 							.style("opacity", .80)
 							.style("visibility","visible")
-							.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name + "<br />" + "<p>Strike Count: " + 0 + "</p>");
+							.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name + "<br />" + "<p>Strike Count: " + strikesCount + "</p>");
+							//.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name + "<br />" + "<p>Strike Count: " + 0 + "</p>"); -> old working
 						
 				}
 				
