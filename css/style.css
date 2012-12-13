@@ -386,7 +386,7 @@ path {
 .timeline {
 	position:absolute;
 	bottom:0;
-	right:0;
+	right:5%;
 	z-index: 99999999;
 }
 
