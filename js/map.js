@@ -94,12 +94,13 @@ var Map = (function($,_,d3){
 
 									}
 
-									templateData.items.push({ SPECIES : incidentData[i][j].SPECIES, REMARKS: incidentRemarks});
+									templateData.items.push({ SPECIES : incidentData[i][j].SPECIES, REMARKS: incidentRemarks, DATE: incidentData[i][j].INCIDENT_DATE});
 									
 
 								console.log("this is...." + incidentData[i][j].SPECIES);
 								console.log("test test test")
 								console.log("this is.........." + incidentData[i][j].AIRPORT);
+								console.log("this is the incident date...." + incidentData[i][j].INCIDENT_DATE);
 							}
 						});
 					});

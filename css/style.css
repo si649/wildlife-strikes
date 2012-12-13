@@ -364,6 +364,15 @@ path {
 	z-index: 100;
 }
 
+#time .clearbrushingbutton {
+	position: absolute;
+	top: 300px;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	z-index: 100;
+}
+
 #nodeDetails {
 
 	width: 500px;
