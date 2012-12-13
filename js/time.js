@@ -304,11 +304,15 @@ var Timer = (function($,_,d3){
 
 			function clearBrushing() {
 
+				console.log("Made it into clear brushing function...")
+				d3.select(".brush").call(brush.clear());
+
+
 
 			}//end of clearBrushing
 
 			// call function to reset brushing
-			$(".resetBrush").on("click", function(ev) {
+			$(".clearbrushingbutton").on("click", function(ev) {
 				clearBrushing();
 			})
 			
