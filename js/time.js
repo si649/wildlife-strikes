@@ -83,6 +83,8 @@ var Timer = (function($,_,d3){
 						// update global variables
 						WSR.vars.date = months;
 						WSR.vars.airports = currentAirports;
+						// trigger time update
+						updateTimeView();
 						// if playing, call the loop
 						if (playing) {
 							setTimeout(function() {updateTime(months)}, playInterval);
@@ -102,6 +104,10 @@ var Timer = (function($,_,d3){
 			updateMap = function (data) {
 				WSR.vars.map.trigger('updateAirports', [data]);
 			}; // END updateMap
+
+			updateTimeView = function () {
+				console.log('CURRENT TIME INTERVAL: ' + months);
+			}; // END updateTimeView
 
 			// start the whole she-bang
 			incrementTime(months);
