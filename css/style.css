@@ -381,3 +381,24 @@ path {
 	        transition: fill 3s ease-out;  /* Firefox 16+, Opera 12.50+ */
 	
 }
+
+/********** 4. TimeLine  **********/
+.timeline {
+	position:absolute;
+	bottom:0;
+	right:0;
+	z-index: 99999999;
+}
+
+.timeline .axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
