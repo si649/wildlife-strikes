@@ -3,6 +3,9 @@
 	by Kyle Schaeffer
 	kyleschaeffer.com
 	* requires jQuery
+
+	Modified By: Phillip Tularak for FAA Airstrikes Visualization
+	www.philliptularak.com
 ****************************************/
 // display the lightbox
 function lightbox(insertContent, ajaxContentUrl){
