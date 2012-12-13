@@ -320,6 +320,11 @@ var Map = (function($,_,d3){
 						return newPos.y; 
 					})
 			}); // END map.on updateLines
+			WSR.vars.map.on('clearLines',function(ev) {
+				chartLines.selectAll("line").remove();
+				$("#animals li").removeClass('active');
+			});
+			
 			
 			// experimenting with a reset button for the map
 			$(".leaflet-control-reset").on("click", function(ev) {
