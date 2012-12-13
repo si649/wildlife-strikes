@@ -1,0 +1,76 @@
+/* WSR Main Stylesheet
+**
+** Contents:
+** 1. CSS Reset Declarations
+** 2. Animal UI
+** 3. Map
+**
+**
+** NOTE: this is all pretty messy, I'm more than happy to 
+** 	clean it up when I get a chance - wesley
+*/
+
+
+#time .playbutton {
+	position: absolute;
+	top: 150px;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	z-index: 100;
+}
+
+#time .forwardbutton {
+	position: absolute;
+	top: 200px;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	z-index: 100;
+}
+
+#time .backwardbutton {
+	position: absolute;
+	top: 250px;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	z-index: 100;
+}
+
+#time .clearbrushingbutton {
+	position: absolute;
+	top: 300px;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	z-index: 100;
+}
+
+/********** 4. TimeLine  **********/
+
+.timeline {
+	position:absolute;
+	bottom:0;
+	right:5%;
+	z-index: 1000;
+}
+
+.timeline .axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.timeline .timelineBackground {
+	fill:white;
+}
+
+
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
