@@ -79,20 +79,30 @@ var Map = (function($,_,d3){
 					templateData.airport = airportData.properties.name;
 					
 					//Uses the JSON file from infobox function and iterates over it
-					$.each(incidentData,function(i) {
+					$.each(incidentData, function(i){
+						$.each(incidentData[i], function(j){
 
-						if(incidentData[i].AIRPORT_ID == airportData.id) { //Compares all of the incidents in the file to the current airport and returns values that match
+							if(incidentData[i][j].AIRPORT_ID == airportData.id) { //Compares all of the incidents in the file to the current airport and returns values that match
 
-								strikesCount++;
-								console.log("this is the strike count..." + strikesCount);
-								templateData.items.push({ SPECIES : incidentData[i].SPECIES, REMARKS: incidentData[i].REMARKS});
-								
+									strikesCount++;
+									console.log("this is the strike count..." + strikesCount);
+									var incidentRemarks = incidentData[i][j].REMARKS;
+									
+									if(incidentRemarks == "") {
 
-							console.log("this is...." + incidentData[i].SPECIES);
-							console.log("test test test")
-							console.log("this is.........." + incidentData[i].AIRPORT);
-						}
-					})
+										incidentRemarks = "No Remarks For This Incident";
+
+									}
+
+									templateData.items.push({ SPECIES : incidentData[i][j].SPECIES, REMARKS: incidentRemarks});
+									
+
+								console.log("this is...." + incidentData[i][j].SPECIES);
+								console.log("test test test")
+								console.log("this is.........." + incidentData[i][j].AIRPORT);
+							}
+						});
+					});
 					
 					//Grab the Template and Compile
 					$.get("templates/nodeDetails.html", function(nodeTemplate) {
