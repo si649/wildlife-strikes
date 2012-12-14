@@ -305,12 +305,23 @@ var Map = (function($,_,d3){
 			}); // end JSON load				
 				
 			WSR.vars.map.on('deselectAnimal',function(ev,view) {
-				chartLines.selectAll("."+view.model.id)
-					.transition()
-						.delay(function(d,i) { return i * 50 })
-						.duration(150)
+				// get number of lines being drawn
+				var lineCount = chartLines.selectAll("."+view.model.id);
+
+				// if number of connected airports is small, remove lines with slowish transition
+				if (lineCount[0].length < 50) {
+					lineCount.transition()
+						.delay(function(d,i) { return i * 25; })
+						.duration(25)
 						.attr("opacity",0)
 						.remove();
+				} else {
+					lineCount.transition()
+						.delay(function(d,i) { return i * 1.05; })
+						.attr("opacity",0)
+						.remove();
+				}
+
 			}); // END map.on deselectAnimal
 			
 			WSR.vars.map.on('updateLines',function(ev,view) {
