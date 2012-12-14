@@ -165,7 +165,7 @@ var Map = (function($,_,d3){
 							.style("left", (d3.event.pageX + 20) + "px")
 							.style("width", 300 + "px")
 							.style("height", 60 + "px")
-							.style("opacity", .80)
+							.style("opacity", .70)
 							.style("visibility","visible")
 							.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name + "<br />" + "<p>Strike Count: " + strikesCount + "</p>");
 							//.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name + "<br />" + "<p>Strike Count: " + 0 + "</p>"); -> old working
