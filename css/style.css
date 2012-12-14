@@ -372,6 +372,13 @@ path {
 
 }
 
+#nodeDetails .airportInfo h1 {
+
+	font-size: 3.4em;
+	font-weight: bold;
+	text-transform: uppercase;
+	
+}
 .redDotMouse {
 
 	fill: crimson;
@@ -770,7 +777,7 @@ a {
 
     float:right;
 	vertical-align: top;
-    width: 300px;
+    width: 260px;
     padding: 20px 20px 40px 20px;
     
 }
@@ -779,7 +786,7 @@ a {
 	float:left;
     vertical-align: top;
 	width: 300px;
-	padding: 20px 20px 40px 20px;
+	padding: 20px 40px 40px 20px;
 
 }
 
