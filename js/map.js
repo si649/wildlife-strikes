@@ -48,7 +48,7 @@ var Map = (function($,_,d3){
 
 			    path.pointRadius(5);
 
-			    var currentAirports = collection.features;
+			    var currentAirports = [];
 
 				//Constructs the SVG elements for the infobox. Each line of text needs its own element and all of the elements need to be in the same "g" group
 
@@ -80,9 +80,12 @@ var Map = (function($,_,d3){
 					//Creates property items annd makes it an array
 					templateData.items = [];
 					templateData.airport = airportData.properties.name;
-					
+
 					//Uses the JSON file from infobox function and iterates over it
 					$.each(incidentData, function(i){
+
+						console.log("this is where I'm working...-----> " + incidentData.i)
+						
 						$.each(incidentData[i], function(j){
 
 							if(incidentData[i][j].AIRPORT_ID == airportData.id) { //Compares all of the incidents in the file to the current airport and returns values that match
@@ -305,12 +308,23 @@ var Map = (function($,_,d3){
 			}); // end JSON load				
 				
 			WSR.vars.map.on('deselectAnimal',function(ev,view) {
-				chartLines.selectAll("."+view.model.id)
-					.transition()
-						.delay(function(d,i) { return i * 50 })
-						.duration(150)
+				// get number of lines being drawn
+				var lineCount = chartLines.selectAll("."+view.model.id);
+
+				// if number of connected airports is small, remove lines with slowish transition
+				if (lineCount[0].length < 50) {
+					lineCount.transition()
+						.delay(function(d,i) { return i * 25; })
+						.duration(25)
 						.attr("opacity",0)
 						.remove();
+				} else {
+					lineCount.transition()
+						.delay(function(d,i) { return i * 1.05; })
+						.attr("opacity",0)
+						.remove();
+				}
+
 			}); // END map.on deselectAnimal
 			
 			WSR.vars.map.on('updateLines',function(ev,view) {
