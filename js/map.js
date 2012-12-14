@@ -163,11 +163,11 @@ var Map = (function($,_,d3){
 					infoBox
 							.style("top", (d3.event.pageY) + "px")
 							.style("left", (d3.event.pageX + 20) + "px")
-							// .style("width", 300 + "px")
+							.style("width", airportData.properties.name.length * 10)
 							// .style("height", 60 + "px")
 							// .style("opacity", .70)
 							.style("visibility","visible")
-							.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name + "<br />" + "<p>Strike Count: " + strikesCount + "</p>");
+							.html("<p>" + airportData.properties.name + "</p>" + "Airport ID: " + airportData.id  + "<br />" + "Strike Count: " + strikesCount);
 							//.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name + "<br />" + "<p>Strike Count: " + 0 + "</p>"); -> old working
 						
 				}
