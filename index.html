@@ -33,7 +33,7 @@
 			window.WSR = window.WSR || {};
 			$.extend(true,WSR,{
 				vars: {
-					date: [],
+					date: ['2009_1'],
 					incidents: {},
 					airports: [],
 					mapH: $(window).height(), // set in $ready
@@ -45,15 +45,15 @@
 			$('#map').css({'width':WSR.vars.mapW,'height':WSR.vars.mapH});
 			
 			/** Initialize Modules **/
-			
+	
 			var map = new Map();
 			map.initMap("#map")  // initialize map
-			
-			var animalUI = new AnimalUI();
-			animalUI.initAnimalUI("#animals"); // initialize Species Buttons
-			
+
 			var time = new Timer();
 			time.initTime("#time");	// initialize time controls
+
+			var animalUI = new AnimalUI();
+			animalUI.initAnimalUI("#animals"); // initialize Species Buttons
 			
 		}); // END $.ready
 	});
