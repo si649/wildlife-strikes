@@ -18,6 +18,9 @@ function lightbox(insertContent, ajaxContentUrl){
 
 			closeLightbox();
 		});
+		//sticky rest of the page
+		$('#animals').addClass("freeze");
+		
 		$('body').append(theShadow);
 		$('body').append(theLightbox);
 	}
@@ -64,10 +67,12 @@ function closeLightbox(){
 	
 	//CSS Fade Effect
 	d3.select(".redDotClicked").classed("redDotClicked", false)
-			
+		
 	// hide lightbox and shadow <div/>'s
 	$('#lightbox').hide();
 	$('#lightbox-shadow').hide();
+	// un-sticky rest of the page
+	$('#animals').removeClass("freeze");
 
 	// remove contents of lightbox in case a video or other content is actively playing
 	$('#lightbox').empty();
