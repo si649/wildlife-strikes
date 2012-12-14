@@ -272,6 +272,22 @@ var AnimalUI = (function($,_,d3){
 					console.log(textStatus, errorThrown)
 			}});
 			
+			//Append Paragraph Tag To Be Used For Animals Slider Tab
+			$(parent).append("<p id=\"sliderTab\"></p>");
+			var clickCount = 0;
+			$("#sliderTab").on("click", function(){
+							
+				if(clickCount % 2 == 0){
+
+					$(parent).animate({"left":"-250px"}, 850, "easeInOutCubic");
+
+				} else {
+
+					$(parent).animate({"left":"0px"}, 850, "easeOutCubic");
+
+				}
+				clickCount++;
+			});
 		} // END initAnimalUI()
 	} // end return closure
 })(jQuery,_,d3);
