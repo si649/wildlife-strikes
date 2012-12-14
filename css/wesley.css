@@ -1,0 +1,7 @@
+/* Modifications for later merge back into the main style.css, saving here to avoid potential conflicts */
+
+/* Fixing up scrolling on the details lightbox */
+
+.freeze, #lightbox-shadow {
+	position: fixed !important;
+}
