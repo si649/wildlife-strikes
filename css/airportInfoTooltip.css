@@ -1,0 +1,18 @@
+
+
+#tooltip{
+
+	background-color: white;
+	border: solid;
+	border-width: 1px;
+
+	width: 200px;
+	height: 60px;
+
+}
+
+#tooltip text {
+	font-size: 12pt;
+	text-align: center;
+}
+
