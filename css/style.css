@@ -301,14 +301,6 @@ path {
 	stroke-width: 2;
 	cursor: pointer;
 }
-#tooltip{
-
-	background-color: #FFFFFF;
-	border: solid;
-	border-width: 1px;
-	font-size: 1.2em;
-
-}
 #lightbox {
 	font-size: 1.2em;
 	position: absolute;
@@ -460,14 +452,6 @@ path {
 .line:hover {
 	stroke-width: 2;
 	cursor: pointer;
-}
-#tooltip{
-
-	background-color: #FFFFFF;
-	border: solid;
-	border-width: 1px;
-	font-size: 1.2em;
-
 }
 #lightbox {
 	font-size: 1.2em;
