@@ -21,7 +21,10 @@ var Map = (function($,_,d3){
 			var layer = new L.StamenTileLayer("toner-lite");	// switch to "watercolor" for fun times!
 			var map = new L.Map(parent.substr(1, parent.length-1), {
 			    center: new L.LatLng(39.810556, -98.556111),
-			    zoom: 4
+			    minZoom: 3,
+			    zoom: 4,
+			    attributionControl: false,
+			    scrollWheelZoom: false
 			});
 			map.addLayer(layer);
 			map.zoomControl.setPosition("topright");
