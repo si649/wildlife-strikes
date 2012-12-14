@@ -277,11 +277,9 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYA
 	top: 0;
 	left: 0;
 	z-index: 10;
-	-webkit-filter: hue-rotate(253deg)
-	invert(100%);
-	-moz-filter: hue-rotate(253deg)
-	invert(100%);
+	
 }
+
 
 path {
 	fill: teal;
