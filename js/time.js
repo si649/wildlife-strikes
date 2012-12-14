@@ -188,6 +188,11 @@ var Timer = (function($,_,d3){
 				updateTime(timeInterval);
 			});
 
+			// reset
+			$(".clearbrushingbutton").on("click", function(ev) {
+				updateTime(defaultTime);
+			});
+
 			//Call the function to build the time line
 			buildTimeLine()
 
