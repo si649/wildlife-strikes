@@ -5,3 +5,106 @@
 .freeze, #lightbox-shadow {
 	position: fixed !important;
 }
+
+#currentDate {
+	display: block;
+	text-align: center;
+
+	}
+#currentDate a span {
+	width: 120px;
+}
+#currentDate span {
+	display: inline-block;
+	margin: 0 auto;
+	line-height: 35px;
+	font-size: 1.5em;
+	font-family: Helvetica,Arial;
+	font-weight: bold;
+	color: #555;
+	text-shadow: 0 1px 0 rgba(255, 255, 255,.8);
+}
+#timeControler {
+	background-image: linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(236,236,236)),
+		color-stop(1, rgb(250,250,250))
+	);
+	border: 1px solid #aaa;
+	border-top:none;
+	border-bottom-color: #999;
+	border-radius: 4px;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, .25), inset 0 -3px 0 rgba(0, 0, 0, .1);
+	overflow: visible;
+	height: auto;
+}
+#toolbarbottom  {
+	display: black;
+	position: static;
+	width: auto;
+	border: 0;
+	text-align: center;
+	margin-top: .5em;
+}
+#toolbarbottom li {
+	height: auto;
+	width: auto;
+	margin-top: .5em;
+	padding: 0 1em;
+}
+#toolbarbottom button {
+	text-shadow: 0 1px #white;
+	display: inline-block;
+	border: 0;
+	background: white;
+	height: 35px;
+	width: 100px;
+	border-radius: 4px;
+	background-image: linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(236,236,236)),
+		color-stop(1, rgb(250,250,250))
+	);
+	border: 1px solid #bbb;
+	box-shadow: 0 2px 0 rgba(255,255,255,.7),0 -1px #ddd,inset 0 -1px #eee;
+	-webkit-transition: all 0.2s ease-out;  /* Safari 3.2+, Chrome */
+	   -moz-transition: all 0.2s ease-out;  /* Firefox 4-15 */
+	     -o-transition: all 0.2s ease-out;  /* Opera 10.5–12.00 */
+	        transition: all 0.2s ease-out;  /* Firefox 16+, Opera 12.50+ */
+}
+#toolbarbottom button:hover {
+	background-image: linear-gradient(bottom, rgb(246,246,246) 0%, rgb(250,250,250) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(246,246,246) 0%, rgb(250,250,250) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(246,246,246) 0%, rgb(250,250,250) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(246,246,246) 0%, rgb(250,250,250) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(246,246,246) 0%, rgb(250,250,250) 100%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(246,246,246)),
+		color-stop(1, rgb(250,250,250))
+	);
+}
+#timeControler .timeline {
+	position: static;
+	display: block;
+	margin: .5em auto 0;
+}
