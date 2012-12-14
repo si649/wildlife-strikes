@@ -54,7 +54,21 @@
 			
 			var time = new Timer();
 			time.initTime("#time");	// initialize time controls
-			
+
+
+			//Extended jQuery Functions
+			jQuery.easing.easeInOutCubic = function (x, t, b, c, d) {
+
+			if ((t/=d/2) < 1) return c/2*t*t*t + b;
+			return c/2*((t-=2)*t*t + 2) + b;
+
+			};
+
+			jQuery.easing.easeOutCubic = function (x, t, b, c, d) {
+
+			return c*((t=t/d-1)*t*t + 1) + b;
+
+			};
 		}); // END $.ready
 	});
 </script>
