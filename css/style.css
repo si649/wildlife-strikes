@@ -277,9 +277,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYA
 	top: 0;
 	left: 0;
 	z-index: 10;
-	
 }
-
 
 path {
 	fill: teal;
@@ -298,14 +296,6 @@ path {
 .line:hover {
 	stroke-width: 2;
 	cursor: pointer;
-}
-#tooltip{
-
-	background-color: #FFFFFF;
-	border: solid;
-	border-width: 1px;
-	font-size: 1.2em;
-
 }
 #lightbox {
 	font-size: 1.2em;
@@ -458,14 +448,6 @@ path {
 .line:hover {
 	stroke-width: 2;
 	cursor: pointer;
-}
-#tooltip{
-
-	background-color: #FFFFFF;
-	border: solid;
-	border-width: 1px;
-	font-size: 1.2em;
-
 }
 #lightbox {
 	font-size: 1.2em;
