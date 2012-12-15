@@ -297,15 +297,46 @@ var Timer = (function($,_,d3){
 			      .attr("y", -16)
 			      .attr("height", height + 17);
 
+			  var markerMove = function(d) {
+			  		var point = d3.mouse(this);
+			  		svg.select(".playposition")
+			  	  		.attr("x", point[0]);
+			  	  	// var timeDelta = Math.floor(point[0] * data.length/width);	  	  	
+			  	  	// var monthDelta = timeDelta % 12;
+			  	  	// var yearDelta = Math.floor(timeDelta/12);
+
+			  	  	// console.log('year: ' + yearDelta, 'month: ' + monthDelta);
+			  	  	// var newTime = 1999 + yearDelta + '_' + 1 + monthDelta;
+			  	  	// updateTime([newTime]);
+			  };
+
+			  var markerTime = function(d) {
+			  		var point = d3.mouse(this);
+			  	  	var timeDelta = Math.floor(point[0] * data.length/width);	  	  	
+			  	  	var monthDelta = timeDelta % 12;
+			  	  	var yearDelta = Math.floor(timeDelta/12);
+
+			  	  	console.log('year: ' + yearDelta, 'month: ' + monthDelta);
+			  	  	var newTime = String(1999 + yearDelta) + '_' + String(1 + monthDelta);
+			  	  	updateTime([newTime]);
+			  }
+
+			  // define drag behavior
+			  var drag = d3.behavior.drag()
+			  				.origin(Object)
+			  				.on("drag", markerMove)
+			  				.on("dragend", markerTime);
+
 			  // draw play position - default set at 2009_1
-			  brushChart.append("g")
+			  var playMarker = brushChart.append("g")
 			  	  .append("rect")
 			  	  .attr("class","playposition")
-			  	  .attr("x", function() { return (121 + barPadding) * (width/data.length); })
+			  	  .attr("x", function() { return 120 * (width/data.length); })
 			  	  .attr("y", -16)
 			  	  .attr("height", height + 17)
 			  	  .attr("width", (width/data.length) - barPadding)
-			  	  .style("fill","#ff9b3e");
+			  	  .style("fill","#ff9b3e")
+			  	  .call(drag);
 
 			});
 
@@ -347,6 +378,7 @@ var Timer = (function($,_,d3){
 			    console.log(monthsArray);
 			    return monthsArray;
 			  }
+
 			  timeInterval = arrayOfDates(brush.extent()[0],brush.extent()[1]);
 			  console.log("call to months between", timeInterval);
 			  updateTime(timeInterval);
@@ -391,7 +423,7 @@ var Timer = (function($,_,d3){
 
 			  // update play position marker
 			  svg.select(".playposition")
-			  	  .attr("x", function() { return (xDelta + barPadding) * (width/timelineLength) });
+			  	  .attr("x", function() { return xDelta * (width/timelineLength) });
 			}; // END showPosition
 
 		}; //END buildTimeLine
