@@ -117,6 +117,8 @@ var Map = (function($,_,d3){
 									} else {
 
 										incidentRemarks = "\"" + incidentRemarks + "\"";
+										remarkClass = "remark";
+
 									}
 
 									if(strikesCount == 1){
