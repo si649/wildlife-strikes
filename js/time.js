@@ -220,7 +220,7 @@ var Timer = (function($,_,d3){
 			var x = d3.time.scale().range([0, width]),
 			    y = d3.scale.linear().range([height, 0]);
 
-			var xAxis = d3.svg.axis().scale(x).orient("bottom").tickSize(2).tickPadding(0);
+			var xAxis = d3.svg.axis().scale(x).orient("bottom").tickSize(2).tickSubdivide(1).tickPadding(0);
 
 			var brush = d3.svg.brush()
 			    .x(x)
