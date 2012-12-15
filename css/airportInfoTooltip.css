@@ -1,0 +1,19 @@
+
+
+#tooltip{
+
+	background-color: white;
+	border: solid;
+	border-width: 1px;
+	height: 50px;
+	font-size: 10pt;
+	padding: 1%;
+	line-height: 130%;
+
+}
+#tooltip  p{
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+
+
