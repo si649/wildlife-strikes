@@ -19,6 +19,7 @@ var Timer = (function($,_,d3){
 			playing = false,
 			forward = false,
 			backward = false,
+			dayLength = 0,
 			moveBrush,
 			showPosition;
 		
@@ -26,8 +27,6 @@ var Timer = (function($,_,d3){
 
 			var months = data;
 			var currentAirports = [];
-
-			//console.log('starting time - updateTime: ' + months);
 
 			// increment time - range: 1999_1 to 2012_7
 			incrementTime = function () {
@@ -45,9 +44,6 @@ var Timer = (function($,_,d3){
 						}
 						return m;
 					});
-
-				//console.log('after incrementTime - playing or forward: ' + months);
-
 				};
 				if (backward) decrementTime();
 				fetchIncidents();
@@ -67,17 +63,12 @@ var Timer = (function($,_,d3){
 					}
 					return m;
 				});
-
-				//console.log('after decrementTime: ' + months);
-
 			}; // END decrementTime
 
 			// load new incident files
 			fetchIncidents = function () {
 				// reset local and global variables
 				WSR.vars.incidents = {};
-				//var currentAirports = [];
-
 				// for each month, load the incidents file
 				_.each(months, function(m,i) {
 					// check if incidents data already exists
@@ -107,7 +98,6 @@ var Timer = (function($,_,d3){
 				currentAirports = _.union(currentAirports, fetchAirports(jsondata));
 				// check for final iteration, then update map and global variables
 				if (i == months.length - 1) {
-					//console.log('updateIncidents final month: ' + months);
 					// trigger change in map module
 					updateMap(currentAirports);
 					// update local time variable
@@ -129,7 +119,6 @@ var Timer = (function($,_,d3){
 					// if playing, call the loop
 					if (playing) {
 						moveBrush(true);
-						//console.log('playing is on - before setTimeout: ' + months);
 						setTimeout(function() {updateTime(months)}, playInterval);
 					};
 				};
@@ -148,7 +137,6 @@ var Timer = (function($,_,d3){
 
 			// update time display in UI controls
 			updateTimeView = function () {
-				console.log('CURRENT TIME INTERVAL: ' + months);
 				var firstMonth = months[0].split('_');
 				var monthDisplay = firstMonth[1] + '/' + firstMonth[0];
 				if (months.length > 1) {
@@ -156,9 +144,8 @@ var Timer = (function($,_,d3){
 					monthDisplay += ' - ' + lastMonth[1] + '/' + lastMonth[0];
 				};
 				$("#date span").html(monthDisplay);
-
 				// update play position marker
-				showPosition(firstMonth[1],firstMonth[0]);
+				showPosition(firstMonth[1],firstMonth[0],dayLength);
 
 			}; // END updateTimeView
 			
@@ -210,15 +197,16 @@ var Timer = (function($,_,d3){
 			});
 
 			//Call the function to build the time line
-			buildTimeLine()
+			buildTimeLine();
 
+			//Run the time filtering
 			updateTime(defaultTime);
 		
 		
 		} // END initTime()
 		
 		//NIKKI DON'T GO ABOVE THIS!
-		//This is the function to build the 
+		//This is the function to build the timeline
 		function buildTimeLine () {
 
 			var margin = {top: 10, right: 0, bottom: 0, left: 0},
@@ -246,19 +234,9 @@ var Timer = (function($,_,d3){
 			    .attr("width", width)
 			    .attr("height", height + margin.top + margin.bottom);
 
-			// //rectangle for back of chart
-			// svg.append("rect")
-			// 	.attr("class", "timelineBackground")
-			// 	.attr("x",-10)
-			// 	.attr("y",-10)
-			//     .attr("width", width + margin.left + margin.right + 20 )
-			//     .attr("height", height + margin.top + margin.bottom + 20);
-
 			var brushChart = svg.append("g")
-			    .attr("transform", "translate(" + margin.left + ","+margin.top+" )"); // + margin.top + ")");
+			    .attr("transform", "translate(" + margin.left + ","+margin.top+" )");
 
-			// d3.csv("sp500.csv", function(error, data) {
-			// d3.json("../Data/incidents/1999_10_incidents.json", function(error, data) {
 			d3.json("Data/incidents/totalincidents.json", function(data, error) {
 
 			  //Need to format the dates for chart
@@ -304,26 +282,26 @@ var Timer = (function($,_,d3){
 			      .attr("y", -16)
 			      .attr("height", height + 17);
 
+			  // drag function for the play marker
 			  var markerMove = function(d) {
+			  		d3.select(".brush").call(brush.clear());
 			  		var point = d3.mouse(this);
+			  		var maxLength = 162 * width/data.length;
 			  		svg.select(".playposition")
-			  	  		.attr("x", point[0]);
-			  	  	// var timeDelta = Math.floor(point[0] * data.length/width);	  	  	
-			  	  	// var monthDelta = timeDelta % 12;
-			  	  	// var yearDelta = Math.floor(timeDelta/12);
-
-			  	  	// console.log('year: ' + yearDelta, 'month: ' + monthDelta);
-			  	  	// var newTime = 1999 + yearDelta + '_' + 1 + monthDelta;
-			  	  	// updateTime([newTime]);
+			  	  		.attr("x", ((point[0] < 0)? 0 : ((point[0] > maxLength)? maxLength : point[0])));
 			  };
 
+			  // update the time based on where the marker is when the user stops dragging
 			  var markerTime = function(d) {
 			  		var point = d3.mouse(this);
-			  	  	var timeDelta = Math.floor(point[0] * data.length/width);	  	  	
+			  		var maxLength = 162 * width/data.length;
+
+			  		var xPoint = (point[0] < 0)? 0 : ((point[0] > maxLength)? maxLength : point[0]);
+
+			  	  	var timeDelta = Math.floor(xPoint * data.length/width);	  	  	
 			  	  	var monthDelta = timeDelta % 12;
 			  	  	var yearDelta = Math.floor(timeDelta/12);
 
-			  	  	console.log('year: ' + yearDelta, 'month: ' + monthDelta);
 			  	  	var newTime = String(1999 + yearDelta) + '_' + String(1 + monthDelta);
 			  	  	updateTime([newTime]);
 			  }
@@ -362,7 +340,7 @@ var Timer = (function($,_,d3){
 			    //Given the number of months btw the two dates construct an array with our date format
 			    var monthsArray = [];
 
-			    //We'll be incrimenting over date one
+			    //We'll be incrementing over date one
 			    var month = d1.getMonth() + 1; //b/c this is index 0-11 
 			    var year = d1.getFullYear();
 			    var dateStr = year + "_" + month;
@@ -379,15 +357,18 @@ var Timer = (function($,_,d3){
 			        dateStr = ++year + '_1';
 			        month = 1;
 			      }
-			      console.log(dateStr);
 			      monthsArray.push(dateStr);
 			    }
-			    console.log(monthsArray);
 			    return monthsArray;
 			  }
 
+			  // get year_month format of time
 			  timeInterval = arrayOfDates(brush.extent()[0],brush.extent()[1]);
-			  console.log("call to months between", timeInterval);
+
+			  // calculate small different between brushing and play marker position
+			  dayLength = ((width/timelineLength) / 30) * brush.extent()[0].getDate();
+
+			  // filter based on new time selection
 			  updateTime(timeInterval);
 
 			}//end of brush
@@ -406,7 +387,6 @@ var Timer = (function($,_,d3){
 			// shift brush left or right
 			moveBrush = function (right) {
 				// get current months
-				//console.log('left: ' + brush.extent()[0], 'right: ' + brush.extent()[1]); 
 				var leftDate = brush.extent()[0];
 				var rightDate = brush.extent()[1];
 
@@ -415,23 +395,19 @@ var Timer = (function($,_,d3){
 				brush.extent()[1] = rightDate.setMonth( (right? rightDate.getMonth() + 1 : rightDate.getMonth() - 1) );
 
 				// update brush
-				//console.log('new left: ' + leftDate, 'new right: ' + rightDate);
 				svg.select(".brush").call(brush.extent([leftDate, rightDate]));
 
 			}; // END moveBrush
 
-			showPosition = function (month,year) {
+			// show marker play position
+			showPosition = function (month,year,day) {
 			  // calculate months and years away from 1999_1
 			  var yearDelta = year - 1999;
 			  var monthDelta = month - 1;
-
 			  var xDelta = yearDelta * 12 + monthDelta;
-
-			  console.log('time from 1999_1: ' + xDelta);
-
 			  // update play position marker
 			  svg.select(".playposition")
-			  	  .attr("x", function() { return xDelta * (width/timelineLength) });
+			  	  .attr("x", function() { return xDelta * width/timelineLength + day });
 			}; // END showPosition
 
 		}; //END buildTimeLine
