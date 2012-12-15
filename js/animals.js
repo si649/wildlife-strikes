@@ -283,6 +283,7 @@ var AnimalUI = (function($,_,d3){
 				console.log(cdate);
 				$.each(WSR.vars.familyButtons,function(idx,view){
 					var $el = $(view.el);
+					$el.removeClass('disabled')
 					$el.addClass('disabled');
 					_.each(cdate,function(d){
 						if(view.model.mask[d[0]][d[1]] == 1 ) $el.removeClass('disabled');	
