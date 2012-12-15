@@ -245,8 +245,9 @@ var Timer = (function($,_,d3){
 			    d.hits = +d.hits;
 			  });
 
-			  // get overall length for use by other functions
+			  // get lengths for use by other functions
 			  timelineLength = data.length;
+			  var maxLength = 162 * width/timelineLength;
 
 			  //Once we have a date, now sort
 			  data.sort(function(a,b) { return a.chartDate-b.chartDate; });
@@ -261,8 +262,8 @@ var Timer = (function($,_,d3){
 			    .enter().append("rect")
 			      .attr("class", "brushbar")
 			      .attr("fill", "black")
-			      .attr("x", function(d, i) { return i * (width/data.length);})
-			      .attr("width",(width/data.length) - barPadding)
+			      .attr("x", function(d, i) { return i * (width/timelineLength);})
+			      .attr("width",(width/timelineLength) - barPadding)
 			      .attr("y", function(d) { return y(d.hits); })
 			      .attr("height", function(d) { return height - y(d.hits); });
 
@@ -285,26 +286,24 @@ var Timer = (function($,_,d3){
 			  // drag function for the play marker
 			  var markerMove = function(d) {
 			  		d3.select(".brush").call(brush.clear());
+			  		dayLength = 0;
 			  		var point = d3.mouse(this);
-			  		var maxLength = 162 * width/data.length;
 			  		svg.select(".playposition")
 			  	  		.attr("x", ((point[0] < 0)? 0 : ((point[0] > maxLength)? maxLength : point[0])));
-			  };
+			  }; // END markerMove
 
 			  // update the time based on where the marker is when the user stops dragging
 			  var markerTime = function(d) {
 			  		var point = d3.mouse(this);
-			  		var maxLength = 162 * width/data.length;
-
 			  		var xPoint = (point[0] < 0)? 0 : ((point[0] > maxLength)? maxLength : point[0]);
 
-			  	  	var timeDelta = Math.floor(xPoint * data.length/width);	  	  	
+			  	  	var timeDelta = Math.floor(xPoint * timelineLength/width);	  	  	
 			  	  	var monthDelta = timeDelta % 12;
 			  	  	var yearDelta = Math.floor(timeDelta/12);
 
 			  	  	var newTime = String(1999 + yearDelta) + '_' + String(1 + monthDelta);
 			  	  	updateTime([newTime]);
-			  }
+			  }; // END markerTime
 
 			  // define drag behavior
 			  var drag = d3.behavior.drag()
@@ -316,14 +315,14 @@ var Timer = (function($,_,d3){
 			  var playMarker = brushChart.append("g")
 			  	  .append("rect")
 			  	  .attr("class","playposition")
-			  	  .attr("x", function() { return 120 * (width/data.length); })
+			  	  .attr("x", function() { return 120 * (width/timelineLength); })
 			  	  .attr("y", -16)
 			  	  .attr("height", height + 17)
-			  	  .attr("width", (width/data.length) - barPadding)
+			  	  .attr("width", (width/timelineLength) - barPadding)
 			  	  .style("fill","#ff9b3e")
 			  	  .call(drag);
 
-			});
+			}); // END json load
 
 			function brush() {
 
@@ -367,6 +366,7 @@ var Timer = (function($,_,d3){
 
 			  // calculate small different between brushing and play marker position
 			  dayLength = ((width/timelineLength) / 30) * brush.extent()[0].getDate();
+			  if (Math.abs(Date.parse(brush.extent()[0]) - Date.parse(brush.extent()[1])) < 1) dayLength = 0;
 
 			  // filter based on new time selection
 			  updateTime(timeInterval);
@@ -374,8 +374,8 @@ var Timer = (function($,_,d3){
 			}//end of brush
 
 			function clearBrushing() {
-				console.log("Made it into clear brushing function...")
 				d3.select(".brush").call(brush.clear());
+				dayLength = 0;
 			}//end of clearBrushing
 
 			// call function to reset brushing
