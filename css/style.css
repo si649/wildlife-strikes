@@ -366,6 +366,8 @@ path {
 	z-index: 100;
 }
 
+/******* Template CSS *******/
+
 #nodeDetails {
 
 	width: 500px;	
@@ -377,7 +379,59 @@ path {
 	font-size: 3.4em;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin-bottom: 20px;
 	
+}
+#nodeDetails .airportInfo li {
+
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+
+}
+
+#nodeDetails .airportInfo li:last-child {
+
+
+	color: #444;
+
+}
+
+#nodeDetails .icon-airport {
+
+	font-size: 2em;
+
+}
+#nodeDetails .date {
+
+	float: left;
+	clear: right;
+	width: 20%;
+
+}
+
+#nodeDetails .species {
+
+	float: right;
+	width: 70%;
+	
+}
+
+#nodeDetails .remark {
+
+	float: right;
+	margin-bottom: 20px;
+	padding: 5px 5px 5px 5px;
+	width: 70%;
+}
+
+#nodeDetails hr {
+
+	clear: both;
+	border: none;
+	border-top: 1px solid gray;
+	width: 30%;
+	margin: 20px auto;
 }
 .redDotMouse {
 
