@@ -19,7 +19,8 @@ var Timer = (function($,_,d3){
 			playing = false,
 			forward = false,
 			backward = false,
-			moveBrush;
+			moveBrush,
+			showPosition;
 		
 		updateTime = function (data) {
 
@@ -155,6 +156,10 @@ var Timer = (function($,_,d3){
 					monthDisplay += ' - ' + lastMonth[1] + '/' + lastMonth[0];
 				};
 				$("#date span").html(monthDisplay);
+
+				// update play position marker
+				showPosition(firstMonth[1],firstMonth[0]);
+
 			}; // END updateTimeView
 
 			// start the whole she-bang
@@ -212,7 +217,8 @@ var Timer = (function($,_,d3){
 			var margin = {top: 10, right: 0, bottom: 0, left: 0},
 		    width = 550 - margin.left - margin.right,
 		    height = 30 - margin.top - margin.bottom,
-		    barPadding = 1;
+		    barPadding = 1,
+		    timelineLength;
 
 			var parseDate = d3.time.format("%Y_%m").parse;
 
@@ -254,6 +260,9 @@ var Timer = (function($,_,d3){
 			    d.hits = +d.hits;
 			  });
 
+			  // get overall length for use by other functions
+			  timelineLength = data.length;
+
 			  //Once we have a date, now sort
 			  data.sort(function(a,b) { return a.chartDate-b.chartDate; });
 
@@ -261,6 +270,7 @@ var Timer = (function($,_,d3){
 			  x.domain(d3.extent(data.map(function(d) { return d.chartDate; })));
 			  y.domain([0, d3.max(data.map(function(d) { return d.hits; }))]);
 
+			  // draw bars for each month
 			  brushChart.selectAll(".brushBars")
 			      .data(data)
 			    .enter().append("rect")
@@ -271,6 +281,7 @@ var Timer = (function($,_,d3){
 			      .attr("y", function(d) { return y(d.hits); })
 			      .attr("height", function(d) { return height - y(d.hits); });
 
+			  // draw x axis
 			  d3.select("#timeControler").insert("svg","#toolbarbottom")
 			  	 .attr("width", width + margin.left + margin.right)
 			  	 .attr("height", "10")
@@ -278,12 +289,24 @@ var Timer = (function($,_,d3){
 			      .attr("class", "x axis")
 			      .call(xAxis);
 
+			  // draw brushing
 			  brushChart.append("g")
 			      .attr("class", "brush") //was "x brush"
 			      .call(brush)
 			    .selectAll("rect")
 			      .attr("y", -16)
 			      .attr("height", height + 17);
+
+			  // draw play position - default set at 2009_1
+			  brushChart.append("g")
+			  	  .append("rect")
+			  	  .attr("class","playposition")
+			  	  .attr("x", function() { return (121 + barPadding) * (width/data.length); })
+			  	  .attr("y", -16)
+			  	  .attr("height", height + 17)
+			  	  .attr("width", (width/data.length) - barPadding)
+			  	  .style("fill","#ff9b3e");
+
 			});
 
 			function brush() {
@@ -355,9 +378,23 @@ var Timer = (function($,_,d3){
 				//console.log('new left: ' + leftDate, 'new right: ' + rightDate);
 				svg.select(".brush").call(brush.extent([leftDate, rightDate]));
 
-			}; // END moveBrush	
+			}; // END moveBrush
 
-		}//end of buildTimeLine
+			showPosition = function (month,year) {
+			  // calculate months and years away from 1999_1
+			  var yearDelta = year - 1999;
+			  var monthDelta = month - 1;
+
+			  var xDelta = yearDelta * 12 + monthDelta;
+
+			  console.log('time from 1999_1: ' + xDelta);
+
+			  // update play position marker
+			  svg.select(".playposition")
+			  	  .attr("x", function() { return (xDelta + barPadding) * (width/timelineLength) });
+			}; // END showPosition
+
+		}; //END buildTimeLine
 		
-	} // end return closure
+	} // END return closure
 })(jQuery,_,d3);
