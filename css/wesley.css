@@ -195,3 +195,13 @@
 path.domain {
 	display: none;
 }
+#timeControler:after {
+	content: " ";
+	width: 170px;
+	height: 16px;
+	position: absolute;
+	top: -11px;
+	right: 20px;
+	background: url(../images/birds.png) no-repeat;
+		
+}
