@@ -19,7 +19,7 @@ function lightbox(insertContent, ajaxContentUrl){
 			closeLightbox();
 		});
 		//sticky rest of the page
-		$('#animals').addClass("freeze");
+		
 		
 		$('body').append(theShadow);
 		$('body').append(theLightbox);
@@ -57,6 +57,7 @@ function lightbox(insertContent, ajaxContentUrl){
 	$('#lightbox').css('top', $(window).scrollTop() + 100 + 'px');
 
 	// display the lightbox
+	$('#animals').addClass("freeze");
 	$('#lightbox').show();
 	$('#lightbox-shadow').show();
 

@@ -111,6 +111,8 @@ var AnimalUI = (function($,_,d3){
 					// trigger the map's implementation of line redraw, pass view reference for X/Y positions
 					WSR.vars.map.trigger('updateLines',[ev.data.src]);
 				}
+				console.log($(window).scrollTop());
+				$('#sliderTab').css('top',300+$(window).scrollTop());
 			});
 		} // END SpeciesButton Constructor
 		
