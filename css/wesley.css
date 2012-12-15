@@ -251,7 +251,6 @@ path.domain {
 	top: 17px;
 	right: 4px;
 }
-
 #animals li p:hover, #animals li.active p,#animals li.active li.active p {
 	border-color: #00b8cb;
 }
@@ -270,13 +269,8 @@ path.domain {
     font-weight: 900;
     text-transform: uppercase;
 }
-#map path {
-	fill: #ff922c;
-	stroke: #353535;
-}
-#map path:hover {
-	fill: #00b8cb;
-	cursor: pointer;
+#map .line {
+	stroke-width: 1;
 }
 #map .leaflet-tile-pane {
 	-webkit-filter: invert(79%) ;
