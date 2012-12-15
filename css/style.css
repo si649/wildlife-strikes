@@ -514,11 +514,6 @@ path {
 	z-index: 10;
 }
 
-path {
-	fill: teal;
-	stroke: #fff;
-	stroke-width: 1.5px;
-}
 .line {
 	stroke-width: .5;
 	-webkit-transform: translateZ(0); /* force gpu render */
@@ -597,27 +592,6 @@ path {
 
 	margin-top: 20px;
 
-}
-
-.redDotMouse {
-
-	fill: crimson;
-}
-
-.redDotClicked {
-
-	fill: crimson;
-
-}
-
-.redDotTransition {
-
-	-webkit-transform: translateZ(0); /* force gpu render */
-	-webkit-transition: fill 3s ease-out;  /* Safari 3.2+, Chrome */
-	   -moz-transition: fill 3s ease-out;  /* Firefox 4-15 */
-	     -o-transition: fill 3s ease-out;  /* Opera 10.5–12.00 */
-	        transition: fill 3s ease-out;  /* Firefox 16+, Opera 12.50+ */
-	
 }
 
 /********** 4. TimeLine  **********/
