@@ -362,7 +362,7 @@ var Map = (function($,_,d3){
 			
 			// experimenting with a reset button for the map
 			$(".leaflet-control-reset").on("click", function(ev) {
-				map.setView([39.810556, -98.556111],4);
+				map.setView([38, -102],4);
 			});
 
 		} // END initMap
