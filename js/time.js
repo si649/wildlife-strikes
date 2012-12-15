@@ -19,6 +19,7 @@ var Timer = (function($,_,d3){
 			playing = false,
 			forward = false,
 			backward = false,
+			dayLength = 0,
 			moveBrush,
 			showPosition;
 		
@@ -158,7 +159,7 @@ var Timer = (function($,_,d3){
 				$("#date span").html(monthDisplay);
 
 				// update play position marker
-				showPosition(firstMonth[1],firstMonth[0]);
+				showPosition(firstMonth[1],firstMonth[0],dayLength);
 
 			}; // END updateTimeView
 
@@ -299,20 +300,18 @@ var Timer = (function($,_,d3){
 
 			  var markerMove = function(d) {
 			  		var point = d3.mouse(this);
+			  		var maxLength = 162 * width/data.length;
 			  		svg.select(".playposition")
-			  	  		.attr("x", point[0]);
-			  	  	// var timeDelta = Math.floor(point[0] * data.length/width);	  	  	
-			  	  	// var monthDelta = timeDelta % 12;
-			  	  	// var yearDelta = Math.floor(timeDelta/12);
-
-			  	  	// console.log('year: ' + yearDelta, 'month: ' + monthDelta);
-			  	  	// var newTime = 1999 + yearDelta + '_' + 1 + monthDelta;
-			  	  	// updateTime([newTime]);
+			  	  		.attr("x", ((point[0] < 0)? 0 : ((point[0] > maxLength)? maxLength : point[0])));
 			  };
 
 			  var markerTime = function(d) {
 			  		var point = d3.mouse(this);
-			  	  	var timeDelta = Math.floor(point[0] * data.length/width);	  	  	
+			  		var maxLength = 162 * width/data.length;
+
+			  		var xPoint = (point[0] < 0)? 0 : ((point[0] > maxLength)? maxLength : point[0]);
+
+			  	  	var timeDelta = Math.floor(xPoint * data.length/width);	  	  	
 			  	  	var monthDelta = timeDelta % 12;
 			  	  	var yearDelta = Math.floor(timeDelta/12);
 
@@ -320,6 +319,10 @@ var Timer = (function($,_,d3){
 			  	  	var newTime = String(1999 + yearDelta) + '_' + String(1 + monthDelta);
 			  	  	updateTime([newTime]);
 			  }
+
+			  // shift marker to drag edge
+			  // add css for marker
+			  // clean up code
 
 			  // define drag behavior
 			  var drag = d3.behavior.drag()
@@ -381,6 +384,17 @@ var Timer = (function($,_,d3){
 
 			  timeInterval = arrayOfDates(brush.extent()[0],brush.extent()[1]);
 			  console.log("call to months between", timeInterval);
+
+			  //////////
+
+			  dayLength = ((width/timelineLength) / 30) * brush.extent()[0].getDate();
+			  //showPosition(timeInterval[0][1],timeInterval[0][0],dayLength);
+
+			  // update play position marker
+			  //svg.select(".playposition")
+			   //	  .attr("x", function() { return dayLength * brush.extent()[0].getDate(); });
+			   /////////////
+
 			  updateTime(timeInterval);
 
 			}//end of brush
@@ -412,18 +426,19 @@ var Timer = (function($,_,d3){
 
 			}; // END moveBrush
 
-			showPosition = function (month,year) {
+			// show marker play position
+			showPosition = function (month,year,day) {
 			  // calculate months and years away from 1999_1
 			  var yearDelta = year - 1999;
 			  var monthDelta = month - 1;
 
 			  var xDelta = yearDelta * 12 + monthDelta;
 
-			  console.log('time from 1999_1: ' + xDelta);
+			  if (day != 0) console.log('adding day: ' + day);
 
 			  // update play position marker
 			  svg.select(".playposition")
-			  	  .attr("x", function() { return xDelta * (width/timelineLength) });
+			  	  .attr("x", function() { return (xDelta * (width/timelineLength)) + day });
 			}; // END showPosition
 
 		}; //END buildTimeLine
