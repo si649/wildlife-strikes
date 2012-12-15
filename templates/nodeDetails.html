@@ -13,9 +13,9 @@
 	</div>
 		<dl>
 			 {{#each items}}
-			<dt class="date">Date: {{DATE}}</dt>
-				<dd class="species">Species: {{SPECIES}}</dd>
-				<dd class="remark">Remark:<blockquote>{{REMARKS}}</blockquote></dd>
+			<dt class="date">{{DATE}}</dt>
+				<dd class="species">Encounter With: {{SPECIES}}</dd>
+				<dd class="{{REMARKCLASS}}"><blockquote>{{REMARKS}}</blockquote></dd>
 				<hr />
 			 {{/each}}
 		</dl>

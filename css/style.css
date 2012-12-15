@@ -403,7 +403,8 @@ path {
 
 }
 #nodeDetails .date {
-
+	
+	font-size: 1.5em;
 	float: left;
 	clear: right;
 	width: 20%;
@@ -412,6 +413,7 @@ path {
 
 #nodeDetails .species {
 
+	font-size: 1.5em;
 	float: right;
 	width: 70%;
 	
@@ -419,12 +421,22 @@ path {
 
 #nodeDetails .remark {
 
+	font-size: 1.2em;
 	float: right;
 	margin-bottom: 20px;
 	padding: 5px 5px 5px 5px;
 	width: 70%;
 }
 
+#nodeDetails .noRemark {
+
+	color: #444;
+	font-size: 1.2em;
+	float: right;
+	margin-bottom: 20px;
+	padding: 5px 5px 5px 5px;
+	width: 70%;
+}
 #nodeDetails hr {
 
 	clear: both;
@@ -852,13 +864,12 @@ a {
 #nodeDetails dt {
 
 	padding: 5px 5px 5px 5px;
-	background-color: #008080;
+
 }
 
 #nodeDetails dd {
 
 	padding: 5px 5px 5px 5px;
-	background-color: #CC6600;
 }
 #sliderTab {
 

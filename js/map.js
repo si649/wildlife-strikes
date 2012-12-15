@@ -80,10 +80,12 @@ var Map = (function($,_,d3){
 					//Creates property items annd makes it an array
 					templateData.items = [];
 					templateData.airport = airportData.properties.name;
+					var remarkClass = "remark";
 					
-					months = WSR.vars.date;
-
 					//Create the time display for the Lightbox
+
+					months = WSR.vars.date;
+					
 					var firstMonth = months[0].split('_');
 					
 					var monthDisplay = firstMonth[1] + '/' + firstMonth[0];
@@ -109,9 +111,15 @@ var Map = (function($,_,d3){
 									
 									if(incidentRemarks == "") {
 
-										incidentRemarks = "No Remarks For This Incident";
+										incidentRemarks = "No Remark For This Incident";
+										remarkClass = "noRemark";
+										console.log("why am I getting weird quotes... " + templateData.remarkClass)
 
+									} else {
+
+										incidentRemarks = "\"" + incidentRemarks + "\"";
 									}
+
 									if(strikesCount == 1){
 										
 										templateData.strikes = "Total Strike " + strikesCount;
@@ -121,8 +129,8 @@ var Map = (function($,_,d3){
 										templateData.strikes = "Total Strikes " + strikesCount;
 									}
 								
-									templateData.items.push({ SPECIES : incidentData[i][j].SPECIES, REMARKS: incidentRemarks, DATE: incidentData[i][j].INCIDENT_DATE});
-
+									templateData.items.push({ SPECIES : incidentData[i][j].SPECIES, REMARKS: incidentRemarks, DATE: incidentData[i][j].INCIDENT_DATE, REMARKCLASS: remarkClass});
+									console.log(templateData);
 							}
 						});
 					});
