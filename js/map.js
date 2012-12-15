@@ -43,7 +43,7 @@ var Map = (function($,_,d3){
 				return [point.x, point.y];
 			}
 			
-			d3.json("data/airports.json", function(collection) {
+			d3.json("Data/airports.json", function(collection) {
 				var bounds = d3.geo.bounds(collection),
 			    	path = d3.geo.path().projection(project);
 

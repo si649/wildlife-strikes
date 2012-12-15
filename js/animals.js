@@ -52,7 +52,7 @@ var AnimalUI = (function($,_,d3){
 		// retrieve the family's json file, and execute a callback function if passed
 		// using the callback here lets us call getStrikes() without having to worry if async data is already loaded
 		WSR.models.Family.prototype.fetchAnimalData = function(view,callback) {
-			var dataUrl = "data/families_bymonth/family"+this.id+".json";
+			var dataUrl = "Data/families_bymonth/family"+this.id+".json";
 			var family = this;
 			view.el.append('<div class="spinner">');
 			$.ajax({
@@ -254,7 +254,7 @@ var AnimalUI = (function($,_,d3){
 		// setup function for the "module", retrieves family json and sets up the top level buttons
 		this.initAnimalUI = function(parent) {
 			$.ajax({
-				url:"data/animals.json",
+				url:"Data/animals.json",
 				dataType:"json",
 				success: function(data){
 					WSR.vars.familyButtons = [];
@@ -268,7 +268,7 @@ var AnimalUI = (function($,_,d3){
 			}})
 			// load scientific names use with photos
 			$.ajax({
-				url:"data/sci_names.json",
+				url:"Data/sci_names.json",
 				dataType:"json",
 				success: function(data){
 					sci_names = data[0]; // save to variable

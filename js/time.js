@@ -74,7 +74,7 @@ var Timer = (function($,_,d3){
 					// check if incidents data already exists
 					if (m in incidents) updateIncidents(incidents[m],m,i);
 					else {
-						var dataUrl = "data/incidents/" + m + "_incidents.json";
+						var dataUrl = "Data/incidents/" + m + "_incidents.json";
 						$.ajax({
 							url:dataUrl,
 							dataType:"json",
