@@ -169,9 +169,13 @@ var Timer = (function($,_,d3){
 
 			// play / pause
 			$(".playbutton").on("click", function(ev) {
-				if (playing) playing = false;
+				if (playing){
+					playing = false;
+					$(this).removeClass("active").children('span').attr('class','icon-play');
+				}
 				else {
 					playing = true;
+					$(this).addClass("active").children('span').attr('class','icon-pause');
 					updateTime(timeInterval);
 				}
 			});
@@ -197,16 +201,17 @@ var Timer = (function($,_,d3){
 			buildTimeLine()
 
 			updateTime(defaultTime);
-
+		
+		
 		} // END initTime()
 		
 		//NIKKI DON'T GO ABOVE THIS!
 		//This is the function to build the 
 		function buildTimeLine () {
 
-			var margin = {top: 10, right: 10, bottom: 10, left: 10},
-		    width = 700 - margin.left - margin.right,
-		    height = 70 - margin.top - margin.bottom,
+			var margin = {top: 10, right: 0, bottom: 0, left: 0},
+		    width = 550 - margin.left - margin.right,
+		    height = 30 - margin.top - margin.bottom,
 		    barPadding = 1;
 
 			var parseDate = d3.time.format("%Y_%m").parse;
@@ -214,7 +219,7 @@ var Timer = (function($,_,d3){
 			var x = d3.time.scale().range([0, width]),
 			    y = d3.scale.linear().range([height, 0]);
 
-			var xAxis = d3.svg.axis().scale(x).orient("bottom");
+			var xAxis = d3.svg.axis().scale(x).orient("bottom").tickSize(2).tickPadding(0);
 
 			var brush = d3.svg.brush()
 			    .x(x)
@@ -223,9 +228,9 @@ var Timer = (function($,_,d3){
 			    })
 			    .on("brush", brush);
 
-			var svg = d3.select("#timeControler").insert("svg",":first-child")
+			var svg = d3.select("#timeControler #graph").append("svg")
 				.attr("class", "timeline")
-			    .attr("width", width + margin.left + margin.right)
+			    .attr("width", width)
 			    .attr("height", height + margin.top + margin.bottom);
 
 			// //rectangle for back of chart
@@ -237,7 +242,7 @@ var Timer = (function($,_,d3){
 			//     .attr("height", height + margin.top + margin.bottom + 20);
 
 			var brushChart = svg.append("g")
-			    .attr("transform", "translate(" + margin.left + ", 0)"); // + margin.top + ")");
+			    .attr("transform", "translate(" + margin.left + ","+margin.top+" )"); // + margin.top + ")");
 
 			// d3.csv("sp500.csv", function(error, data) {
 			// d3.json("../Data/incidents/1999_10_incidents.json", function(error, data) {
@@ -266,17 +271,19 @@ var Timer = (function($,_,d3){
 			      .attr("y", function(d) { return y(d.hits); })
 			      .attr("height", function(d) { return height - y(d.hits); });
 
-			  brushChart.append("g")
+			  d3.select("#timeControler").insert("svg","#toolbarbottom")
+			  	 .attr("width", width + margin.left + margin.right)
+			  	 .attr("height", "10")
+			  	  .attr("transform", "translate(" + margin.left + ", -20px)") // + margin.top + ")")
 			      .attr("class", "x axis")
-			      .attr("transform", "translate(0," + height + ")")
 			      .call(xAxis);
 
 			  brushChart.append("g")
 			      .attr("class", "brush") //was "x brush"
 			      .call(brush)
 			    .selectAll("rect")
-			      .attr("y", -6)
-			      .attr("height", height + 7);
+			      .attr("y", -16)
+			      .attr("height", height + 17);
 			});
 
 			function brush() {

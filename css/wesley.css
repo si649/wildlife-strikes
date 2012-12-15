@@ -5,11 +5,50 @@
 .freeze, #lightbox-shadow {
 	position: fixed !important;
 }
-
+#currentDate:before {
+	content: " ";
+	width: 118px;
+	height: 13px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	position: absolute;
+	top: 0;
+	left: 1px;
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.58) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.58))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.58) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.58) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.58) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.58) 100%); /* W3C */
+	opacity: .55;
+}
 #currentDate {
+	position: relative;
+	border-radius: 4px;
 	display: block;
 	text-align: center;
-
+	
+	background-image: linear-gradient(bottom, rgb(230,230,230) 15%, rgb(220,220,220) 58%);
+	background-image: -o-linear-gradient(bottom, rgb(230,230,230) 15%, rgb(220,220,220) 58%);
+	background-image: -moz-linear-gradient(bottom, rgb(230,230,230) 15%, rgb(220,220,220) 58%);
+	background-image: -webkit-linear-gradient(bottom, rgb(230,230,230) 15%, rgb(220,220,220) 58%);
+	background-image: -ms-linear-gradient(bottom, rgb(230,230,230) 15%, rgb(220,220,220) 58%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.15, rgb(230,230,230)),
+		color-stop(0.58, rgb(220,220,220))
+	);
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid white;
+	box-shadow: inset 0 5px 5px rgba(0,0,0,.05),inset 0 2px 3px rgba(0,0,0,.1), inset 0 -1px 1px rgba(0,0,0,.1);
+	min-height: 25px;
 	}
 #currentDate a span {
 	width: 120px;
@@ -17,14 +56,15 @@
 #currentDate span {
 	display: inline-block;
 	margin: 0 auto;
-	line-height: 35px;
-	font-size: 1.5em;
+	line-height: 25px;
+	font-size: .9em;
 	font-family: Helvetica,Arial;
 	font-weight: bold;
 	color: #555;
 	text-shadow: 0 1px 0 rgba(255, 255, 255,.8);
 }
 #timeControler {
+	width: 560px;
 	background-image: linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
 	background-image: -moz-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
@@ -41,7 +81,7 @@
 	border: 1px solid #aaa;
 	border-bottom-color: #999;
 	border-radius: 4px;
-	box-shadow: 0 2px 15px rgba(0, 0, 0, .25), inset 0 -3px 0 rgba(0, 0, 0, .1);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .15), 0 2px 2px rgba(0, 0, 0, 0.15),inset 0 -3px 0 rgba(0, 0, 0, .2), inset 0 -4px 0 #eee, inset 0 1px 0 white;
 	overflow: visible;
 	height: auto;
 }
@@ -50,22 +90,23 @@
 	position: static;
 	width: auto;
 	border: 0;
+	margin-top: 5px 0 3px;
 	text-align: center;
-	margin-top: .5em;
+	height: 40px;
+	font-size: 14px;
 }
 #toolbarbottom li {
 	height: auto;
 	width: auto;
-	margin-top: .5em;
-	padding: 0 1em;
+	margin: .5em 1em 0;
 }
 #toolbarbottom button {
 	text-shadow: 0 1px #white;
 	display: inline-block;
 	border: 0;
 	background: white;
-	height: 35px;
-	width: 100px;
+	height: 25px;
+	width: 70px;
 	border-radius: 4px;
 	background-image: linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(236,236,236) 0%, rgb(250,250,250) 100%);
@@ -81,11 +122,14 @@
 		color-stop(1, rgb(250,250,250))
 	);
 	border: 1px solid #bbb;
-	box-shadow: 0 2px 0 rgba(255,255,255,.7),0 -1px #ddd,inset 0 -1px #eee;
-	-webkit-transition: all 0.2s ease-out;  /* Safari 3.2+, Chrome */
-	   -moz-transition: all 0.2s ease-out;  /* Firefox 4-15 */
-	     -o-transition: all 0.2s ease-out;  /* Opera 10.5–12.00 */
-	        transition: all 0.2s ease-out;  /* Firefox 16+, Opera 12.50+ */
+	box-shadow: 0 1px 0 rgba(255,255,255,.7),0 -1px #ddd,inset 0 -1px #eee;
+	-webkit-transition: all 0.1s ease-in;  /* Safari 3.2+, Chrome */
+	   -moz-transition: all 0.1s ease-in;  /* Firefox 4-15 */
+	     -o-transition: all 0.1s ease-in;  /* Opera 10.5–12.00 */
+	        transition: all 0.1s ease-in;  /* Firefox 16+, Opera 12.50+ */
+}
+#toolbarbottom button.active {
+	color: #a9570b;
 }
 #toolbarbottom button:hover {
 	background-image: linear-gradient(bottom, rgb(246,246,246) 0%, rgb(250,250,250) 100%);
@@ -101,10 +145,53 @@
 		color-stop(0, rgb(246,246,246)),
 		color-stop(1, rgb(250,250,250))
 	);
-	border-color: #ff9b3e;
+	color: #a9570b;
 }
-#timeControler .timeline {
+#toolbarbottom button span {
+	text-shadow: 0 1px 0 white;
+}
+#timeControler #graph {
+	background: red;
+	width: 550px;
+	min-height: 30px;
+	margin-left: 5px;
+	margin-top: .5em;
+	background-image: linear-gradient(bottom, rgb(240,240,240) 15%, rgb(230,230,230) 58%);
+	background-image: -o-linear-gradient(bottom, rgb(240,240,240) 15%, rgb(230,230,230) 58%);
+	background-image: -moz-linear-gradient(bottom, rgb(240,240,240) 15%, rgb(230,230,230) 58%);
+	background-image: -webkit-linear-gradient(bottom, rgb(240,240,240) 15%, rgb(230,230,230) 58%);
+	background-image: -ms-linear-gradient(bottom, rgb(240,240,240) 15%, rgb(230,230,230) 58%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.15, rgb(240,240,240)),
+		color-stop(0.58, rgb(230,230,230))
+	);
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid white;
+	border-radius: 2px;
+	box-shadow: inset 0 5px 5px rgba(0,0,0,.05),inset 0 2px 3px rgba(0,0,0,.1), inset 0 -1px 1px rgba(0,0,0,.1);
+	
+	
+}
+#graph rect {
+	fill: #666;
+}
+#graph .extent {
+	stroke: none;
+	fill: #ff9b3e;
+	fill-opacity: .55;
+}
+#timeControler svg {
 	position: static;
 	display: block;
 	margin: .5em auto 0;
+}
+#timeControler svg.timeline {
+	margin-top: 0;
+}
+path.domain {
+	display: none;
 }

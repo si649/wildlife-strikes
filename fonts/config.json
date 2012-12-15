@@ -1,0 +1,134 @@
+{
+  "name": "icons",
+  "glyphs": [
+    {
+      "search": [
+        "pause",
+        "player"
+      ],
+      "code": 9097,
+      "from": 9097,
+      "uid": "d8d378d0ce413f231dfa37592e39c227",
+      "css": "pause",
+      "orig_css": "pause",
+      "orig_code": 9097,
+      "src": "entypo"
+    },
+    {
+      "search": [
+        "right",
+        "player"
+      ],
+      "code": 9193,
+      "uid": "18f7c393e3532e40edd45607c9d99988",
+      "css": "fast-forward",
+      "orig_css": "fast-forward",
+      "orig_code": 9193,
+      "src": "entypo",
+      "from": 9193
+    },
+    {
+      "search": [
+        "left",
+        "player"
+      ],
+      "code": 9194,
+      "uid": "85806fd8ab907f45d34f976354a0df23",
+      "css": "fast-backward",
+      "orig_css": "fast-backward",
+      "orig_code": 9194,
+      "src": "entypo",
+      "from": 9194
+    },
+    {
+      "search": [
+        "left",
+        "player"
+      ],
+      "code": 9198,
+      "uid": "ceefe7653a4f6edaacce9e7f196cec5a",
+      "css": "to-start",
+      "orig_css": "to-start",
+      "orig_code": 9198,
+      "src": "entypo",
+      "from": 9198
+    },
+    {
+      "search": [
+        "play",
+        "player"
+      ],
+      "code": 9654,
+      "uid": "cb13afd4722a849d48056540bb74c47e",
+      "css": "play",
+      "orig_css": "play",
+      "orig_code": 9654,
+      "src": "entypo",
+      "from": 9654
+    },
+    {
+      "search": [
+        "flight",
+        "plane",
+        "airplane",
+        "fly"
+      ],
+      "code": 9992,
+      "uid": "6e8aea8fff9525dfc5149f0c03669091",
+      "css": "flight",
+      "orig_css": "flight",
+      "orig_code": 9992,
+      "src": "entypo",
+      "from": 9992
+    },
+    {
+      "search": [
+        "reload",
+        "undo"
+      ],
+      "code": 10226,
+      "uid": "465bb89b6f204234e5787c326b4ae54c",
+      "css": "ccw",
+      "orig_css": "ccw",
+      "orig_code": 10226,
+      "src": "entypo",
+      "from": 10226
+    },
+    {
+      "search": [
+        "airport"
+      ],
+      "code": 59394,
+      "uid": "f7440aaf96d590adceeff59b4dcb32d0",
+      "css": "airport",
+      "orig_css": "airport",
+      "orig_code": 59394,
+      "src": "maki",
+      "from": 59394
+    },
+    {
+      "search": [
+        "fire station"
+      ],
+      "code": 59415,
+      "uid": "a9d3392264236bb9fe4d60a130c662d1",
+      "css": "fire-station",
+      "orig_css": "fire-station",
+      "orig_code": 59415,
+      "src": "maki",
+      "from": 59415
+    },
+    {
+      "search": [
+        "giraffe"
+      ],
+      "code": 59419,
+      "uid": "8815bdcacab2495dd436f029e78a15d7",
+      "css": "giraffe",
+      "orig_css": "giraffe",
+      "orig_code": 59419,
+      "src": "maki",
+      "from": 59419
+    }
+  ]
+}
