@@ -251,7 +251,6 @@ path.domain {
 	top: 17px;
 	right: 4px;
 }
-
 #animals li p:hover, #animals li.active p,#animals li.active li.active p {
 	border-color: #00b8cb;
 }
@@ -269,6 +268,9 @@ path.domain {
     font-size: 3.4em;
     font-weight: 900;
     text-transform: uppercase;
+}
+#map .line {
+	stroke-width: 1;
 }
 #map path {
 	fill: #ff922c;

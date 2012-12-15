@@ -183,22 +183,26 @@ var Timer = (function($,_,d3){
 					$(this).addClass("active").children('span').attr('class','icon-pause');
 					updateTime(timeInterval);
 				}
+				WSR.vars.map.trigger("clearLines");
 			});
 
 			// forward
 			$(".forwardbutton").on("click", function(ev) {
+				WSR.vars.map.trigger("clearLines");
 				forward = true;
 				updateTime(timeInterval);
 			});
 
 			// forward
 			$(".backwardbutton").on("click", function(ev) {
+				WSR.vars.map.trigger("clearLines");
 				backward = true;
 				updateTime(timeInterval);
 			});
 
 			// reset
 			$(".clearbrushingbutton").on("click", function(ev) {
+				WSR.vars.map.trigger("clearLines");
 				updateTime(defaultTime);
 			});
 
@@ -393,6 +397,7 @@ var Timer = (function($,_,d3){
 			// call function to reset brushing
 			$(".clearbrushingbutton").on("click", function(ev) {
 				clearBrushing();
+				WSR.vars.map.trigger("clearLines");
 			})	
 
 			// shift brush left or right

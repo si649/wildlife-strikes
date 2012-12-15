@@ -281,8 +281,9 @@ var Map = (function($,_,d3){
 					//	to accommodate panning/zooming
 					
 					// random hexcode -> http://paulirish.com/2009/random-hex-color-code-snippets/
-					var lineColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-					
+					//var lineColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+					var lineColors = ["#00b8cb","#0B95E2","#0B58D8","0BE2BA","0BD877"]
+					var lineColor = lineColors[Math.floor(Math.random()*5)]
 					// draw lines for each airport
 					var count = 0;
 					_.each(airportList, function(airport){
@@ -294,7 +295,7 @@ var Map = (function($,_,d3){
 										}
 							chartLines.append('line')
 								.datum(datm)
-								.attr('class', function () { return view.model.id +" line"})
+								.attr('class', function () { return view.model.id +" line" + " leaflet-zoom-hide"})
 								.attr("x1", function(d) { 
 									newPos = map.containerPointToLayerPoint([d.uiView.getXAnchor(),d.uiView.getYAnchor()]);
 									return newPos.x; 
@@ -305,7 +306,7 @@ var Map = (function($,_,d3){
 								})								
 								.attr("x2", function() { return mapPoint[0]; })
 								.attr("y2", function() { return mapPoint[1]; })
-								.attr("stroke",lineColor)
+								.attr("stroke", function() { return lineColor; })
 								.attr("opacity",1)
 								.on('click', function(d,i) { console.log(d.getID()) });
 								//.transition()
