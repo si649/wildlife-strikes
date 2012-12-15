@@ -271,7 +271,14 @@ path.domain {
     text-transform: uppercase;
 }
 #map path {
-	fill: #ff9b3e;
+	fill: #ff922c;
+	stroke: #353535;
 }
-
+#map path:hover {
+	fill: #00b8cb;
+	cursor: pointer;
+}
+#map .leaflet-tile-pane {
+	-webkit-filter: invert(79%) ;
+}
 
