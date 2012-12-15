@@ -113,7 +113,6 @@ var Map = (function($,_,d3){
 
 										incidentRemarks = "No Remark For This Incident";
 										remarkClass = "noRemark";
-										console.log("why am I getting weird quotes... " + templateData.remarkClass)
 
 									} else {
 
@@ -130,7 +129,6 @@ var Map = (function($,_,d3){
 									}
 								
 									templateData.items.push({ SPECIES : incidentData[i][j].SPECIES, REMARKS: incidentRemarks, DATE: incidentData[i][j].INCIDENT_DATE, REMARKCLASS: remarkClass});
-									console.log(templateData);
 							}
 						});
 					});
@@ -184,7 +182,7 @@ var Map = (function($,_,d3){
 							.style("left", (d3.event.pageX + 20) + "px")
 							.style("width", airportData.properties.name.length * 10)
 							.style("visibility","visible")
-							.html("<p>" + airportData.properties.name + "</p>" + "Airport ID: " + airportData.id  + "<br />" + "Strike Count: " + strikesCount);
+							.html("<p>" + airportData.properties.name + "</p>" + "<p class=\"icon-airport\">" + airportData.id + "</p>" + "Strike Count: " + strikesCount);
 						
 				}
 				

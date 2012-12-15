@@ -453,13 +453,15 @@ path {
 }
 
 .redDotMouse {
-
-	fill: crimson;
+	
+	fill: #00b8cb;
+	cursor: pointer;
+	
 }
 
 .redDotClicked {
 
-	fill: crimson;
+	fill: #00b8cb;
 
 }
 
