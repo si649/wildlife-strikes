@@ -199,6 +199,7 @@ var AnimalUI = (function($,_,d3){
 		WSR.views.FamilyButton = function(model,parent){
 			WSR.views.SpeciesButton.call(this,model,parent);
 			this.template = '<li class="family"><p>'+this.model.name+'<span>&#x25BC;</span></p></li>';
+			this.mask = model.mask;
 			this.animalButtons = [] // array of AnimalButtons under this FamilyButton
 			this.render();
 			

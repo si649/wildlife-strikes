@@ -161,7 +161,10 @@ var Timer = (function($,_,d3){
 				showPosition(firstMonth[1],firstMonth[0]);
 
 			}; // END updateTimeView
-
+			
+			//make the animals update
+			$('#animals').trigger('updateVisibility'); 
+			
 			// start the whole she-bang
 			incrementTime();
 		
