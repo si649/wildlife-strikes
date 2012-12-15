@@ -81,18 +81,22 @@ var Map = (function($,_,d3){
 					templateData.items = [];
 					templateData.airport = airportData.properties.name;
 					
-					templateData.between = "" + WSR.vars.date[0];
+					months = WSR.vars.date;
 
-					// var firstMonth = months[0].split('_');
-					// var monthDisplay = firstMonth[1] + '/' + firstMonth[0];
+					//Create the time display for the Lightbox
+					var firstMonth = months[0].split('_');
 					
-					// if (months.length > 1) {
+					var monthDisplay = firstMonth[1] + '/' + firstMonth[0];
+					
+					templateData.between = monthDisplay;
+
+					if (months.length > 1) {
 						
-					// 	var lastMonth = months[months.length - 1].split('_');
-					// 	monthDisplay += ' - ' + lastMonth[1] + '/' + lastMonth[0];
-					
-					// };
-					
+						var lastMonth = months[months.length - 1].split('_');
+					 	monthDisplay += ' - ' + lastMonth[1] + '/' + lastMonth[0];
+						templateData.between = monthDisplay;
+
+					 }
 
 					//Uses the JSON file from infobox function and iterates over it
 					$.each(incidentData, function(i){
@@ -101,7 +105,6 @@ var Map = (function($,_,d3){
 							if(incidentData[i][j].AIRPORT_ID == airportData.id) { //Compares all of the incidents in the file to the current airport and returns values that match
 
 									strikesCount++;
-									console.log("this is the strike count..." + strikesCount);
 									var incidentRemarks = incidentData[i][j].REMARKS;
 									
 									if(incidentRemarks == "") {
@@ -109,15 +112,17 @@ var Map = (function($,_,d3){
 										incidentRemarks = "No Remarks For This Incident";
 
 									}
+									if(strikesCount == 1){
+										
+										templateData.strikes = "Total Strike " + strikesCount;
 									
-									templateData.strikes = strikesCount;
+									} else {
+										
+										templateData.strikes = "Total Strikes " + strikesCount;
+									}
+								
 									templateData.items.push({ SPECIES : incidentData[i][j].SPECIES, REMARKS: incidentRemarks, DATE: incidentData[i][j].INCIDENT_DATE});
-									
 
-								console.log("this is...." + incidentData[i][j].SPECIES);
-								console.log("test test test")
-								console.log("this is.........." + incidentData[i][j].AIRPORT);
-								console.log("this is the incident date...." + incidentData[i][j].INCIDENT_DATE);
 							}
 						});
 					});
@@ -134,11 +139,6 @@ var Map = (function($,_,d3){
 						 					.append("div")
 					 							.attr("id","infoboxContents");
 											
-						//Diagnostics
-						// console.log("This is the template: " + template)
-						// console.log("This is the context: " + context)
-						// console.log("This is the infoboxContents: " + infoboxContents)
-						
 						//Lightbox call to nodeDetails Template
 						lightbox($("#infoboxContents").html(template(context)));
 					
@@ -166,8 +166,6 @@ var Map = (function($,_,d3){
 							if(incidentData[i][j].AIRPORT_ID == airportData.id){
 
 								strikesCount++;
-								//$("#tooltip p").html("Strike Count: 88888"); //+ strikesCount); --> old working
-								console.log("This is the strikes count..." + strikesCount);
 							
 							}
 						});
@@ -177,11 +175,8 @@ var Map = (function($,_,d3){
 							.style("top", (d3.event.pageY) + "px")
 							.style("left", (d3.event.pageX + 20) + "px")
 							.style("width", airportData.properties.name.length * 10)
-							// .style("height", 60 + "px")
-							// .style("opacity", .70)
 							.style("visibility","visible")
 							.html("<p>" + airportData.properties.name + "</p>" + "Airport ID: " + airportData.id  + "<br />" + "Strike Count: " + strikesCount);
-							//.html("Airport ID: " + airportData.id + "<br />" + "Airport Name: " + airportData.properties.name + "<br />" + "<p>Strike Count: " + 0 + "</p>"); -> old working
 						
 				}
 				

@@ -1,8 +1,10 @@
 <div id="nodeDetails">
 	<div class="airportInfo">
+		<p class="icon-airport"></p>
 		<h1>{{airport}} </h1>
 		<ul>
-			<li>Strike Count During {{between}}: {{strikes}}</li>
+			<li>{{strikes}}</li>
+			<li>{{between}}</li>
 		</ul>
 	</div>
 	<div class="mapbox">
@@ -12,8 +14,9 @@
 		<dl>
 			 {{#each items}}
 			<dt class="date">Date: {{DATE}}</dt>
-				<dd class="remark">Remark: {{REMARKS}}</dd>
 				<dd class="species">Species: {{SPECIES}}</dd>
+				<dd class="remark">Remark:<blockquote>{{REMARKS}}</blockquote></dd>
+				<hr />
 			 {{/each}}
 		</dl>
 </div>
