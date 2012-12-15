@@ -122,11 +122,11 @@ var Map = (function($,_,d3){
 
 									if(strikesCount == 1){
 										
-										templateData.strikes = "Total Strike " + strikesCount;
+										templateData.strikes = strikesCount + " Total Strike";
 									
 									} else {
 										
-										templateData.strikes = "Total Strikes " + strikesCount;
+										templateData.strikes = strikesCount + " Total Strikes";
 									}
 								
 									templateData.items.push({ SPECIES : incidentData[i][j].SPECIES, REMARKS: incidentRemarks, DATE: incidentData[i][j].INCIDENT_DATE, REMARKCLASS: remarkClass});
