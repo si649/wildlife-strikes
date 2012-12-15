@@ -20,9 +20,10 @@ var Map = (function($,_,d3){
 			
 			var layer = new L.StamenTileLayer("toner-background");	// switch to "watercolor" for fun times!
 			var map = new L.Map(parent.substr(1, parent.length-1), {
-			    center: new L.LatLng(39.810556, -98.556111),
-			    minZoom: 3,
+			    center: new L.LatLng(38, -102),
 			    zoom: 4,
+			    minZoom: 3,
+			    maxZoom: 10,
 			    attributionControl: false,
 			    scrollWheelZoom: false
 			});
