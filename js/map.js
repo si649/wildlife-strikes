@@ -80,12 +80,22 @@ var Map = (function($,_,d3){
 					//Creates property items annd makes it an array
 					templateData.items = [];
 					templateData.airport = airportData.properties.name;
+					
+					templateData.between = "" + WSR.vars.date[0];
+
+					// var firstMonth = months[0].split('_');
+					// var monthDisplay = firstMonth[1] + '/' + firstMonth[0];
+					
+					// if (months.length > 1) {
+						
+					// 	var lastMonth = months[months.length - 1].split('_');
+					// 	monthDisplay += ' - ' + lastMonth[1] + '/' + lastMonth[0];
+					
+					// };
+					
 
 					//Uses the JSON file from infobox function and iterates over it
 					$.each(incidentData, function(i){
-
-						console.log("this is where I'm working...-----> " + incidentData.i)
-						
 						$.each(incidentData[i], function(j){
 
 							if(incidentData[i][j].AIRPORT_ID == airportData.id) { //Compares all of the incidents in the file to the current airport and returns values that match
