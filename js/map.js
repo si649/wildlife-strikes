@@ -49,7 +49,7 @@ var Map = (function($,_,d3){
 
 			    path.pointRadius(5);
 
-			    var currentAirports = collection.features;
+			    var currentAirports = [];
 
 				//Constructs the SVG elements for the infobox. Each line of text needs its own element and all of the elements need to be in the same "g" group
 
