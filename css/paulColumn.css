@@ -32,7 +32,8 @@ body {
 
 
 body a {
-    color: #ff9b3e;
+    
+    color: #00b8cb;
     text-decoration: none;
 }
 
@@ -166,7 +167,7 @@ body a {
 
 #content a {
 
-    color: #6C469B;
+    color: #FF9B3E;
     font-weight: bold;
     text-decoration: none;
 }
