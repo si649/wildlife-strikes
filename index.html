@@ -38,7 +38,7 @@
 					incidents: {},
 					airports: [],
 					mapH: $(window).height(), // set in $ready
-					mapW: $(window).width()	// set in $ready
+					mapW: $(window).width(), // set in $ready
 				},
 				models: {},	// store data models for reference
 				views: {}	// store UI views for reference
@@ -56,6 +56,8 @@
 			var animalUI = new AnimalUI();
 			animalUI.initAnimalUI("#animals"); // initialize Species Buttons
 			
+			
+			
 			//Extended jQuery Functions
 			
 			jQuery.easing.easeInOutCubic = function (x, t, b, c, d) {
@@ -70,6 +72,12 @@
 				return c*((t=t/d-1)*t*t + 1) + b;
 
 			};
+			   
+			  offset = parseInt( $(window).width() - $('#animals').width() - $("#timeControler").width() ) / 2 + parseInt($('#animals').width());
+			  $("#timeControler").css("left",offset).animate({"bottom":"5%"},800,"easeOutCubic");
+			  $('#animals').animate({"left":"0px"}, 850, "easeOutCubic");
+			 
+			
 		}); // END $.ready
 	});
 </script>

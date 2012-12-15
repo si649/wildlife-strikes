@@ -280,11 +280,13 @@ var AnimalUI = (function($,_,d3){
 				if(clickCount % 2 == 0){
 
 					$(parent).animate({"left":"-250px"}, 850, "easeInOutCubic");
-
+					offset = parseInt( $(window).width() - $("#timeControler").width() ) / 2;
+					$("#timeControler").animate({"left":offset},850,"easeInOutCubic");
 				} else {
 
 					$(parent).animate({"left":"0px"}, 850, "easeOutCubic");
-
+					offset = parseInt( $(window).width() - $(parent).width() - $("#timeControler").width() ) / 2 + parseInt($(parent).width());
+					$("#timeControler").animate({"left":offset},850,"easeOutCubic");
 				}
 				clickCount++;
 			});

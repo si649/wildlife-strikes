@@ -5,6 +5,8 @@
 .freeze, #lightbox-shadow {
 	position: fixed !important;
 }
+
+/* timeControler styling */
 #currentDate:before {
 	content: " ";
 	width: 118px;
@@ -205,3 +207,11 @@ path.domain {
 	background: url(../images/birds.png) no-repeat;
 		
 }
+
+
+/* switch #animals to starting position */
+#animals {
+	left: -250px;
+}
+
+
