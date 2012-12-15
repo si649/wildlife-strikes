@@ -104,6 +104,11 @@ var Timer = (function($,_,d3){
 					timeInterval = months;
 					// update global variables
 					WSR.vars.date = months;
+
+
+				//make the animals update
+				$('#animals').trigger('updateVisibility'); 
+				
 					WSR.vars.airports = currentAirports;
 					// trigger time update
 					updateTimeView();
@@ -147,10 +152,8 @@ var Timer = (function($,_,d3){
 				// update play position marker
 				showPosition(firstMonth[1],firstMonth[0],dayLength);
 
+
 			}; // END updateTimeView
-			
-			//make the animals update
-			$('#animals').trigger('updateVisibility'); 
 			
 			// start the whole she-bang
 			incrementTime();
