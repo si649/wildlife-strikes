@@ -227,7 +227,7 @@ path.domain {
 	background: -ms-linear-gradient(left, #ececec 0%,#fafafa 100%); /* IE10+ */
 	background: linear-gradient(to right, #ececec 0%,#fafafa 100%); /* W3C */
 	border-left: 1px solid #aaa;
-	box-shadow: inset -2px 0 0 #eee,inset -1px 0 0 #ccc,2px 0 5px #ccc;
+	box-shadow: inset -2px 0 0 #eee,inset -1px 0 0 #ccc,2px 0 7px rgba(0,0,0,.15);
 	
 }
 
@@ -240,7 +240,7 @@ path.domain {
 	border: 1px solid #aaa;
 	border-left: none;
 	background-color: #fafafa ;
-	box-shadow: inset -2px 0 0 #eee,inset -1px 0 0 #ccc,2px 0 5px #ccc;
+	box-shadow: inset -2px 0 0 #eee,inset -1px 0 0 #ccc,2px 0 7px rgba(0,0,0,.15);
 }
 #sliderTab:after {
 	content: "";
@@ -265,5 +265,13 @@ path.domain {
 	opacity: .4 !important;
 }
 
+#nodeDetails .airportInfo h1 {
+    font-size: 3.4em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+#map path {
+	fill: #ff9b3e;
+}
 
 
