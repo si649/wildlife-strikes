@@ -29,6 +29,7 @@ var AnimalUI = (function($,_,d3){
 		WSR.models.Family = function(data){
 			this.id = data.id;
 			this.name = data.name;
+			this.mask = data.mask
 			this.animals = [] // a list of WSR.models.Animal objects
 		} // END Family Constructor
 		
@@ -198,8 +199,9 @@ var AnimalUI = (function($,_,d3){
 		// Child class for family buttons
 		WSR.views.FamilyButton = function(model,parent){
 			WSR.views.SpeciesButton.call(this,model,parent);
-			this.template = '<li class="family"><p>'+this.model.name+'<span>&#x25BC;</span></p></li>';
-			this.mask = model.mask;
+			cdate = WSR.vars.date[0].split("_");
+			model.mask[cdate[0]][cdate[1]] == 1 ? disabled ="" : disabled =" disabled";
+			this.template = '<li class="family'+disabled+'"><p>'+this.model.name+'<span>&#x25BC;</span></p></li>';
 			this.animalButtons = [] // array of AnimalButtons under this FamilyButton
 			this.render();
 			
@@ -274,6 +276,19 @@ var AnimalUI = (function($,_,d3){
 				error: function(jqXHR, textStatus, errorThrown){
 					console.log(textStatus, errorThrown)
 			}});
+			
+			// Update Visibility on date change
+			$(parent).on('updateVisibility',function(ev){
+				cdate = _.reduce(WSR.vars.date,function(memo,date){ memo.push(date.split("_")); return memo; },[]);
+				console.log(cdate);
+				$.each(WSR.vars.familyButtons,function(idx,view){
+					var $el = $(view.el);
+					$el.addClass('disabled');
+					_.each(cdate,function(d){
+						if(view.model.mask[d[0]][d[1]] == 1 ) $el.removeClass('disabled');	
+					});
+				});
+			});
 			
 			//Append Paragraph Tag To Be Used For Animals Slider Tab
 			$(parent).append("<p id=\"sliderTab\"></p>");
