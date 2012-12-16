@@ -209,28 +209,6 @@ path.domain {
 }
 
 
-/* switch #animals to starting position */
-#animals {
-	position: absolute;
-	padding-top: .5em;
-	padding-bottom: .5em;
-	left: -250px;
-	background-color: #ccc;
-	border-right: 1px solid #888;
-	
-	
-	background: #ececec; /* Old browsers */
-	background: -moz-linear-gradient(left, #ececec 0%, #fafafa 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ececec), color-stop(100%,#fafafa)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left, #ececec 0%,#fafafa 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left, #ececec 0%,#fafafa 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left, #ececec 0%,#fafafa 100%); /* IE10+ */
-	background: linear-gradient(to right, #ececec 0%,#fafafa 100%); /* W3C */
-	border-left: 1px solid #aaa;
-	box-shadow: inset -2px 0 0 #eee,inset -1px 0 0 #ccc,2px 0 7px rgba(0,0,0,.15);
-	
-}
-
 /*update styling on animals panel */
 
 #sliderTab {
@@ -251,18 +229,9 @@ path.domain {
 	top: 17px;
 	right: 4px;
 }
-#animals li p:hover, #animals li.active p,#animals li.active li.active p {
-	border-color: #00b8cb;
-}
-#animals li.active p:hover {
-	background-color: #B2F7FF;
-}
-#animals li.active p,#animals li.active li.active p,#animals li.active li p {
-	background-color:white;
-}
-#animals li.disabled {
-	opacity: .4 !important;
-}
+
+
+
 
 #nodeDetails .airportInfo h1 {
     font-size: 3.4em;

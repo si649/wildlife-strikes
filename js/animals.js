@@ -97,12 +97,14 @@ var AnimalUI = (function($,_,d3){
 		WSR.views.SpeciesButton.prototype.render = function() {
 			this.el = $(this.template).appendTo(this.parent);
 			this.el.children("p").on('click',{src:this},function(ev) {
-				if ($(this).parent().hasClass('active')){
-					$(this).parent().removeClass('active');
-					WSR.vars.map.trigger('deselectAnimal',[ev.data.src]);
-				} else {
-					$(this).parent().addClass('active');
-					ev.data.src.model.getStrikes(ev.data.src,ev.data.src.drawStrikeLines);
+				if(!($(this).parent().hasClass('disabled'))){
+					if ($(this).parent().hasClass('active')){
+						$(this).parent().removeClass('active');
+						WSR.vars.map.trigger('deselectAnimal',[ev.data.src]);
+					} else {
+						$(this).parent().addClass('active');
+						ev.data.src.model.getStrikes(ev.data.src,ev.data.src.drawStrikeLines);
+					}
 				}
 			});
 			
@@ -200,7 +202,7 @@ var AnimalUI = (function($,_,d3){
 		WSR.views.FamilyButton = function(model,parent){
 			WSR.views.SpeciesButton.call(this,model,parent);
 			cdate = WSR.vars.date[0].split("_");
-			model.mask[cdate[0]][cdate[1]] == 1 ? disabled ="" : disabled =" disabled";
+			model.mask[cdate[0]][cdate[1]-1] == 1 ? disabled ="" : disabled =" disabled";
 			this.template = '<li class="family'+disabled+'"><p>'+this.model.name+'<span>&#x25BC;</span></p></li>';
 			this.animalButtons = [] // array of AnimalButtons under this FamilyButton
 			this.render();
@@ -222,7 +224,7 @@ var AnimalUI = (function($,_,d3){
 							WSR.vars.map.trigger('deselectAnimal',[view]);
 						}
 					});
-				} else {
+				} else if(!($(this).parent().parent().hasClass('disabled'))){
 					$(this).addClass('open').html("&#x25BA;");
 					if($(this).parent().siblings("ul")[0]){ // check to see if animalButtons have been created
 						$("html,body").animate({scrollTop:$(window).scrollTop()+10},350); //force trigger window update
@@ -287,7 +289,7 @@ var AnimalUI = (function($,_,d3){
 					$el.removeClass('disabled')
 					$el.addClass('disabled');
 					_.each(cdate,function(d){
-						if(view.model.mask[d[0]][d[1]] == 1 ) $el.removeClass('disabled');	
+						if(view.model.mask[d[0]][d[1]-1] == 1 ) $el.removeClass('disabled');	
 						});
 					});
 				};
@@ -309,6 +311,7 @@ var AnimalUI = (function($,_,d3){
 					offset = parseInt( $(window).width() - $(parent).width() - $("#timeControler").width() ) / 2 + parseInt($(parent).width());
 					$("#timeControler").animate({"left":offset},850,"easeOutCubic");
 				}
+				$("html,body").animate({scrollTop:$(window).scrollTop()+5},900);
 				clickCount++;
 			});
 		} // END initAnimalUI()
