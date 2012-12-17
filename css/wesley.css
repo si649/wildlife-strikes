@@ -243,5 +243,7 @@ path.domain {
 }
 #map .leaflet-tile-pane {
 	-webkit-filter: invert(79%) ;
+	-moz-filter: invert(79%) ;
+	filter: invert(79%);
 }
 
