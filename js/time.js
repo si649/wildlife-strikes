@@ -21,7 +21,8 @@ var Timer = (function($,_,d3){
 			backward = false,
 			dayLength = 0,
 			moveBrush,
-			showPosition;
+			showPosition,
+			first = true;
 		
 		updateTime = function (data) {
 
@@ -126,6 +127,10 @@ var Timer = (function($,_,d3){
 						moveBrush(true);
 						setTimeout(function() {updateTime(months)}, playInterval);
 					};
+					if(first){
+						$(".forwardbutton").trigger('click');
+						first = false;
+					}
 				};
 			}; // END updateIncidents
 
@@ -164,7 +169,7 @@ var Timer = (function($,_,d3){
 		this.initTime = function(parent) {
 
 			var defaultTime = ['2009_1'];
-
+			
 			// play / pause
 			$(".playbutton").on("click", function(ev) {
 				if (playing){
@@ -203,7 +208,7 @@ var Timer = (function($,_,d3){
 			buildTimeLine();
 
 			//Run the time filtering
-			updateTime(defaultTime);
+			updateTime(['2008_12']);
 		
 		
 		} // END initTime()
