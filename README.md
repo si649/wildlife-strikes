@@ -12,6 +12,8 @@ Authors
 -[Jeremy Salfen](http://onceyougodigital.com/about/)
 -[Phillip Tularak](http://www.philliptularak.com)
 
+-[University of Michigan School of Information - SI649: Information Visualization](http://www.si.umich.edu)
+
 For our SI 649 final group project at the University of Michigan School of Information, we designed an interactive 
 visualization mapping incidents of wildlife strikes on aircraft from 1999 to 2012 based on data from the Federal Aviation 
 Administration (FAA). We chose the FAA animal strikes dataset because, besides being quite large, there were many interesting 
