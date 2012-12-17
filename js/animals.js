@@ -114,7 +114,7 @@ var AnimalUI = (function($,_,d3){
 					// trigger the map's implementation of line redraw, pass view reference for X/Y positions
 					WSR.vars.map.trigger('updateLines',[ev.data.src]);
 				}
-				console.log($(window).scrollTop());
+				//console.log($(window).scrollTop());
 				$('#sliderTab').css('top',300+$(window).scrollTop());
 			});
 		} // END SpeciesButton Constructor
@@ -141,7 +141,7 @@ var AnimalUI = (function($,_,d3){
 			
 				airports = airports.concat( _.chain(strikes).pluck(dateName).flatten().uniq().without(undefined).value());
 			});
-			console.log(airports);
+			//console.log(airports);
 			// trigger the map's implementation of line drawing, passing view and airport list
 			WSR.vars.map.trigger('strikesByAnimal',[this,airports]);
 		} // END drawStrikeLines
@@ -179,7 +179,7 @@ var AnimalUI = (function($,_,d3){
 					"nojsoncallback=1"
 				]
 				var req = baseUrl + attrs.join("&");
-				console.log(req);
+				//console.log(req);
 				$.getJSON(req,function(data){
 					// http://www.flickr.com/services/api/misc.urls.html
 					var photo = data.photos.photo[0] // only asked for 1 photo
@@ -282,7 +282,7 @@ var AnimalUI = (function($,_,d3){
 			// Update Visibility on date change
 			$(parent).on('updateVisibility',function(ev){
 				cdate = _.reduce(WSR.vars.date,function(memo,date){ memo.push(date.split("_")); return memo; },[]);
-				console.log(cdate);
+				//console.log(cdate);
 				if (WSR.vars.familyButtons) {
 					$.each(WSR.vars.familyButtons,function(idx,view){
 					var $el = $(view.el);

@@ -285,7 +285,7 @@ var Map = (function($,_,d3){
 					//var lineColor = '#'+Math.floor(Math.random()*16777215).toString(16);
 					var lineColors = ["#00b8cb","#0B95E2","#0B58D8","#0BE2BA","#0BD877"]
 					var lineColor = lineColors[Math.floor(Math.random()*5)]
-					console.log(lineColor);
+					//console.log(lineColor);
 					// draw lines for each airport
 					var count = 0;
 					_.each(airportList, function(airport){
