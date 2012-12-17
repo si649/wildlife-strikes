@@ -185,8 +185,8 @@ body a {
 
 .button a:before {
     content:"";
-    width:20px;
-    height:21px;
+    width:28px;
+    height:30px;
     background-image: url(../images/bird_logo_28x30_white.png);
     position: absolute;
     top:11px;
